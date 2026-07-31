@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: medicare_raw
-    database: your-gcp-project-id   # <- replace with your actual GCP project
+    database: dataanalytics-504114   # <- replace with your actual GCP project
     schema: medicare_raw            # the BigQuery dataset you bq-loaded the CSV into
     tables:
       - name: provider_service_raw

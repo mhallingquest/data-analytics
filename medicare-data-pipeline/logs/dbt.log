@@ -1,0 +1,1007 @@
+[0m11:05:35.196132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000153E4614D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000153E6B57ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000153E6B579D0>]}
+
+
+============================== 11:05:35.206024 | 1e06a054-0a87-4f63-9c7e-ebe0cf2913da ==============================
+[0m11:05:35.206024 [info ] [MainThread]: Running with dbt=1.12.0
+[0m11:05:35.206937 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\mhall\\OneDrive\\Documents\\GitHub\\data-analytics\\medicare-data-pipeline\\logs'}
+[0m11:05:35.235517 [info ] [MainThread]: dbt version: 1.12.0
+[0m11:05:35.235916 [info ] [MainThread]: python version: 3.13.13
+[0m11:05:35.236249 [info ] [MainThread]: python path: C:\Users\mhall\AppData\Local\Programs\Python\Python313\python.exe
+[0m11:05:35.236585 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m11:05:48.239443 [info ] [MainThread]: Using profiles dir at C:\Users\mhall\.dbt
+[0m11:05:48.239920 [info ] [MainThread]: Using profiles.yml file at C:\Users\mhall\.dbt\profiles.yml
+[0m11:05:48.240259 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\dbt_project.yml
+[0m11:05:48.240632 [info ] [MainThread]: adapter type: bigquery
+[0m11:05:48.240947 [info ] [MainThread]: adapter version: 1.12.0
+[0m11:05:48.337006 [info ] [MainThread]: Configuration:
+[0m11:05:48.337423 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:05:48.337760 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:05:48.338067 [info ] [MainThread]: Required dependencies:
+[0m11:05:48.338379 [debug] [MainThread]: Executing "git --help"
+[0m11:05:48.430735 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:05:48.431150 [debug] [MainThread]: STDERR: "b''"
+[0m11:05:48.431487 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:05:48.431828 [info ] [MainThread]: Connection:
+[0m11:05:48.432173 [info ] [MainThread]:   method: service-account
+[0m11:05:48.432477 [info ] [MainThread]:   database: dataanalytics-504114
+[0m11:05:48.432779 [info ] [MainThread]:   execution_project: dataanalytics-504114
+[0m11:05:48.433075 [info ] [MainThread]:   schema: medicare_dev
+[0m11:05:48.433373 [info ] [MainThread]:   location: US
+[0m11:05:48.433664 [info ] [MainThread]:   priority: None
+[0m11:05:48.433959 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m11:05:48.434247 [info ] [MainThread]:   reservation: None
+[0m11:05:48.434537 [info ] [MainThread]:   impersonate_service_account: None
+[0m11:05:48.434836 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m11:05:48.435145 [info ] [MainThread]:   job_retries: 1
+[0m11:05:48.435451 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m11:05:48.435743 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m11:05:48.436033 [info ] [MainThread]:   job_link_info_level_log: False
+[0m11:05:48.436319 [info ] [MainThread]:   timeout_seconds: 300
+[0m11:05:48.436608 [info ] [MainThread]:   client_id: None
+[0m11:05:48.436902 [info ] [MainThread]:   token_uri: None
+[0m11:05:48.437189 [info ] [MainThread]:   compute_region: None
+[0m11:05:48.437474 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m11:05:48.437760 [info ] [MainThread]:   gcs_bucket: None
+[0m11:05:48.438045 [info ] [MainThread]:   dataproc_batch: None
+[0m11:05:48.438565 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m11:05:49.027005 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m11:05:49.027344 [debug] [MainThread]: On debug: select 1 as id
+[0m11:05:49.027664 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:05:49.028030 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:\\Users\\mhall\\path\\to\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDOQEzWtUDYM0ei\\neXwffMfVzqqY4+JPaH+Vb2WPq9ApA4iv8yr8vgxsHjoEgw/XaMtPYmRdmAMwFFsP\\nmXOiFaiklK/HUhwMaA/nC78bItoNaZbAlGPTPKWXjk0ytNfBXpK5MI7llueTAnxU\\n4issaUKtVh9i5bOwXjO1jRL7zxU3FuAuUGndfR6qbydCmjPILgaBogm5zL7xb3Xv\\ntQzJq63gayekU7GJUrazZxsyb3l6ROoXYg1Zpn+3RXr+7cxOS4OCCH+X72r2ieDP\\nWRA53MEw1DdhEU6Tb4rZkr5KRIw1ZJXtLV28nK4yVNjCxHoGc1oXMKgcP3c9HYKA\\nKmh9+2ZhAgMBAAECggEAAgpvQDNyVm6jy4WidDt4t41oO85LGar15+F+lU5Mx1px\\nuSpMVKHK72xupEde33b5267vFuEnd0EHpCGUxsfU/6OO0tzwVQaYEVq48RCrlz+i\\nK6+5hk2WsVzUTSIZMusnw5WUNQ0aJ5Fvb8Bo+d3k7csOUTJm5bc5kYGuzFygj/yW\\nmXavdAk2zxy0S4DngvCx8Se6Aj7d3tlVcvytRnXColFOQzfhwHXYuxdBAX0uB/aR\\nubWl5Q1LebexBdqqFBrV3J0LTuDVhMqP/angfNfAnPNT+wvwzJjJCu5lNOYLI+L1\\nTGYQQZI8kX58ua0fnUrhywkOVfSPyy3GmaO/7DJ6mQKBgQD8YMs5iGhwuLHSuG7V\\nD80Oh+5WBNhl6eal1IiiKJNH8WawdYxOYl7OL3e9FHUa0LPbVHnRcKIkfqeAfm9y\\nEEeEVZg6x+PIv4y+ZP+gWWF8GRqKO1z/m+l3NaH/Prb3RJuckzFouB3cFdogjDiN\\nRZ1Eih91okXEWx4LYrd6QkXa+QKBgQDRNgqoeQF2TJmfZos6/OxwbT2pv+SgM9mx\\nAWndvJFpRmc+oxm2FfzUnrhwMpkQfQPqDTm/ktBVOo7ZVrAWuhO8RzSr0NQGxOGN\\ngneDKtpD8YEE9B/ZTpKjYyedr2NCS0yo31PAZHrRXLmI9KDVDNVTnSX5YGeDtcV0\\nJ5d0zyqYqQKBgQCrFcbOcp0yRNIvId3oS3Tbs+QqpdA4ji5QHlqdatokvA2784Ow\\no1jXdzA5mkOkcPRr68FE7JDOIpnULmHINib1G709o8HTlZ6IdxkfD1hZcv8d1A5A\\nLOZAbLgrusz3pKfEpbep4J5FUv7yb3vqsNVi4CthaCbZbFdaqonstD58qQKBgQC7\\nQGV1uSin25O8ainAGFT/o6cHYiudgAseNKeuwXJdCZirJYyDv1ZWb+Gg+oipi1uP\\nh1riruMtBYaJ3N8q2E2FvS3VgsnjbSB8agPSMO6+1U+nQWGoPH1fJAZ3Sl3LHl50\\n3760erq63QVrIZk6V4wwlH1CoRjFeFJMzorvD+WOUQKBgBou2qbOwuWHRPCDD8OB\\n56U3d5n90eznBvXui/5D1MtlkFWGbgklaMYNC8jqdPmhOnNdKJtRNDyxWu7LNJKS\\nI8MtGFhgAkLavtrFM9m8biwWvLY3jwYyUOnytvlCJkQJwYGqJgFsx+9L98nnBhMS\\nZoGiM/CJYcTbHutMxL0CbuZm''
+[0m11:05:49.028430 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m11:05:49.028737 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 2] No such file or directory: 'C:\\Users\\mhall\\path\\to\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDOQEzWtUDYM0ei\\neXwffMfVzqqY4+JPaH+Vb2WPq9ApA4iv8yr8vgxsHjoEgw/XaMtPYmRdmAMwFFsP\\nmXOiFaiklK/HUhwMaA/nC78bItoNaZbAlGPTPKWXjk0ytNfBXpK5MI7llueTAnxU\\n4issaUKtVh9i5bOwXjO1jRL7zxU3FuAuUGndfR6qbydCmjPILgaBogm5zL7xb3Xv\\ntQzJq63gayekU7GJUrazZxsyb3l6ROoXYg1Zpn+3RXr+7cxOS4OCCH+X72r2ieDP\\nWRA53MEw1DdhEU6Tb4rZkr5KRIw1ZJXtLV28nK4yVNjCxHoGc1oXMKgcP3c9HYKA\\nKmh9+2ZhAgMBAAECggEAAgpvQDNyVm6jy4WidDt4t41oO85LGar15+F+lU5Mx1px\\nuSpMVKHK72xupEde33b5267vFuEnd0EHpCGUxsfU/6OO0tzwVQaYEVq48RCrlz+i\\nK6+5hk2WsVzUTSIZMusnw5WUNQ0aJ5Fvb8Bo+d3k7csOUTJm5bc5kYGuzFygj/yW\\nmXavdAk2zxy0S4DngvCx8Se6Aj7d3tlVcvytRnXColFOQzfhwHXYuxdBAX0uB/aR\\nubWl5Q1LebexBdqqFBrV3J0LTuDVhMqP/angfNfAnPNT+wvwzJjJCu5lNOYLI+L1\\nTGYQQZI8kX58ua0fnUrhywkOVfSPyy3GmaO/7DJ6mQKBgQD8YMs5iGhwuLHSuG7V\\nD80Oh+5WBNhl6eal1IiiKJNH8WawdYxOYl7OL3e9FHUa0LPbVHnRcKIkfqeAfm9y\\nEEeEVZg6x+PIv4y+ZP+gWWF8GRqKO1z/m+l3NaH/Prb3RJuckzFouB3cFdogjDiN\\nRZ1Eih91okXEWx4LYrd6QkXa+QKBgQDRNgqoeQF2TJmfZos6/OxwbT2pv+SgM9mx\\nAWndvJFpRmc+oxm2FfzUnrhwMpkQfQPqDTm/ktBVOo7ZVrAWuhO8RzSr0NQGxOGN\\ngneDKtpD8YEE9B/ZTpKjYyedr2NCS0yo31PAZHrRXLmI9KDVDNVTnSX5YGeDtcV0\\nJ5d0zyqYqQKBgQCrFcbOcp0yRNIvId3oS3Tbs+QqpdA4ji5QHlqdatokvA2784Ow\\no1jXdzA5mkOkcPRr68FE7JDOIpnULmHINib1G709o8HTlZ6IdxkfD1hZcv8d1A5A\\nLOZAbLgrusz3pKfEpbep4J5FUv7yb3vqsNVi4CthaCbZbFdaqonstD58qQKBgQC7\\nQGV1uSin25O8ainAGFT/o6cHYiudgAseNKeuwXJdCZirJYyDv1ZWb+Gg+oipi1uP\\nh1riruMtBYaJ3N8q2E2FvS3VgsnjbSB8agPSMO6+1U+nQWGoPH1fJAZ3Sl3LHl50\\n3760erq63QVrIZk6V4wwlH1CoRjFeFJMzorvD+WOUQKBgBou2qbOwuWHRPCDD8OB\\n56U3d5n90eznBvXui/5D1MtlkFWGbgklaMYNC8jqdPmhOnNdKJtRNDyxWu7LNJKS\\nI8MtGFhgAkLavtrFM9m8biwWvLY3jwYyUOnytvlCJkQJwYGqJgFsx+9L98nnBhMS\\nZoGiM/CJYcTbHutMxL0CbuZm'
+[0m11:05:49.029049 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m11:05:49.029442 [info ] [MainThread]: [31m1 check failed:[0m
+[0m11:05:49.029809 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m11:05:49.030698 [debug] [MainThread]: Command `dbt debug` failed at 11:05:49.030596 after 14.07 seconds
+[0m11:05:49.031071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001538AEA23F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001538AEE9130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001538AEA97B0>]}
+[0m11:05:49.031398 [debug] [MainThread]: Flushing usage events
+[0m11:05:49.758509 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:10:12.133398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296CEF24D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296D144BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296D144B890>]}
+
+
+============================== 11:10:12.138940 | eb28aa0d-54b2-447b-92eb-eaa6a7401902 ==============================
+[0m11:10:12.138940 [info ] [MainThread]: Running with dbt=1.12.0
+[0m11:10:12.139459 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\mhall\\OneDrive\\Documents\\GitHub\\data-analytics\\medicare-data-pipeline\\logs'}
+[0m11:10:12.160625 [info ] [MainThread]: dbt version: 1.12.0
+[0m11:10:12.161022 [info ] [MainThread]: python version: 3.13.13
+[0m11:10:12.161335 [info ] [MainThread]: python path: C:\Users\mhall\AppData\Local\Programs\Python\Python313\python.exe
+[0m11:10:12.161643 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m11:10:14.003176 [info ] [MainThread]: Using profiles dir at C:\Users\mhall\.dbt
+[0m11:10:14.003655 [info ] [MainThread]: Using profiles.yml file at C:\Users\mhall\.dbt\profiles.yml
+[0m11:10:14.004003 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\dbt_project.yml
+[0m11:10:14.004366 [info ] [MainThread]: adapter type: bigquery
+[0m11:10:14.004745 [info ] [MainThread]: adapter version: 1.12.0
+[0m11:10:14.100470 [info ] [MainThread]: Configuration:
+[0m11:10:14.100947 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:10:14.101318 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:10:14.101673 [info ] [MainThread]: Required dependencies:
+[0m11:10:14.102044 [debug] [MainThread]: Executing "git --help"
+[0m11:10:14.202709 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:10:14.203122 [debug] [MainThread]: STDERR: "b''"
+[0m11:10:14.203454 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:10:14.203777 [info ] [MainThread]: Connection:
+[0m11:10:14.204119 [info ] [MainThread]:   method: service-account
+[0m11:10:14.204448 [info ] [MainThread]:   database: dataanalytics-504114
+[0m11:10:14.204775 [info ] [MainThread]:   execution_project: dataanalytics-504114
+[0m11:10:14.205081 [info ] [MainThread]:   schema: medicare_dev
+[0m11:10:14.205382 [info ] [MainThread]:   location: US
+[0m11:10:14.205682 [info ] [MainThread]:   priority: None
+[0m11:10:14.205973 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m11:10:14.206268 [info ] [MainThread]:   reservation: None
+[0m11:10:14.206554 [info ] [MainThread]:   impersonate_service_account: None
+[0m11:10:14.206851 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m11:10:14.207178 [info ] [MainThread]:   job_retries: 1
+[0m11:10:14.207499 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m11:10:14.207817 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m11:10:14.208116 [info ] [MainThread]:   job_link_info_level_log: False
+[0m11:10:14.208417 [info ] [MainThread]:   timeout_seconds: 300
+[0m11:10:14.208710 [info ] [MainThread]:   client_id: None
+[0m11:10:14.208999 [info ] [MainThread]:   token_uri: None
+[0m11:10:14.209286 [info ] [MainThread]:   compute_region: None
+[0m11:10:14.209573 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m11:10:14.209858 [info ] [MainThread]:   gcs_bucket: None
+[0m11:10:14.210141 [info ] [MainThread]:   dataproc_batch: None
+[0m11:10:14.210644 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m11:10:14.740243 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m11:10:14.740570 [debug] [MainThread]: On debug: select 1 as id
+[0m11:10:14.740866 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:10:14.741211 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 13] Permission denied: 'C:\\Users\\mhall\\.dbt''
+[0m11:10:14.741508 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m11:10:14.741763 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 13] Permission denied: 'C:\\Users\\mhall\\.dbt'
+[0m11:10:14.742022 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m11:10:14.742396 [info ] [MainThread]: [31m1 check failed:[0m
+[0m11:10:14.742754 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m11:10:14.743663 [debug] [MainThread]: Command `dbt debug` failed at 11:10:14.743556 after 2.83 seconds
+[0m11:10:14.743974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296F50CC9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296F50C4830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296F50B5370>]}
+[0m11:10:14.744299 [debug] [MainThread]: Flushing usage events
+[0m11:10:15.294696 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:13:23.745895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029542A14D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029544F2BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029544F2B890>]}
+
+
+============================== 11:13:23.749477 | 6406b7d2-8e24-4fcd-9f17-e3a88f1a0feb ==============================
+[0m11:13:23.749477 [info ] [MainThread]: Running with dbt=1.12.0
+[0m11:13:23.750133 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\mhall\\OneDrive\\Documents\\GitHub\\data-analytics\\medicare-data-pipeline\\logs'}
+[0m11:13:23.764327 [info ] [MainThread]: dbt version: 1.12.0
+[0m11:13:23.764957 [info ] [MainThread]: python version: 3.13.13
+[0m11:13:23.765467 [info ] [MainThread]: python path: C:\Users\mhall\AppData\Local\Programs\Python\Python313\python.exe
+[0m11:13:23.765916 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m11:13:24.690800 [info ] [MainThread]: Using profiles dir at C:\Users\mhall\.dbt
+[0m11:13:24.691553 [info ] [MainThread]: Using profiles.yml file at C:\Users\mhall\.dbt\profiles.yml
+[0m11:13:24.692077 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\dbt_project.yml
+[0m11:13:24.692578 [info ] [MainThread]: adapter type: bigquery
+[0m11:13:24.693094 [info ] [MainThread]: adapter version: 1.12.0
+[0m11:13:24.788433 [info ] [MainThread]: Configuration:
+[0m11:13:24.789107 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:13:24.789628 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:13:24.790122 [info ] [MainThread]: Required dependencies:
+[0m11:13:24.790639 [debug] [MainThread]: Executing "git --help"
+[0m11:13:24.842770 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:13:24.843430 [debug] [MainThread]: STDERR: "b''"
+[0m11:13:24.843804 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:13:24.844151 [info ] [MainThread]: Connection:
+[0m11:13:24.844522 [info ] [MainThread]:   method: service-account
+[0m11:13:24.844854 [info ] [MainThread]:   database: dataanalytics-504114
+[0m11:13:24.845170 [info ] [MainThread]:   execution_project: dataanalytics-504114
+[0m11:13:24.845469 [info ] [MainThread]:   schema: medicare_dev
+[0m11:13:24.845764 [info ] [MainThread]:   location: US
+[0m11:13:24.846060 [info ] [MainThread]:   priority: None
+[0m11:13:24.846354 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m11:13:24.846685 [info ] [MainThread]:   reservation: None
+[0m11:13:24.846997 [info ] [MainThread]:   impersonate_service_account: None
+[0m11:13:24.847298 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m11:13:24.847583 [info ] [MainThread]:   job_retries: 1
+[0m11:13:24.847867 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m11:13:24.848149 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m11:13:24.848440 [info ] [MainThread]:   job_link_info_level_log: False
+[0m11:13:24.848722 [info ] [MainThread]:   timeout_seconds: 300
+[0m11:13:24.849001 [info ] [MainThread]:   client_id: None
+[0m11:13:24.849299 [info ] [MainThread]:   token_uri: None
+[0m11:13:24.849596 [info ] [MainThread]:   compute_region: None
+[0m11:13:24.849883 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m11:13:24.850168 [info ] [MainThread]:   gcs_bucket: None
+[0m11:13:24.850448 [info ] [MainThread]:   dataproc_batch: None
+[0m11:13:24.850938 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m11:13:25.369436 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m11:13:25.369782 [debug] [MainThread]: On debug: select 1 as id
+[0m11:13:25.370087 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:13:27.712997 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:32718b5e-84b7-4c03-9a06-d1b0b634638d&page=queryresults
+[0m11:13:28.000485 [debug] [MainThread]: SQL status: OK in 0.286 seconds
+[0m11:13:28.562060 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:13:28.563026 [info ] [MainThread]: [32mAll checks passed![0m
+[0m11:13:28.564142 [debug] [MainThread]: Command `dbt debug` succeeded at 11:13:28.564013 after 5.02 seconds
+[0m11:13:28.564419 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:13:28.564721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029568BBAC40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029568BAE210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029568B71040>]}
+[0m11:13:28.565039 [debug] [MainThread]: Flushing usage events
+[0m11:13:29.007112 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:16:05.701430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152C8690D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152CAC17ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152CAC17B10>]}
+
+
+============================== 11:16:05.705362 | d5dd43fe-7126-4e38-a8f9-dd710e601b17 ==============================
+[0m11:16:05.705362 [info ] [MainThread]: Running with dbt=1.12.0
+[0m11:16:05.706017 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\mhall\\OneDrive\\Documents\\GitHub\\data-analytics\\medicare-data-pipeline\\logs'}
+[0m11:16:06.875455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd5dd43fe-7126-4e38-a8f9-dd710e601b17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152C8B8D350>]}
+[0m11:16:06.934543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd5dd43fe-7126-4e38-a8f9-dd710e601b17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152EE71AF10>]}
+[0m11:16:06.935475 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m11:16:07.461345 [debug] [MainThread]: checksum: 743f53252efa4c15af929e7b36210727a41c2a4b3c4f942c023cc63bbae1370a, vars: {}, profile: medicare_data_pipeline, target: dev, version: 1.12.0
+[0m11:16:07.462416 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:16:07.462997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd5dd43fe-7126-4e38-a8f9-dd710e601b17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152EE646350>]}
+[0m11:16:08.994384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd5dd43fe-7126-4e38-a8f9-dd710e601b17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152EE5DAE40>]}
+[0m11:16:09.094524 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\manifest.json
+[0m11:16:09.100796 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\semantic_manifest.json
+[0m11:16:09.139808 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\osi_document.json
+[0m11:16:09.160809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd5dd43fe-7126-4e38-a8f9-dd710e601b17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152EFE37AF0>]}
+[0m11:16:09.161399 [info ] [MainThread]: Found 3 models, 5 data tests, 1 source, 561 macros
+[0m11:16:09.161898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd5dd43fe-7126-4e38-a8f9-dd710e601b17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152F010D570>]}
+[0m11:16:09.163772 [info ] [MainThread]: 
+[0m11:16:09.164473 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:16:09.164796 [info ] [MainThread]: 
+[0m11:16:09.165269 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:16:09.168849 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m11:16:09.169145 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:16:09.212964 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m11:16:09.213347 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:16:10.677285 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataanalytics-504114, now create_dataanalytics-504114_medicare_dev_staging)
+[0m11:16:10.677724 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataanalytics-504114, now create_dataanalytics-504114_medicare_dev_marts)
+[0m11:16:10.678174 [debug] [ThreadPool]: Creating schema "database: "dataanalytics-504114"
+schema: "medicare_dev_staging"
+"
+[0m11:16:10.678573 [debug] [ThreadPool]: Creating schema "database: "dataanalytics-504114"
+schema: "medicare_dev_marts"
+"
+[0m11:16:10.687196 [debug] [ThreadPool]: On create_dataanalytics-504114_medicare_dev_staging: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "medicare_data_pipeline", "target_name": "dev", "connection_name": "create_dataanalytics-504114_medicare_dev_staging"} */
+create schema if not exists `dataanalytics-504114`.`medicare_dev_staging`
+  
+[0m11:16:10.688181 [debug] [ThreadPool]: On create_dataanalytics-504114_medicare_dev_marts: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "medicare_data_pipeline", "target_name": "dev", "connection_name": "create_dataanalytics-504114_medicare_dev_marts"} */
+create schema if not exists `dataanalytics-504114`.`medicare_dev_marts`
+  
+[0m11:16:10.688518 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:16:10.688817 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:16:12.218634 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:f162c146-825a-498a-b944-d72d4afd3011&page=queryresults
+[0m11:16:12.222371 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:27ce782d-d952-42ba-b42c-5181e69781fd&page=queryresults
+[0m11:16:12.985722 [debug] [ThreadPool]: SQL status: OK in 0.763 seconds
+[0m11:16:13.277285 [debug] [ThreadPool]: SQL status: OK in 1.058 seconds
+[0m11:16:13.280717 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_medicare_dev_staging'
+[0m11:16:13.281144 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:16:13.281614 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_medicare_dev_marts'
+[0m11:16:13.281916 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:16:14.733518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd5dd43fe-7126-4e38-a8f9-dd710e601b17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152F00C5D90>]}
+[0m11:16:14.733950 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:16:14.770645 [debug] [Thread-7 (]: Began running node model.medicare_data_pipeline.stg_medicare_provider_service
+[0m11:16:14.771175 [info ] [Thread-7 (]: 1 of 3 START sql view model medicare_dev_staging.stg_medicare_provider_service . [RUN]
+[0m11:16:14.771745 [debug] [Thread-7 (]: Acquiring new bigquery connection 'model.medicare_data_pipeline.stg_medicare_provider_service'
+[0m11:16:14.772058 [debug] [Thread-7 (]: Began compiling node model.medicare_data_pipeline.stg_medicare_provider_service
+[0m11:16:14.777480 [debug] [Thread-7 (]: Writing injected SQL for node "model.medicare_data_pipeline.stg_medicare_provider_service"
+[0m11:16:14.780236 [debug] [Thread-7 (]: Began executing node model.medicare_data_pipeline.stg_medicare_provider_service
+[0m11:16:14.800651 [debug] [Thread-7 (]: Writing runtime sql for node "model.medicare_data_pipeline.stg_medicare_provider_service"
+[0m11:16:14.803347 [debug] [Thread-7 (]: On model.medicare_data_pipeline.stg_medicare_provider_service: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "medicare_data_pipeline", "target_name": "dev", "node_id": "model.medicare_data_pipeline.stg_medicare_provider_service"} */
+
+
+  create or replace view `dataanalytics-504114`.`medicare_dev_staging`.`stg_medicare_provider_service`
+  OPTIONS()
+  as -- Staging: light cleaning and renaming only. No business logic here —
+-- staging models exist to normalize types/names so every downstream model
+-- works from a consistent, well-typed source.
+--
+-- Source: raw BigQuery table loaded from the CMS "Medicare Physician &
+-- Other Practitioners - by Provider and Service" CSV. Column names below
+-- follow CMS's Rndrng_*/Tot_*/Avg_* naming convention as of the 2023+
+-- release — verify against the actual data dictionary in your downloaded
+-- file, since CMS occasionally renames columns between annual releases.
+
+with source as (
+
+    select * from `dataanalytics-504114`.`medicare_raw`.`provider_service_raw`
+
+),
+
+renamed as (
+
+    select
+        Rndrng_NPI                      as provider_npi,
+        Rndrng_Prvdr_Last_Org_Name      as provider_last_or_org_name,
+        Rndrng_Prvdr_First_Name         as provider_first_name,
+        Rndrng_Prvdr_Type               as provider_specialty,
+        Rndrng_Prvdr_State_Abrvtn       as provider_state,
+        Rndrng_Prvdr_City               as provider_city,
+        HCPCS_Cd                        as procedure_code,
+        HCPCS_Desc                      as procedure_description,
+        Place_Of_Srvc                   as place_of_service,
+        cast(Tot_Benes as int64)        as total_beneficiaries,
+        cast(Tot_Srvcs as int64)        as total_services,
+        cast(Avg_Sbmtd_Chrg as float64) as avg_submitted_charge,
+        cast(Avg_Mdcr_Alowd_Amt as float64) as avg_medicare_allowed_amount,
+        cast(Avg_Mdcr_Pymt_Amt as float64)  as avg_medicare_payment_amount
+
+    from source
+    where Rndrng_NPI is not null
+
+)
+
+select * from renamed;
+
+
+[0m11:16:14.803816 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m11:16:16.156183 [debug] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:66919a4a-0f83-4514-b2c3-0f1dd7a620fd&page=queryresults
+[0m11:16:16.156691 [error] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:66919a4a-0f83-4514-b2c3-0f1dd7a620fd&page=queryresults
+[0m11:16:16.171845 [debug] [Thread-7 (]: Database Error in model stg_medicare_provider_service (models\staging\stg_medicare_provider_service.sql)
+  Not found: Dataset dataanalytics-504114:medicare_raw was not found in location US
+  compiled code at target\run\medicare_data_pipeline\models\staging\stg_medicare_provider_service.sql
+[0m11:16:16.173585 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd5dd43fe-7126-4e38-a8f9-dd710e601b17', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152F0469020>]}
+[0m11:16:16.174116 [error] [Thread-7 (]: 1 of 3 ERROR creating sql view model medicare_dev_staging.stg_medicare_provider_service  [[31mERROR[0m in 1.40s]
+[0m11:16:16.174723 [debug] [Thread-7 (]: Finished running node model.medicare_data_pipeline.stg_medicare_provider_service
+[0m11:16:16.175186 [debug] [Thread-13 ]: Marking all children of 'model.medicare_data_pipeline.stg_medicare_provider_service' to be skipped because of status 'error'.  Reason: Database Error in model stg_medicare_provider_service (models\staging\stg_medicare_provider_service.sql)
+  Not found: Dataset dataanalytics-504114:medicare_raw was not found in location US
+  compiled code at target\run\medicare_data_pipeline\models\staging\stg_medicare_provider_service.sql.
+[0m11:16:16.176182 [debug] [Thread-9 (]: Began running node model.medicare_data_pipeline.mart_provider_summary
+[0m11:16:16.176837 [debug] [Thread-8 (]: Began running node model.medicare_data_pipeline.mart_procedure_summary
+[0m11:16:16.176552 [info ] [Thread-9 (]: 3 of 3 SKIP relation medicare_dev_marts.mart_provider_summary .................. [[33mSKIP[0m]
+[0m11:16:16.177256 [info ] [Thread-8 (]: 2 of 3 SKIP relation medicare_dev_marts.mart_procedure_summary ................. [[33mSKIP[0m]
+[0m11:16:16.177732 [debug] [Thread-9 (]: Finished running node model.medicare_data_pipeline.mart_provider_summary
+[0m11:16:16.178136 [debug] [Thread-8 (]: Finished running node model.medicare_data_pipeline.mart_procedure_summary
+[0m11:16:16.179341 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:16:16.207720 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:16:16.208032 [debug] [MainThread]: Connection 'create_dataanalytics-504114_medicare_dev_marts' was properly closed.
+[0m11:16:16.208275 [debug] [MainThread]: Connection 'create_dataanalytics-504114_medicare_dev_staging' was properly closed.
+[0m11:16:16.208504 [debug] [MainThread]: Connection 'list_dataanalytics-504114_medicare_dev_staging' was properly closed.
+[0m11:16:16.208730 [debug] [MainThread]: Connection 'list_dataanalytics-504114_medicare_dev_marts' was properly closed.
+[0m11:16:16.208955 [debug] [MainThread]: Connection 'model.medicare_data_pipeline.stg_medicare_provider_service' was properly closed.
+[0m11:16:16.209256 [info ] [MainThread]: 
+[0m11:16:16.209646 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 7.04 seconds (7.04s).
+[0m11:16:16.210397 [debug] [MainThread]: Command end result
+[0m11:16:16.242660 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\manifest.json
+[0m11:16:16.245964 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\semantic_manifest.json
+[0m11:16:16.249171 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\osi_document.json
+[0m11:16:16.255818 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\run_results.json
+[0m11:16:16.256101 [info ] [MainThread]: 
+[0m11:16:16.256489 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m11:16:16.256850 [info ] [MainThread]: 
+[0m11:16:16.257243 [error] [MainThread]: [[31mERROR[0m]: in model stg_medicare_provider_service (models\staging\stg_medicare_provider_service.sql)
+[0m11:16:16.257618 [error] [MainThread]:   Database Error in model stg_medicare_provider_service (models\staging\stg_medicare_provider_service.sql)
+  Not found: Dataset dataanalytics-504114:medicare_raw was not found in location US
+  compiled code at target\run\medicare_data_pipeline\models\staging\stg_medicare_provider_service.sql
+[0m11:16:16.257930 [info ] [MainThread]: 
+[0m11:16:16.258285 [info ] [MainThread]:   compiled code at target\compiled\medicare_data_pipeline\models\staging\stg_medicare_provider_service.sql
+[0m11:16:16.258586 [info ] [MainThread]: 
+[0m11:16:16.258922 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 REUSED=0 TOTAL=3
+[0m11:16:16.259655 [debug] [MainThread]: Command `dbt run` failed at 11:16:16.259557 after 10.77 seconds
+[0m11:16:16.259966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152F03BF7F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152F0410950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152EE5044D0>]}
+[0m11:16:16.260304 [debug] [MainThread]: Flushing usage events
+[0m11:16:16.800381 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:20:23.727166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292B05F4D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292B2B77ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292B2B77B10>]}
+
+
+============================== 11:20:23.731136 | 88167eee-7f0d-4a33-b4af-5ff2cc9e002d ==============================
+[0m11:20:23.731136 [info ] [MainThread]: Running with dbt=1.12.0
+[0m11:20:23.731808 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'C:\\Users\\mhall\\OneDrive\\Documents\\GitHub\\data-analytics\\medicare-data-pipeline\\logs'}
+[0m11:20:24.791421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '88167eee-7f0d-4a33-b4af-5ff2cc9e002d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292B0AED350>]}
+[0m11:20:24.851668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '88167eee-7f0d-4a33-b4af-5ff2cc9e002d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292D667EF10>]}
+[0m11:20:24.852601 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m11:20:25.375909 [debug] [MainThread]: checksum: 743f53252efa4c15af929e7b36210727a41c2a4b3c4f942c023cc63bbae1370a, vars: {}, profile: medicare_data_pipeline, target: dev, version: 1.12.0
+[0m11:20:25.482566 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m11:20:25.483276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '88167eee-7f0d-4a33-b4af-5ff2cc9e002d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292D7B42150>]}
+[0m11:20:26.886101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '88167eee-7f0d-4a33-b4af-5ff2cc9e002d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292D6AB47D0>]}
+[0m11:20:26.978810 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\manifest.json
+[0m11:20:26.982284 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\semantic_manifest.json
+[0m11:20:27.002137 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\osi_document.json
+[0m11:20:27.012597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '88167eee-7f0d-4a33-b4af-5ff2cc9e002d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292D803CBB0>]}
+[0m11:20:27.013122 [info ] [MainThread]: Found 3 models, 5 data tests, 1 source, 561 macros
+[0m11:20:27.013649 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '88167eee-7f0d-4a33-b4af-5ff2cc9e002d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292D80F93D0>]}
+[0m11:20:27.015937 [info ] [MainThread]: 
+[0m11:20:27.016327 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:20:27.016640 [info ] [MainThread]: 
+[0m11:20:27.017116 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:20:27.020609 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m11:20:27.021021 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:20:27.021407 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m11:20:27.021787 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:20:28.345640 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_medicare_dev_staging'
+[0m11:20:28.346114 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:20:28.346605 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_medicare_dev_marts'
+[0m11:20:28.346890 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:20:29.818482 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '88167eee-7f0d-4a33-b4af-5ff2cc9e002d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292D8026750>]}
+[0m11:20:29.818913 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:20:29.850861 [debug] [Thread-5 (]: Began running node model.medicare_data_pipeline.stg_medicare_provider_service
+[0m11:20:29.851333 [info ] [Thread-5 (]: 1 of 3 START sql view model medicare_dev_staging.stg_medicare_provider_service . [RUN]
+[0m11:20:29.851849 [debug] [Thread-5 (]: Acquiring new bigquery connection 'model.medicare_data_pipeline.stg_medicare_provider_service'
+[0m11:20:29.852152 [debug] [Thread-5 (]: Began compiling node model.medicare_data_pipeline.stg_medicare_provider_service
+[0m11:20:29.857555 [debug] [Thread-5 (]: Writing injected SQL for node "model.medicare_data_pipeline.stg_medicare_provider_service"
+[0m11:20:29.858826 [debug] [Thread-5 (]: Began executing node model.medicare_data_pipeline.stg_medicare_provider_service
+[0m11:20:29.883006 [debug] [Thread-5 (]: Writing runtime sql for node "model.medicare_data_pipeline.stg_medicare_provider_service"
+[0m11:20:29.884608 [debug] [Thread-5 (]: On model.medicare_data_pipeline.stg_medicare_provider_service: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "medicare_data_pipeline", "target_name": "dev", "node_id": "model.medicare_data_pipeline.stg_medicare_provider_service"} */
+
+
+  create or replace view `dataanalytics-504114`.`medicare_dev_staging`.`stg_medicare_provider_service`
+  OPTIONS()
+  as -- Staging: light cleaning and renaming only. No business logic here —
+-- staging models exist to normalize types/names so every downstream model
+-- works from a consistent, well-typed source.
+--
+-- Source: raw BigQuery table loaded from the CMS "Medicare Physician &
+-- Other Practitioners - by Provider and Service" CSV. Column names below
+-- follow CMS's Rndrng_*/Tot_*/Avg_* naming convention as of the 2023+
+-- release — verify against the actual data dictionary in your downloaded
+-- file, since CMS occasionally renames columns between annual releases.
+
+with source as (
+
+    select * from `dataanalytics-504114`.`medicare_raw`.`provider_service_raw`
+
+),
+
+renamed as (
+
+    select
+        Rndrng_NPI                      as provider_npi,
+        Rndrng_Prvdr_Last_Org_Name      as provider_last_or_org_name,
+        Rndrng_Prvdr_First_Name         as provider_first_name,
+        Rndrng_Prvdr_Type               as provider_specialty,
+        Rndrng_Prvdr_State_Abrvtn       as provider_state,
+        Rndrng_Prvdr_City               as provider_city,
+        HCPCS_Cd                        as procedure_code,
+        HCPCS_Desc                      as procedure_description,
+        Place_Of_Srvc                   as place_of_service,
+        cast(Tot_Benes as int64)        as total_beneficiaries,
+        cast(Tot_Srvcs as int64)        as total_services,
+        cast(Avg_Sbmtd_Chrg as float64) as avg_submitted_charge,
+        cast(Avg_Mdcr_Alowd_Amt as float64) as avg_medicare_allowed_amount,
+        cast(Avg_Mdcr_Pymt_Amt as float64)  as avg_medicare_payment_amount
+
+    from source
+    where Rndrng_NPI is not null
+
+)
+
+select * from renamed;
+
+
+[0m11:20:29.885102 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m11:20:31.058358 [debug] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:us-east5:fc0d77e3-6283-4793-9c89-bf06111b0f38&page=queryresults
+[0m11:20:31.059184 [error] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:us-east5:fc0d77e3-6283-4793-9c89-bf06111b0f38&page=queryresults
+[0m11:20:31.069991 [debug] [Thread-5 (]: Database Error in model stg_medicare_provider_service (models\staging\stg_medicare_provider_service.sql)
+  Not found: Dataset dataanalytics-504114:medicare_dev_staging was not found in location us-east5
+  compiled code at target\run\medicare_data_pipeline\models\staging\stg_medicare_provider_service.sql
+[0m11:20:31.071608 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '88167eee-7f0d-4a33-b4af-5ff2cc9e002d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292D803A360>]}
+[0m11:20:31.072149 [error] [Thread-5 (]: 1 of 3 ERROR creating sql view model medicare_dev_staging.stg_medicare_provider_service  [[31mERROR[0m in 1.22s]
+[0m11:20:31.072803 [debug] [Thread-5 (]: Finished running node model.medicare_data_pipeline.stg_medicare_provider_service
+[0m11:20:31.073283 [debug] [Thread-11 ]: Marking all children of 'model.medicare_data_pipeline.stg_medicare_provider_service' to be skipped because of status 'error'.  Reason: Database Error in model stg_medicare_provider_service (models\staging\stg_medicare_provider_service.sql)
+  Not found: Dataset dataanalytics-504114:medicare_dev_staging was not found in location us-east5
+  compiled code at target\run\medicare_data_pipeline\models\staging\stg_medicare_provider_service.sql.
+[0m11:20:31.074286 [debug] [Thread-6 (]: Began running node model.medicare_data_pipeline.mart_procedure_summary
+[0m11:20:31.074928 [debug] [Thread-7 (]: Began running node model.medicare_data_pipeline.mart_provider_summary
+[0m11:20:31.074654 [info ] [Thread-6 (]: 2 of 3 SKIP relation medicare_dev_marts.mart_procedure_summary ................. [[33mSKIP[0m]
+[0m11:20:31.075676 [debug] [Thread-6 (]: Finished running node model.medicare_data_pipeline.mart_procedure_summary
+[0m11:20:31.075250 [info ] [Thread-7 (]: 3 of 3 SKIP relation medicare_dev_marts.mart_provider_summary .................. [[33mSKIP[0m]
+[0m11:20:31.076279 [debug] [Thread-7 (]: Finished running node model.medicare_data_pipeline.mart_provider_summary
+[0m11:20:31.077491 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:20:31.105721 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:20:31.106030 [debug] [MainThread]: Connection 'list_dataanalytics-504114' was properly closed.
+[0m11:20:31.106262 [debug] [MainThread]: Connection 'list_dataanalytics-504114' was properly closed.
+[0m11:20:31.106486 [debug] [MainThread]: Connection 'list_dataanalytics-504114_medicare_dev_staging' was properly closed.
+[0m11:20:31.106718 [debug] [MainThread]: Connection 'list_dataanalytics-504114_medicare_dev_marts' was properly closed.
+[0m11:20:31.106943 [debug] [MainThread]: Connection 'model.medicare_data_pipeline.stg_medicare_provider_service' was properly closed.
+[0m11:20:31.107239 [info ] [MainThread]: 
+[0m11:20:31.107639 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 4.09 seconds (4.09s).
+[0m11:20:31.108379 [debug] [MainThread]: Command end result
+[0m11:20:31.218362 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\manifest.json
+[0m11:20:31.221600 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\semantic_manifest.json
+[0m11:20:31.224527 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\osi_document.json
+[0m11:20:31.231038 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\run_results.json
+[0m11:20:31.231331 [info ] [MainThread]: 
+[0m11:20:31.231724 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m11:20:31.232067 [info ] [MainThread]: 
+[0m11:20:31.232452 [error] [MainThread]: [[31mERROR[0m]: in model stg_medicare_provider_service (models\staging\stg_medicare_provider_service.sql)
+[0m11:20:31.232831 [error] [MainThread]:   Database Error in model stg_medicare_provider_service (models\staging\stg_medicare_provider_service.sql)
+  Not found: Dataset dataanalytics-504114:medicare_dev_staging was not found in location us-east5
+  compiled code at target\run\medicare_data_pipeline\models\staging\stg_medicare_provider_service.sql
+[0m11:20:31.233144 [info ] [MainThread]: 
+[0m11:20:31.234425 [info ] [MainThread]:   compiled code at target\compiled\medicare_data_pipeline\models\staging\stg_medicare_provider_service.sql
+[0m11:20:31.235638 [info ] [MainThread]: 
+[0m11:20:31.236912 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 REUSED=0 TOTAL=3
+[0m11:20:31.239636 [debug] [MainThread]: Command `dbt run` failed at 11:20:31.239233 after 7.71 seconds
+[0m11:20:31.240770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292D7B89DB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292D8037BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292B0A806D0>]}
+[0m11:20:31.242130 [debug] [MainThread]: Flushing usage events
+[0m11:20:31.824163 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:22:30.549549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001700ECB4D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017011237ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017011237B10>]}
+
+
+============================== 11:22:30.553415 | 01be1199-3e6f-42ba-aa25-4bac12b6d925 ==============================
+[0m11:22:30.553415 [info ] [MainThread]: Running with dbt=1.12.0
+[0m11:22:30.554061 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'C:\\Users\\mhall\\OneDrive\\Documents\\GitHub\\data-analytics\\medicare-data-pipeline\\logs'}
+[0m11:22:31.659632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '01be1199-3e6f-42ba-aa25-4bac12b6d925', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001700F1A9350>]}
+[0m11:22:31.720983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '01be1199-3e6f-42ba-aa25-4bac12b6d925', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017034D7AF10>]}
+[0m11:22:31.721732 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m11:22:32.235989 [debug] [MainThread]: checksum: 743f53252efa4c15af929e7b36210727a41c2a4b3c4f942c023cc63bbae1370a, vars: {}, profile: medicare_data_pipeline, target: dev, version: 1.12.0
+[0m11:22:32.390891 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:22:32.391208 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m11:22:32.391438 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:22:32.399283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '01be1199-3e6f-42ba-aa25-4bac12b6d925', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017036242850>]}
+[0m11:22:32.527045 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\manifest.json
+[0m11:22:32.530948 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\semantic_manifest.json
+[0m11:22:32.552505 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\osi_document.json
+[0m11:22:32.563255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '01be1199-3e6f-42ba-aa25-4bac12b6d925', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170363CC140>]}
+[0m11:22:32.563671 [info ] [MainThread]: Found 3 models, 5 data tests, 1 source, 561 macros
+[0m11:22:32.564027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '01be1199-3e6f-42ba-aa25-4bac12b6d925', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170363D2430>]}
+[0m11:22:32.565652 [info ] [MainThread]: 
+[0m11:22:32.565999 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:22:32.566312 [info ] [MainThread]: 
+[0m11:22:32.566801 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:22:32.570376 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m11:22:32.570665 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:22:32.571305 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m11:22:32.571594 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:22:33.859617 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataanalytics-504114, now create_dataanalytics-504114_medicare_dev_marts)
+[0m11:22:33.860256 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataanalytics-504114, now create_dataanalytics-504114_medicare_dev_staging)
+[0m11:22:33.860936 [debug] [ThreadPool]: Creating schema "database: "dataanalytics-504114"
+schema: "medicare_dev_marts"
+"
+[0m11:22:33.861562 [debug] [ThreadPool]: Creating schema "database: "dataanalytics-504114"
+schema: "medicare_dev_staging"
+"
+[0m11:22:33.874627 [debug] [ThreadPool]: On create_dataanalytics-504114_medicare_dev_marts: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "medicare_data_pipeline", "target_name": "dev", "connection_name": "create_dataanalytics-504114_medicare_dev_marts"} */
+create schema if not exists `dataanalytics-504114`.`medicare_dev_marts`
+  
+[0m11:22:33.875968 [debug] [ThreadPool]: On create_dataanalytics-504114_medicare_dev_staging: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "medicare_data_pipeline", "target_name": "dev", "connection_name": "create_dataanalytics-504114_medicare_dev_staging"} */
+create schema if not exists `dataanalytics-504114`.`medicare_dev_staging`
+  
+[0m11:22:33.876427 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:22:33.876893 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:22:35.321700 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:us-east5:a5421ca2-7396-4b09-ac5e-9e3daf192015&page=queryresults
+[0m11:22:35.337112 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:us-east5:5565e919-05b5-4e7d-9268-4618a4f0f253&page=queryresults
+[0m11:22:36.421906 [debug] [ThreadPool]: SQL status: OK in 1.084 seconds
+[0m11:22:36.529705 [debug] [ThreadPool]: SQL status: OK in 1.208 seconds
+[0m11:22:36.577579 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_medicare_dev_marts'
+[0m11:22:36.578051 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:22:36.578493 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_medicare_dev_staging'
+[0m11:22:36.578772 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:22:37.974278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '01be1199-3e6f-42ba-aa25-4bac12b6d925', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170365AD640>]}
+[0m11:22:37.974922 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:22:38.017287 [debug] [Thread-7 (]: Began running node model.medicare_data_pipeline.stg_medicare_provider_service
+[0m11:22:38.017820 [info ] [Thread-7 (]: 1 of 3 START sql view model medicare_dev_staging.stg_medicare_provider_service . [RUN]
+[0m11:22:38.018398 [debug] [Thread-7 (]: Acquiring new bigquery connection 'model.medicare_data_pipeline.stg_medicare_provider_service'
+[0m11:22:38.018710 [debug] [Thread-7 (]: Began compiling node model.medicare_data_pipeline.stg_medicare_provider_service
+[0m11:22:38.024261 [debug] [Thread-7 (]: Writing injected SQL for node "model.medicare_data_pipeline.stg_medicare_provider_service"
+[0m11:22:38.026132 [debug] [Thread-7 (]: Began executing node model.medicare_data_pipeline.stg_medicare_provider_service
+[0m11:22:38.058562 [debug] [Thread-7 (]: Writing runtime sql for node "model.medicare_data_pipeline.stg_medicare_provider_service"
+[0m11:22:38.060682 [debug] [Thread-7 (]: On model.medicare_data_pipeline.stg_medicare_provider_service: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "medicare_data_pipeline", "target_name": "dev", "node_id": "model.medicare_data_pipeline.stg_medicare_provider_service"} */
+
+
+  create or replace view `dataanalytics-504114`.`medicare_dev_staging`.`stg_medicare_provider_service`
+  OPTIONS()
+  as -- Staging: light cleaning and renaming only. No business logic here —
+-- staging models exist to normalize types/names so every downstream model
+-- works from a consistent, well-typed source.
+--
+-- Source: raw BigQuery table loaded from the CMS "Medicare Physician &
+-- Other Practitioners - by Provider and Service" CSV. Column names below
+-- follow CMS's Rndrng_*/Tot_*/Avg_* naming convention as of the 2023+
+-- release — verify against the actual data dictionary in your downloaded
+-- file, since CMS occasionally renames columns between annual releases.
+
+with source as (
+
+    select * from `dataanalytics-504114`.`medicare_raw`.`provider_service_raw`
+
+),
+
+renamed as (
+
+    select
+        Rndrng_NPI                      as provider_npi,
+        Rndrng_Prvdr_Last_Org_Name      as provider_last_or_org_name,
+        Rndrng_Prvdr_First_Name         as provider_first_name,
+        Rndrng_Prvdr_Type               as provider_specialty,
+        Rndrng_Prvdr_State_Abrvtn       as provider_state,
+        Rndrng_Prvdr_City               as provider_city,
+        HCPCS_Cd                        as procedure_code,
+        HCPCS_Desc                      as procedure_description,
+        Place_Of_Srvc                   as place_of_service,
+        cast(Tot_Benes as int64)        as total_beneficiaries,
+        cast(Tot_Srvcs as int64)        as total_services,
+        cast(Avg_Sbmtd_Chrg as float64) as avg_submitted_charge,
+        cast(Avg_Mdcr_Alowd_Amt as float64) as avg_medicare_allowed_amount,
+        cast(Avg_Mdcr_Pymt_Amt as float64)  as avg_medicare_payment_amount
+
+    from source
+    where Rndrng_NPI is not null
+
+)
+
+select * from renamed;
+
+
+[0m11:22:38.061544 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m11:22:39.403744 [debug] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:us-east5:135e1abd-9ebe-4bbc-a816-6e82a798b020&page=queryresults
+[0m11:22:39.605829 [debug] [Thread-7 (]: SQL status: OK in 0.201 seconds
+[0m11:22:39.625348 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01be1199-3e6f-42ba-aa25-4bac12b6d925', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001703643EA50>]}
+[0m11:22:39.625907 [info ] [Thread-7 (]: 1 of 3 OK created sql view model medicare_dev_staging.stg_medicare_provider_service  [[32mCREATE VIEW (0 processed)[0m in 1.61s]
+[0m11:22:39.626573 [debug] [Thread-7 (]: Finished running node model.medicare_data_pipeline.stg_medicare_provider_service
+[0m11:22:39.627368 [debug] [Thread-8 (]: Began running node model.medicare_data_pipeline.mart_procedure_summary
+[0m11:22:39.628144 [debug] [Thread-9 (]: Began running node model.medicare_data_pipeline.mart_provider_summary
+[0m11:22:39.627817 [info ] [Thread-8 (]: 2 of 3 START sql table model medicare_dev_marts.mart_procedure_summary ......... [RUN]
+[0m11:22:39.629069 [debug] [Thread-8 (]: Acquiring new bigquery connection 'model.medicare_data_pipeline.mart_procedure_summary'
+[0m11:22:39.629382 [debug] [Thread-8 (]: Began compiling node model.medicare_data_pipeline.mart_procedure_summary
+[0m11:22:39.630995 [debug] [Thread-8 (]: Writing injected SQL for node "model.medicare_data_pipeline.mart_procedure_summary"
+[0m11:22:39.628544 [info ] [Thread-9 (]: 3 of 3 START sql table model medicare_dev_marts.mart_provider_summary .......... [RUN]
+[0m11:22:39.631687 [debug] [Thread-9 (]: Acquiring new bigquery connection 'model.medicare_data_pipeline.mart_provider_summary'
+[0m11:22:39.631992 [debug] [Thread-9 (]: Began compiling node model.medicare_data_pipeline.mart_provider_summary
+[0m11:22:39.633382 [debug] [Thread-9 (]: Writing injected SQL for node "model.medicare_data_pipeline.mart_provider_summary"
+[0m11:22:39.635224 [debug] [Thread-9 (]: Began executing node model.medicare_data_pipeline.mart_provider_summary
+[0m11:22:39.635690 [debug] [Thread-8 (]: Began executing node model.medicare_data_pipeline.mart_procedure_summary
+[0m11:22:39.660655 [debug] [Thread-9 (]: Writing runtime sql for node "model.medicare_data_pipeline.mart_provider_summary"
+[0m11:22:39.662446 [debug] [Thread-8 (]: Writing runtime sql for node "model.medicare_data_pipeline.mart_procedure_summary"
+[0m11:22:39.664741 [debug] [Thread-9 (]: On model.medicare_data_pipeline.mart_provider_summary: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "medicare_data_pipeline", "target_name": "dev", "node_id": "model.medicare_data_pipeline.mart_provider_summary"} */
+
+  
+    
+
+    create or replace table `dataanalytics-504114`.`medicare_dev_marts`.`mart_provider_summary`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- Production mart: one row per provider, aggregated across all their
+-- billed services. This is what Power BI connects to for provider-level
+-- views (top billers, specialty breakdowns, geographic distribution).
+
+with staged as (
+
+    select * from `dataanalytics-504114`.`medicare_dev_staging`.`stg_medicare_provider_service`
+
+),
+
+provider_summary as (
+
+    select
+        provider_npi,
+        provider_last_or_org_name,
+        provider_first_name,
+        provider_specialty,
+        provider_state,
+        provider_city,
+        count(distinct procedure_code)        as distinct_procedures_billed,
+        sum(total_services)                   as total_services_rendered,
+        sum(total_beneficiaries)               as total_beneficiaries_served,
+        sum(total_services * avg_medicare_payment_amount) as total_medicare_paid,
+        avg(avg_medicare_payment_amount)       as avg_payment_per_service
+
+    from staged
+    group by
+        provider_npi,
+        provider_last_or_org_name,
+        provider_first_name,
+        provider_specialty,
+        provider_state,
+        provider_city
+
+)
+
+select * from provider_summary
+    );
+  
+[0m11:22:39.665218 [debug] [Thread-8 (]: On model.medicare_data_pipeline.mart_procedure_summary: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "medicare_data_pipeline", "target_name": "dev", "node_id": "model.medicare_data_pipeline.mart_procedure_summary"} */
+
+  
+    
+
+    create or replace table `dataanalytics-504114`.`medicare_dev_marts`.`mart_procedure_summary`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- Production mart: one row per (procedure code, state), aggregated across
+-- all providers. This is what Power BI connects to for "which procedures
+-- cost the most, and where" style views — the map/geography visuals.
+
+with staged as (
+
+    select * from `dataanalytics-504114`.`medicare_dev_staging`.`stg_medicare_provider_service`
+
+),
+
+procedure_summary as (
+
+    select
+        procedure_code,
+        procedure_description,
+        provider_state,
+        count(distinct provider_npi)          as distinct_providers_billing,
+        sum(total_services)                   as total_services_rendered,
+        sum(total_beneficiaries)               as total_beneficiaries_served,
+        avg(avg_submitted_charge)              as avg_submitted_charge,
+        avg(avg_medicare_allowed_amount)       as avg_medicare_allowed_amount,
+        avg(avg_medicare_payment_amount)       as avg_medicare_payment_amount,
+        sum(total_services * avg_medicare_payment_amount) as total_medicare_paid
+
+    from staged
+    group by
+        procedure_code,
+        procedure_description,
+        provider_state
+
+)
+
+select * from procedure_summary
+    );
+  
+[0m11:22:39.665683 [debug] [Thread-9 (]: Opening a new connection, currently in state init
+[0m11:22:39.666063 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m11:22:41.537839 [debug] [Thread-8 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:us-east5:097f8e1e-c522-4cdc-8dc0-4d55a2ad3636&page=queryresults
+[0m11:22:41.570414 [debug] [Thread-9 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:us-east5:76929415-8bb2-49b0-b960-54bd1abd0f7a&page=queryresults
+[0m11:22:43.242333 [debug] [Thread-9 (]: SQL status: OK in 1.671 seconds
+[0m11:22:43.446593 [debug] [Thread-9 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01be1199-3e6f-42ba-aa25-4bac12b6d925', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170363CBC20>]}
+[0m11:22:43.447300 [info ] [Thread-9 (]: 3 of 3 OK created sql table model medicare_dev_marts.mart_provider_summary ..... [[32mCREATE TABLE (34.3k rows, 24.5 MiB processed)[0m in 3.81s]
+[0m11:22:43.447905 [debug] [Thread-9 (]: Finished running node model.medicare_data_pipeline.mart_provider_summary
+[0m11:22:43.464614 [debug] [Thread-8 (]: SQL status: OK in 1.926 seconds
+[0m11:22:43.619557 [debug] [Thread-8 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01be1199-3e6f-42ba-aa25-4bac12b6d925', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017036702AD0>]}
+[0m11:22:43.620217 [info ] [Thread-8 (]: 2 of 3 OK created sql table model medicare_dev_marts.mart_procedure_summary .... [[32mCREATE TABLE (3.0k rows, 37.3 MiB processed)[0m in 3.99s]
+[0m11:22:43.620819 [debug] [Thread-8 (]: Finished running node model.medicare_data_pipeline.mart_procedure_summary
+[0m11:22:43.622028 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:22:43.694229 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:22:43.694627 [debug] [MainThread]: Connection 'create_dataanalytics-504114_medicare_dev_staging' was properly closed.
+[0m11:22:43.694944 [debug] [MainThread]: Connection 'create_dataanalytics-504114_medicare_dev_marts' was properly closed.
+[0m11:22:43.695207 [debug] [MainThread]: Connection 'list_dataanalytics-504114_medicare_dev_marts' was properly closed.
+[0m11:22:43.695465 [debug] [MainThread]: Connection 'list_dataanalytics-504114_medicare_dev_staging' was properly closed.
+[0m11:22:43.695737 [debug] [MainThread]: Connection 'model.medicare_data_pipeline.stg_medicare_provider_service' was properly closed.
+[0m11:22:43.695996 [debug] [MainThread]: Connection 'model.medicare_data_pipeline.mart_procedure_summary' was properly closed.
+[0m11:22:43.696250 [debug] [MainThread]: Connection 'model.medicare_data_pipeline.mart_provider_summary' was properly closed.
+[0m11:22:43.696596 [info ] [MainThread]: 
+[0m11:22:43.697008 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 11.13 seconds (11.13s).
+[0m11:22:43.698144 [debug] [MainThread]: Command end result
+[0m11:22:43.732248 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\manifest.json
+[0m11:22:43.735668 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\semantic_manifest.json
+[0m11:22:43.738606 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\osi_document.json
+[0m11:22:43.745451 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\run_results.json
+[0m11:22:43.745754 [info ] [MainThread]: 
+[0m11:22:43.746138 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:22:43.746459 [info ] [MainThread]: 
+[0m11:22:43.746807 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m11:22:43.747562 [debug] [MainThread]: Command `dbt run` succeeded at 11:22:43.747454 after 13.39 seconds
+[0m11:22:43.747907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017034B644D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017034D334D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017011267F50>]}
+[0m11:22:43.748231 [debug] [MainThread]: Flushing usage events
+[0m11:22:44.231186 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:24:43.087593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025923434D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259259B7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259259B7B10>]}
+
+
+============================== 11:24:43.091441 | 6ab78ed6-e641-4cf7-89d5-129a549a2aac ==============================
+[0m11:24:43.091441 [info ] [MainThread]: Running with dbt=1.12.0
+[0m11:24:43.092124 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test', 'log_path': 'C:\\Users\\mhall\\OneDrive\\Documents\\GitHub\\data-analytics\\medicare-data-pipeline\\logs'}
+[0m11:24:44.198938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6ab78ed6-e641-4cf7-89d5-129a549a2aac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025923929350>]}
+[0m11:24:44.282351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6ab78ed6-e641-4cf7-89d5-129a549a2aac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259494BEF10>]}
+[0m11:24:44.285048 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m11:24:44.861322 [debug] [MainThread]: checksum: 743f53252efa4c15af929e7b36210727a41c2a4b3c4f942c023cc63bbae1370a, vars: {}, profile: medicare_data_pipeline, target: dev, version: 1.12.0
+[0m11:24:45.017740 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:24:45.018059 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m11:24:45.018404 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:24:45.026178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6ab78ed6-e641-4cf7-89d5-129a549a2aac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002594A982850>]}
+[0m11:24:45.171971 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\manifest.json
+[0m11:24:45.175826 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\semantic_manifest.json
+[0m11:24:45.196503 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\osi_document.json
+[0m11:24:45.217325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6ab78ed6-e641-4cf7-89d5-129a549a2aac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002594AB8C5F0>]}
+[0m11:24:45.217715 [info ] [MainThread]: Found 3 models, 5 data tests, 1 source, 561 macros
+[0m11:24:45.218131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6ab78ed6-e641-4cf7-89d5-129a549a2aac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002594AB7E970>]}
+[0m11:24:45.219812 [info ] [MainThread]: 
+[0m11:24:45.220177 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:24:45.220516 [info ] [MainThread]: 
+[0m11:24:45.221002 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:24:45.224892 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_medicare_dev_staging'
+[0m11:24:45.225360 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:24:45.225763 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_medicare_dev_marts'
+[0m11:24:45.226156 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:24:46.687734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6ab78ed6-e641-4cf7-89d5-129a549a2aac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259262728F0>]}
+[0m11:24:46.688997 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:24:46.741484 [debug] [Thread-3 (]: Began running node test.medicare_data_pipeline.not_null_mart_procedure_summary_procedure_code.4298c60ab0
+[0m11:24:46.741874 [debug] [Thread-5 (]: Began running node test.medicare_data_pipeline.not_null_stg_medicare_provider_service_procedure_code.d00dcdb3bd
+[0m11:24:46.742172 [debug] [Thread-4 (]: Began running node test.medicare_data_pipeline.not_null_mart_provider_summary_provider_npi.024eb41468
+[0m11:24:46.742776 [debug] [Thread-6 (]: Began running node test.medicare_data_pipeline.not_null_stg_medicare_provider_service_provider_npi.b3fce19a71
+[0m11:24:46.742494 [info ] [Thread-3 (]: 1 of 5 START test not_null_mart_procedure_summary_procedure_code ............... [RUN]
+[0m11:24:46.743224 [info ] [Thread-5 (]: 3 of 5 START test not_null_stg_medicare_provider_service_procedure_code ........ [RUN]
+[0m11:24:46.744308 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.medicare_data_pipeline.not_null_mart_procedure_summary_procedure_code.4298c60ab0'
+[0m11:24:46.744776 [debug] [Thread-5 (]: Acquiring new bigquery connection 'test.medicare_data_pipeline.not_null_stg_medicare_provider_service_procedure_code.d00dcdb3bd'
+[0m11:24:46.743528 [info ] [Thread-4 (]: 2 of 5 START test not_null_mart_provider_summary_provider_npi .................. [RUN]
+[0m11:24:46.745218 [debug] [Thread-3 (]: Began compiling node test.medicare_data_pipeline.not_null_mart_procedure_summary_procedure_code.4298c60ab0
+[0m11:24:46.745540 [debug] [Thread-5 (]: Began compiling node test.medicare_data_pipeline.not_null_stg_medicare_provider_service_procedure_code.d00dcdb3bd
+[0m11:24:46.743814 [info ] [Thread-6 (]: 4 of 5 START test not_null_stg_medicare_provider_service_provider_npi .......... [RUN]
+[0m11:24:46.746015 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.medicare_data_pipeline.not_null_mart_provider_summary_provider_npi.024eb41468'
+[0m11:24:46.763036 [debug] [Thread-3 (]: Writing injected SQL for node "test.medicare_data_pipeline.not_null_mart_procedure_summary_procedure_code.4298c60ab0"
+[0m11:24:46.768131 [debug] [Thread-5 (]: Writing injected SQL for node "test.medicare_data_pipeline.not_null_stg_medicare_provider_service_procedure_code.d00dcdb3bd"
+[0m11:24:46.768622 [debug] [Thread-6 (]: Acquiring new bigquery connection 'test.medicare_data_pipeline.not_null_stg_medicare_provider_service_provider_npi.b3fce19a71'
+[0m11:24:46.768954 [debug] [Thread-4 (]: Began compiling node test.medicare_data_pipeline.not_null_mart_provider_summary_provider_npi.024eb41468
+[0m11:24:46.769585 [debug] [Thread-6 (]: Began compiling node test.medicare_data_pipeline.not_null_stg_medicare_provider_service_provider_npi.b3fce19a71
+[0m11:24:46.775460 [debug] [Thread-4 (]: Writing injected SQL for node "test.medicare_data_pipeline.not_null_mart_provider_summary_provider_npi.024eb41468"
+[0m11:24:46.781811 [debug] [Thread-6 (]: Writing injected SQL for node "test.medicare_data_pipeline.not_null_stg_medicare_provider_service_provider_npi.b3fce19a71"
+[0m11:24:46.783146 [debug] [Thread-5 (]: Began executing node test.medicare_data_pipeline.not_null_stg_medicare_provider_service_procedure_code.d00dcdb3bd
+[0m11:24:46.783511 [debug] [Thread-3 (]: Began executing node test.medicare_data_pipeline.not_null_mart_procedure_summary_procedure_code.4298c60ab0
+[0m11:24:46.802396 [debug] [Thread-5 (]: Writing runtime sql for node "test.medicare_data_pipeline.not_null_stg_medicare_provider_service_procedure_code.d00dcdb3bd"
+[0m11:24:46.803927 [debug] [Thread-3 (]: Writing runtime sql for node "test.medicare_data_pipeline.not_null_mart_procedure_summary_procedure_code.4298c60ab0"
+[0m11:24:46.804272 [debug] [Thread-4 (]: Began executing node test.medicare_data_pipeline.not_null_mart_provider_summary_provider_npi.024eb41468
+[0m11:24:46.804694 [debug] [Thread-6 (]: Began executing node test.medicare_data_pipeline.not_null_stg_medicare_provider_service_provider_npi.b3fce19a71
+[0m11:24:46.808370 [debug] [Thread-4 (]: Writing runtime sql for node "test.medicare_data_pipeline.not_null_mart_provider_summary_provider_npi.024eb41468"
+[0m11:24:46.809940 [debug] [Thread-6 (]: Writing runtime sql for node "test.medicare_data_pipeline.not_null_stg_medicare_provider_service_provider_npi.b3fce19a71"
+[0m11:24:46.811466 [debug] [Thread-5 (]: On test.medicare_data_pipeline.not_null_stg_medicare_provider_service_procedure_code.d00dcdb3bd: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "medicare_data_pipeline", "target_name": "dev", "node_id": "test.medicare_data_pipeline.not_null_stg_medicare_provider_service_procedure_code.d00dcdb3bd"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select procedure_code
+from `dataanalytics-504114`.`medicare_dev_staging`.`stg_medicare_provider_service`
+where procedure_code is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m11:24:46.811906 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m11:24:46.812534 [debug] [Thread-3 (]: On test.medicare_data_pipeline.not_null_mart_procedure_summary_procedure_code.4298c60ab0: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "medicare_data_pipeline", "target_name": "dev", "node_id": "test.medicare_data_pipeline.not_null_mart_procedure_summary_procedure_code.4298c60ab0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select procedure_code
+from `dataanalytics-504114`.`medicare_dev_marts`.`mart_procedure_summary`
+where procedure_code is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m11:24:46.812913 [debug] [Thread-4 (]: On test.medicare_data_pipeline.not_null_mart_provider_summary_provider_npi.024eb41468: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "medicare_data_pipeline", "target_name": "dev", "node_id": "test.medicare_data_pipeline.not_null_mart_provider_summary_provider_npi.024eb41468"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select provider_npi
+from `dataanalytics-504114`.`medicare_dev_marts`.`mart_provider_summary`
+where provider_npi is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m11:24:46.813250 [debug] [Thread-6 (]: On test.medicare_data_pipeline.not_null_stg_medicare_provider_service_provider_npi.b3fce19a71: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "medicare_data_pipeline", "target_name": "dev", "node_id": "test.medicare_data_pipeline.not_null_stg_medicare_provider_service_provider_npi.b3fce19a71"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select provider_npi
+from `dataanalytics-504114`.`medicare_dev_staging`.`stg_medicare_provider_service`
+where provider_npi is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m11:24:46.813585 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m11:24:46.841510 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m11:24:46.842512 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m11:24:50.144946 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:us-east5:a256419f-c0ed-49a2-8e87-b8fcd58e8b1b&page=queryresults
+[0m11:24:50.201820 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:us-east5:7b3fa44b-a47b-4c03-9282-acf89f1ccb11&page=queryresults
+[0m11:24:50.291845 [debug] [Thread-6 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:us-east5:6340913d-883a-4b18-bdb0-0b90912046e6&page=queryresults
+[0m11:24:50.323194 [debug] [Thread-3 (]: SQL status: OK in 0.178 seconds
+[0m11:24:50.332227 [debug] [Thread-4 (]: SQL status: OK in 0.130 seconds
+[0m11:24:50.337969 [debug] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:us-east5:d31abb89-6ff4-466f-aa2a-dc2ac59dba57&page=queryresults
+[0m11:24:50.427261 [debug] [Thread-6 (]: SQL status: OK in 0.135 seconds
+[0m11:24:50.466180 [debug] [Thread-5 (]: SQL status: OK in 0.128 seconds
+[0m11:24:50.634141 [info ] [Thread-3 (]: 1 of 5 PASS not_null_mart_procedure_summary_procedure_code ..................... [[32mPASS[0m in 3.89s]
+[0m11:24:50.634808 [debug] [Thread-3 (]: Finished running node test.medicare_data_pipeline.not_null_mart_procedure_summary_procedure_code.4298c60ab0
+[0m11:24:50.635147 [debug] [Thread-3 (]: Began running node test.medicare_data_pipeline.unique_mart_provider_summary_provider_npi.ca22a42fd9
+[0m11:24:50.635455 [info ] [Thread-3 (]: 5 of 5 START test unique_mart_provider_summary_provider_npi .................... [RUN]
+[0m11:24:50.635899 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.medicare_data_pipeline.not_null_mart_procedure_summary_procedure_code.4298c60ab0, now test.medicare_data_pipeline.unique_mart_provider_summary_provider_npi.ca22a42fd9)
+[0m11:24:50.636208 [debug] [Thread-3 (]: Began compiling node test.medicare_data_pipeline.unique_mart_provider_summary_provider_npi.ca22a42fd9
+[0m11:24:50.643132 [debug] [Thread-3 (]: Writing injected SQL for node "test.medicare_data_pipeline.unique_mart_provider_summary_provider_npi.ca22a42fd9"
+[0m11:24:50.644357 [debug] [Thread-3 (]: Began executing node test.medicare_data_pipeline.unique_mart_provider_summary_provider_npi.ca22a42fd9
+[0m11:24:50.645833 [debug] [Thread-3 (]: Writing runtime sql for node "test.medicare_data_pipeline.unique_mart_provider_summary_provider_npi.ca22a42fd9"
+[0m11:24:50.647116 [debug] [Thread-3 (]: On test.medicare_data_pipeline.unique_mart_provider_summary_provider_npi.ca22a42fd9: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "medicare_data_pipeline", "target_name": "dev", "node_id": "test.medicare_data_pipeline.unique_mart_provider_summary_provider_npi.ca22a42fd9"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select provider_npi as unique_field
+  from `dataanalytics-504114`.`medicare_dev_marts`.`mart_provider_summary`
+  where provider_npi is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m11:24:50.647500 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m11:24:50.678298 [info ] [Thread-4 (]: 2 of 5 PASS not_null_mart_provider_summary_provider_npi ........................ [[32mPASS[0m in 3.93s]
+[0m11:24:50.679148 [debug] [Thread-4 (]: Finished running node test.medicare_data_pipeline.not_null_mart_provider_summary_provider_npi.024eb41468
+[0m11:24:50.707429 [info ] [Thread-5 (]: 3 of 5 PASS not_null_stg_medicare_provider_service_procedure_code .............. [[32mPASS[0m in 3.96s]
+[0m11:24:50.708088 [debug] [Thread-5 (]: Finished running node test.medicare_data_pipeline.not_null_stg_medicare_provider_service_procedure_code.d00dcdb3bd
+[0m11:24:50.723972 [info ] [Thread-6 (]: 4 of 5 PASS not_null_stg_medicare_provider_service_provider_npi ................ [[32mPASS[0m in 3.96s]
+[0m11:24:50.724620 [debug] [Thread-6 (]: Finished running node test.medicare_data_pipeline.not_null_stg_medicare_provider_service_provider_npi.b3fce19a71
+[0m11:24:52.224104 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:us-east5:63bedf30-134b-4fa8-a2e7-da9cca7a9cc9&page=queryresults
+[0m11:24:52.338972 [debug] [Thread-3 (]: SQL status: OK in 0.113 seconds
+[0m11:24:52.629844 [info ] [Thread-3 (]: 5 of 5 PASS unique_mart_provider_summary_provider_npi .......................... [[32mPASS[0m in 1.99s]
+[0m11:24:52.630566 [debug] [Thread-3 (]: Finished running node test.medicare_data_pipeline.unique_mart_provider_summary_provider_npi.ca22a42fd9
+[0m11:24:52.631953 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:24:52.660202 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:24:52.660542 [debug] [MainThread]: Connection 'list_dataanalytics-504114_medicare_dev_staging' was properly closed.
+[0m11:24:52.660785 [debug] [MainThread]: Connection 'list_dataanalytics-504114_medicare_dev_marts' was properly closed.
+[0m11:24:52.661015 [debug] [MainThread]: Connection 'test.medicare_data_pipeline.unique_mart_provider_summary_provider_npi.ca22a42fd9' was properly closed.
+[0m11:24:52.661241 [debug] [MainThread]: Connection 'test.medicare_data_pipeline.not_null_stg_medicare_provider_service_procedure_code.d00dcdb3bd' was properly closed.
+[0m11:24:52.661466 [debug] [MainThread]: Connection 'test.medicare_data_pipeline.not_null_mart_provider_summary_provider_npi.024eb41468' was properly closed.
+[0m11:24:52.661690 [debug] [MainThread]: Connection 'test.medicare_data_pipeline.not_null_stg_medicare_provider_service_provider_npi.b3fce19a71' was properly closed.
+[0m11:24:52.661958 [info ] [MainThread]: 
+[0m11:24:52.662364 [info ] [MainThread]: Finished running 5 data tests in 0 hours 0 minutes and 7.44 seconds (7.44s).
+[0m11:24:52.663613 [debug] [MainThread]: Command end result
+[0m11:24:52.696581 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\manifest.json
+[0m11:24:52.699954 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\semantic_manifest.json
+[0m11:24:52.702879 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\osi_document.json
+[0m11:24:52.709990 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\mhall\OneDrive\Documents\GitHub\data-analytics\medicare-data-pipeline\target\run_results.json
+[0m11:24:52.710254 [info ] [MainThread]: 
+[0m11:24:52.710810 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:24:52.711220 [info ] [MainThread]: 
+[0m11:24:52.711604 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=5
+[0m11:24:52.712423 [debug] [MainThread]: Command `dbt test` succeeded at 11:24:52.712319 after 9.83 seconds
+[0m11:24:52.712769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002592580D0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002594ABCA6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002594ABCADB0>]}
+[0m11:24:52.713080 [debug] [MainThread]: Flushing usage events
+[0m11:24:53.241880 [debug] [MainThread]: An error was encountered while trying to flush usage events
