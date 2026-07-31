@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: mart_provider_summary
+    description: >
+      One row per provider (NPI), aggregated across all services they
+      billed Medicare for. Powers the provider-level views in the Power BI
+      dashboard (top billers by specialty/state).
+    columns:
+      - name: provider_npi
+        tests:
+          - unique
+          - not_null
+
+  - name: mart_procedure_summary
+    description: >
+      One row per (HCPCS procedure code, state), aggregated across all
+      providers who billed for it. Powers the geographic and
+      procedure-cost views in the Power BI dashboard.
+    columns:
+      - name: procedure_code
+        tests:
+          - not_null
