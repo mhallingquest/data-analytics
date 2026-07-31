@@ -1,0 +1,18 @@
+# Copy this to ~/.dbt/profiles.yml (dbt looks for it there, NOT in the
+# project folder) and fill in your actual GCP project id.
+#
+# Auth options (pick one):
+#   method: oauth        -> uses `gcloud auth application-default login`, easiest for local dev
+#   method: service-account -> point keyfile at a downloaded service account JSON key, better for CI/scheduled runs
+
+medicare_data_pipeline:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: your-gcp-project-id       # <- replace with your actual GCP project
+      dataset: medicare_dev
+      threads: 4
+      timeout_seconds: 300
+      location: US

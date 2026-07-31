@@ -1,0 +1,23 @@
+name: 'medicare_data_pipeline'
+version: '1.0.0'
+config-version: 2
+
+profile: 'medicare_data_pipeline'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  medicare_data_pipeline:
+    staging:
+      +materialized: view
+      +schema: staging
+    marts:
+      +materialized: table
+      +schema: marts
