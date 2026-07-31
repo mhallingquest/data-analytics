@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: medicare_raw
+    database: your-gcp-project-id   # <- replace with your actual GCP project
+    schema: medicare_raw            # the BigQuery dataset you bq-loaded the CSV into
+    tables:
+      - name: provider_service_raw
+        description: >
+          Raw load of the CMS "Medicare Physician & Other Practitioners -
+          by Provider and Service" CSV, loaded as-is via `bq load` with no
+          transformation. This is the landing zone table — everything
+          downstream reads from here through the staging layer, never
+          directly from source.

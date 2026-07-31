@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_medicare_provider_service
+    description: Cleaned, renamed staging layer over the raw CMS provider/service CSV load.
+    columns:
+      - name: provider_npi
+        description: National Provider Identifier — unique per provider.
+        tests:
+          - not_null
+      - name: procedure_code
+        description: HCPCS procedure/service code.
+        tests:
+          - not_null
