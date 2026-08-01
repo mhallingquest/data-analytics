@@ -21,28 +21,3 @@ models:
     marts:
       +materialized: table
       +schema: marts
-
-
-
-# Copy this to ~/.dbt/profiles.yml -- or add as a second profile entry if
-# you already have profiles.yml set up from the Medicare project (dbt
-# supports multiple named profiles in one file).
-#
-# This project queries a PUBLIC BigQuery dataset (bigquery-public-data),
-# but the query still runs under YOUR project — so `project:` below should
-# still be your own GCP project id (same one from Medicare), not
-# "bigquery-public-data". You're billed (against your free tier) for the
-# bytes scanned, not for hosting the public data itself.
-
-ga4_ecommerce_pipeline:
-  target: dev
-  outputs:
-    dev:
-      type: bigquery
-      method: service-account
-      project: your-gcp-project-id       # <- same project id as Medicare
-      dataset: ga4_dev
-      threads: 4
-      timeout_seconds: 300
-      location: us-east5                  # <- match whatever location worked for Medicare
-      keyfile: "C:/path/to/your-key.json" # <- same key file as Medicare works fine
