@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: nba_raw
+    database: dataanalytics-504114   # <- replace with your actual GCP project
+    schema: nba_raw                 # the BigQuery dataset you upload the CSV into
+    tables:
+      - name: team_game_totals_raw
+        description: >
+          Raw upload of "regular_season_totals_2010_2024.csv" from the
+          publicly maintained NocturneBear/NBA-Data-2010-2024 GitHub repo
+          (documented, actively maintained, no login/API key required).
+          One row per team per game — each game produces two rows, one for
+          each team. Uploaded directly into BigQuery, no Cloud Storage
+          needed at this file size (~8.7MB).

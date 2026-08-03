@@ -1,0 +1,27 @@
+# Copy this into ~/.dbt/profiles.yml as a fifth named profile, alongside
+# medicare_data_pipeline, ga4_ecommerce_pipeline, superstore_sales_pipeline,
+# and fec_campaign_finance_pipeline.
+#
+# No cross-project public dataset involved (unlike GA4) -- you're uploading
+# the CSV directly into your own project. Match whichever location you've
+# been standardizing on (US multi-region, matching most of your other
+# pipelines, is a reasonable default).
+#
+# IMPORTANT: use forward slashes in the keyfile path if this block is
+# double-quoted, or leave it unquoted with backslashes -- pick whichever
+# style your other profile blocks already use, for consistency. See the
+# BigQuery + dbt Pipeline Guide, Section 6, if you need a reminder of why
+# this matters.
+
+nba_team_stats_pipeline:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: your-gcp-project-id
+      dataset: nba_dev
+      threads: 4
+      timeout_seconds: 300
+      location: US
+      keyfile: "C:/path/to/your-key.json"

@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_nba_team_game_totals
+    description: Cleaned staging layer over the raw NBA team game totals CSV load.
+    columns:
+      - name: game_id
+        tests:
+          - not_null
+      - name: team_id
+        tests:
+          - not_null
+
+  - name: mart_team_season_summary
+    description: One row per (team, season) — wins, losses, scoring, shooting efficiency.
+
+  - name: mart_league_shooting_trends
+    description: One row per season — league-wide shooting and scoring averages.
+    columns:
+      - name: season_year
+        tests:
+          - unique
+          - not_null

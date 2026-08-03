@@ -1,0 +1,966 @@
+[0m09:16:03.301758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC934F4D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC95A7BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC95A7BB10>]}
+
+
+============================== 09:16:03.307403 | 1ff5ecfc-b897-42c9-8d53-e6fdb479df7b ==============================
+[0m09:16:03.307403 [info ] [MainThread]: Running with dbt=1.12.0
+[0m09:16:03.307961 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'F:\\Dropbox\\Hq Data Services\\nba-team-stats-pipeline\\logs'}
+[0m09:16:05.837469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1ff5ecfc-b897-42c9-8d53-e6fdb479df7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC939E9350>]}
+[0m09:16:05.898171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1ff5ecfc-b897-42c9-8d53-e6fdb479df7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCB956EF10>]}
+[0m09:16:05.898907 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m09:16:06.434021 [debug] [MainThread]: checksum: eb983d7b42e77fe6add7b3234a98cd1bf2af07d75b1141db3238a4151bf2203b, vars: {}, profile: nba_team_stats_pipeline, target: dev, version: 1.12.0
+[0m09:16:06.434859 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m09:16:06.435265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1ff5ecfc-b897-42c9-8d53-e6fdb479df7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCB9496350>]}
+[0m09:16:07.953579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1ff5ecfc-b897-42c9-8d53-e6fdb479df7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC92B5AE40>]}
+[0m09:16:08.048879 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\manifest.json
+[0m09:16:08.054510 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\semantic_manifest.json
+[0m09:16:08.093218 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\osi_document.json
+[0m09:16:08.110451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1ff5ecfc-b897-42c9-8d53-e6fdb479df7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCBAC81010>]}
+[0m09:16:08.110827 [info ] [MainThread]: Found 3 models, 4 data tests, 1 source, 561 macros
+[0m09:16:08.111234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1ff5ecfc-b897-42c9-8d53-e6fdb479df7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCBAF7D570>]}
+[0m09:16:08.112815 [info ] [MainThread]: 
+[0m09:16:08.113149 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:16:08.113620 [info ] [MainThread]: 
+[0m09:16:08.114324 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:16:08.118262 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m09:16:08.118553 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:16:08.119242 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m09:16:08.119516 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:16:09.680425 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_fec_dev_marts'
+[0m09:16:09.681107 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:16:09.681715 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_fec_dev_staging'
+[0m09:16:09.682260 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:16:11.276333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1ff5ecfc-b897-42c9-8d53-e6fdb479df7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCBAF296D0>]}
+[0m09:16:11.277164 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:16:11.313692 [debug] [Thread-5 (]: Began running node model.nba_team_stats_pipeline.stg_nba_team_game_totals
+[0m09:16:11.314168 [info ] [Thread-5 (]: 1 of 3 START sql view model fec_dev_staging.stg_nba_team_game_totals ........... [RUN]
+[0m09:16:11.314806 [debug] [Thread-5 (]: Acquiring new bigquery connection 'model.nba_team_stats_pipeline.stg_nba_team_game_totals'
+[0m09:16:11.315108 [debug] [Thread-5 (]: Began compiling node model.nba_team_stats_pipeline.stg_nba_team_game_totals
+[0m09:16:11.320793 [debug] [Thread-5 (]: Writing injected SQL for node "model.nba_team_stats_pipeline.stg_nba_team_game_totals"
+[0m09:16:11.326331 [debug] [Thread-5 (]: Began executing node model.nba_team_stats_pipeline.stg_nba_team_game_totals
+[0m09:16:11.349439 [debug] [Thread-5 (]: Writing runtime sql for node "model.nba_team_stats_pipeline.stg_nba_team_game_totals"
+[0m09:16:11.351825 [debug] [Thread-5 (]: On model.nba_team_stats_pipeline.stg_nba_team_game_totals: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "nba_team_stats_pipeline", "target_name": "dev", "node_id": "model.nba_team_stats_pipeline.stg_nba_team_game_totals"} */
+
+
+  create or replace view `dataanalytics-504114`.`fec_dev_staging`.`stg_nba_team_game_totals`
+  OPTIONS()
+  as -- Staging: light cleaning and renaming only. No business logic here.
+--
+-- Source: NocturneBear/NBA-Data-2010-2024 GitHub repo, "regular season
+-- totals" file. Column names below match the repo's own documented README
+-- schema exactly, verified against the source before writing this model —
+-- one row per team per game (each game produces two rows).
+--
+-- Note: PLUS_MINUS is the team's point differential for that specific
+-- game — using this directly avoids needing a self-join against the
+-- opponent's row to calculate scoring margin.
+
+with source as (
+
+    select * from `dataanalytics-504114`.`nba_raw`.`team_game_totals_raw`
+
+),
+
+renamed as (
+
+    select
+        cast(SEASON_YEAR as string)        as season_year,
+        TEAM_ID                            as team_id,
+        TEAM_ABBREVIATION                  as team_abbreviation,
+        TEAM_NAME                          as team_name,
+        GAME_ID                            as game_id,
+        GAME_DATE                          as game_date,
+        MATCHUP                            as matchup,
+        WL                                 as win_loss,
+        cast(FGM as int64)                 as field_goals_made,
+        cast(FGA as int64)                 as field_goals_attempted,
+        cast(FG_PCT as float64)            as field_goal_pct,
+        cast(FG3M as int64)                as three_pointers_made,
+        cast(FG3A as int64)                as three_pointers_attempted,
+        cast(FG3_PCT as float64)           as three_point_pct,
+        cast(FTM as int64)                 as free_throws_made,
+        cast(FTA as int64)                 as free_throws_attempted,
+        cast(FT_PCT as float64)            as free_throw_pct,
+        cast(OREB as int64)                as offensive_rebounds,
+        cast(DREB as int64)                as defensive_rebounds,
+        cast(REB as int64)                 as total_rebounds,
+        cast(AST as int64)                 as assists,
+        cast(TOV as int64)                 as turnovers,
+        cast(STL as int64)                 as steals,
+        cast(BLK as int64)                 as blocks,
+        cast(PF as int64)                  as personal_fouls,
+        cast(PTS as int64)                 as points,
+        cast(PLUS_MINUS as float64)        as point_differential
+
+    from source
+    where GAME_ID is not null
+
+)
+
+select * from renamed;
+
+
+[0m09:16:11.352304 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m09:16:12.864186 [debug] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:981f8174-34b1-4e4c-990f-b0cf4fbc3c4d&page=queryresults
+[0m09:16:13.401665 [debug] [Thread-5 (]: SQL status: OK in 0.536 seconds
+[0m09:16:13.698247 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ff5ecfc-b897-42c9-8d53-e6fdb479df7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCBB1CC310>]}
+[0m09:16:13.698848 [info ] [Thread-5 (]: 1 of 3 OK created sql view model fec_dev_staging.stg_nba_team_game_totals ...... [[32mCREATE VIEW (0 processed)[0m in 2.38s]
+[0m09:16:13.699568 [debug] [Thread-5 (]: Finished running node model.nba_team_stats_pipeline.stg_nba_team_game_totals
+[0m09:16:13.700152 [debug] [Thread-7 (]: Began running node model.nba_team_stats_pipeline.mart_team_season_summary
+[0m09:16:13.700880 [debug] [Thread-6 (]: Began running node model.nba_team_stats_pipeline.mart_league_shooting_trends
+[0m09:16:13.700559 [info ] [Thread-7 (]: 3 of 3 START sql table model fec_dev_marts.mart_team_season_summary ............ [RUN]
+[0m09:16:13.701857 [debug] [Thread-7 (]: Acquiring new bigquery connection 'model.nba_team_stats_pipeline.mart_team_season_summary'
+[0m09:16:13.702182 [debug] [Thread-7 (]: Began compiling node model.nba_team_stats_pipeline.mart_team_season_summary
+[0m09:16:13.703761 [debug] [Thread-7 (]: Writing injected SQL for node "model.nba_team_stats_pipeline.mart_team_season_summary"
+[0m09:16:13.701278 [info ] [Thread-6 (]: 2 of 3 START sql table model fec_dev_marts.mart_league_shooting_trends ......... [RUN]
+[0m09:16:13.704445 [debug] [Thread-6 (]: Acquiring new bigquery connection 'model.nba_team_stats_pipeline.mart_league_shooting_trends'
+[0m09:16:13.704753 [debug] [Thread-6 (]: Began compiling node model.nba_team_stats_pipeline.mart_league_shooting_trends
+[0m09:16:13.706218 [debug] [Thread-6 (]: Writing injected SQL for node "model.nba_team_stats_pipeline.mart_league_shooting_trends"
+[0m09:16:13.707648 [debug] [Thread-6 (]: Began executing node model.nba_team_stats_pipeline.mart_league_shooting_trends
+[0m09:16:13.707976 [debug] [Thread-7 (]: Began executing node model.nba_team_stats_pipeline.mart_team_season_summary
+[0m09:16:13.736401 [debug] [Thread-7 (]: Writing runtime sql for node "model.nba_team_stats_pipeline.mart_team_season_summary"
+[0m09:16:13.738010 [debug] [Thread-6 (]: Writing runtime sql for node "model.nba_team_stats_pipeline.mart_league_shooting_trends"
+[0m09:16:13.740653 [debug] [Thread-7 (]: On model.nba_team_stats_pipeline.mart_team_season_summary: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "nba_team_stats_pipeline", "target_name": "dev", "node_id": "model.nba_team_stats_pipeline.mart_team_season_summary"} */
+
+  
+    
+
+    create or replace table `dataanalytics-504114`.`fec_dev_marts`.`mart_team_season_summary`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- Production mart: one row per team per season. Powers the team
+-- performance views — wins/losses, scoring, shooting efficiency, and
+-- point differential across a full season.
+
+with games as (
+
+    select * from `dataanalytics-504114`.`fec_dev_staging`.`stg_nba_team_game_totals`
+
+),
+
+team_season_summary as (
+
+    select
+        season_year,
+        team_id,
+        team_abbreviation,
+        any_value(team_name)                     as team_name,
+        count(distinct game_id)                  as games_played,
+        countif(win_loss = 'W')                  as wins,
+        countif(win_loss = 'L')                  as losses,
+        safe_divide(countif(win_loss = 'W'), count(distinct game_id)) as win_pct,
+        avg(points)                              as avg_points_per_game,
+        avg(point_differential)                  as avg_point_differential,
+        avg(field_goal_pct)                      as avg_field_goal_pct,
+        avg(three_point_pct)                     as avg_three_point_pct,
+        avg(free_throw_pct)                      as avg_free_throw_pct,
+        avg(total_rebounds)                      as avg_rebounds_per_game,
+        avg(assists)                             as avg_assists_per_game,
+        avg(turnovers)                           as avg_turnovers_per_game
+
+    from games
+    group by
+        season_year,
+        team_id,
+        team_abbreviation
+
+)
+
+select * from team_season_summary
+    );
+  
+[0m09:16:13.741104 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m09:16:13.741570 [debug] [Thread-6 (]: On model.nba_team_stats_pipeline.mart_league_shooting_trends: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "nba_team_stats_pipeline", "target_name": "dev", "node_id": "model.nba_team_stats_pipeline.mart_league_shooting_trends"} */
+
+  
+    
+
+    create or replace table `dataanalytics-504114`.`fec_dev_marts`.`mart_league_shooting_trends`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- Production mart: league-wide averages by season (across all teams and
+-- games). Powers the "3-point revolution" story — this era (2010-2024)
+-- captures one of the most dramatic tactical shifts in NBA history, as
+-- 3-point attempt volume rose sharply while long-2 attempts declined.
+
+with games as (
+
+    select * from `dataanalytics-504114`.`fec_dev_staging`.`stg_nba_team_game_totals`
+
+),
+
+league_trends as (
+
+    select
+        season_year,
+        count(distinct game_id)                   as total_games,
+        avg(points)                                as avg_points_per_team_game,
+        avg(three_pointers_attempted)              as avg_three_pt_attempts,
+        avg(three_pointers_made)                   as avg_three_pt_made,
+        avg(three_point_pct)                       as avg_three_pt_pct,
+        avg(field_goals_attempted)                 as avg_field_goal_attempts,
+        avg(field_goal_pct)                        as avg_field_goal_pct,
+        avg(total_rebounds)                        as avg_rebounds,
+        avg(assists)                                as avg_assists
+
+    from games
+    group by
+        season_year
+
+)
+
+select * from league_trends
+    );
+  
+[0m09:16:13.741961 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m09:16:15.458593 [debug] [Thread-6 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:172b84a9-27aa-488f-9b9d-928ed8eb88b5&page=queryresults
+[0m09:16:15.715539 [debug] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:25bd20c4-b433-4227-a836-5162904401ad&page=queryresults
+[0m09:16:17.161805 [debug] [Thread-7 (]: SQL status: OK in 1.444 seconds
+[0m09:16:17.378119 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ff5ecfc-b897-42c9-8d53-e6fdb479df7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCBB2E6670>]}
+[0m09:16:17.381016 [info ] [Thread-7 (]: 3 of 3 OK created sql table model fec_dev_marts.mart_team_season_summary ....... [[32mCREATE TABLE (420.0 rows, 3.6 MiB processed)[0m in 3.68s]
+[0m09:16:17.384707 [debug] [Thread-7 (]: Finished running node model.nba_team_stats_pipeline.mart_team_season_summary
+[0m09:16:17.646938 [debug] [Thread-6 (]: SQL status: OK in 2.186 seconds
+[0m09:16:17.861020 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ff5ecfc-b897-42c9-8d53-e6fdb479df7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCBB24F1D0>]}
+[0m09:16:17.863739 [info ] [Thread-6 (]: 2 of 3 OK created sql table model fec_dev_marts.mart_league_shooting_trends .... [[32mCREATE TABLE (14.0 rows, 2.6 MiB processed)[0m in 4.16s]
+[0m09:16:17.867515 [debug] [Thread-6 (]: Finished running node model.nba_team_stats_pipeline.mart_league_shooting_trends
+[0m09:16:17.873954 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:16:17.954306 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:16:17.954649 [debug] [MainThread]: Connection 'list_dataanalytics-504114' was properly closed.
+[0m09:16:17.954914 [debug] [MainThread]: Connection 'list_dataanalytics-504114' was properly closed.
+[0m09:16:17.955168 [debug] [MainThread]: Connection 'list_dataanalytics-504114_fec_dev_marts' was properly closed.
+[0m09:16:17.955421 [debug] [MainThread]: Connection 'list_dataanalytics-504114_fec_dev_staging' was properly closed.
+[0m09:16:17.955683 [debug] [MainThread]: Connection 'model.nba_team_stats_pipeline.stg_nba_team_game_totals' was properly closed.
+[0m09:16:17.955948 [debug] [MainThread]: Connection 'model.nba_team_stats_pipeline.mart_team_season_summary' was properly closed.
+[0m09:16:17.956197 [debug] [MainThread]: Connection 'model.nba_team_stats_pipeline.mart_league_shooting_trends' was properly closed.
+[0m09:16:17.956533 [info ] [MainThread]: 
+[0m09:16:17.957004 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 9.84 seconds (9.84s).
+[0m09:16:17.958123 [debug] [MainThread]: Command end result
+[0m09:16:17.997044 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\manifest.json
+[0m09:16:18.000014 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\semantic_manifest.json
+[0m09:16:18.002742 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\osi_document.json
+[0m09:16:18.009758 [debug] [MainThread]: Wrote artifact RunExecutionResult to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\run_results.json
+[0m09:16:18.010030 [info ] [MainThread]: 
+[0m09:16:18.010392 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:16:18.010710 [info ] [MainThread]: 
+[0m09:16:18.011036 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m09:16:18.011778 [debug] [MainThread]: Command `dbt run` succeeded at 09:16:18.011679 after 14.92 seconds
+[0m09:16:18.012081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC95B300C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC8D99A190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCB9B54410>]}
+[0m09:16:18.012374 [debug] [MainThread]: Flushing usage events
+[0m09:16:18.556877 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:16:34.770847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025060DD4D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002506335FED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002506335FB10>]}
+
+
+============================== 09:16:34.774555 | a5f4b9d8-4fff-4878-a061-ccc0e5811baf ==============================
+[0m09:16:34.774555 [info ] [MainThread]: Running with dbt=1.12.0
+[0m09:16:34.775113 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'F:\\Dropbox\\Hq Data Services\\nba-team-stats-pipeline\\logs'}
+[0m09:16:35.825100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a5f4b9d8-4fff-4878-a061-ccc0e5811baf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000250612C9350>]}
+[0m09:16:35.884203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a5f4b9d8-4fff-4878-a061-ccc0e5811baf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025006FDEF10>]}
+[0m09:16:35.884928 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m09:16:36.406811 [debug] [MainThread]: checksum: eb983d7b42e77fe6add7b3234a98cd1bf2af07d75b1141db3238a4151bf2203b, vars: {}, profile: nba_team_stats_pipeline, target: dev, version: 1.12.0
+[0m09:16:36.559829 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:16:36.560144 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m09:16:36.560371 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:16:36.568059 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a5f4b9d8-4fff-4878-a061-ccc0e5811baf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000250084A2850>]}
+[0m09:16:36.699755 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\manifest.json
+[0m09:16:36.702670 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\semantic_manifest.json
+[0m09:16:36.721725 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\osi_document.json
+[0m09:16:36.744256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a5f4b9d8-4fff-4878-a061-ccc0e5811baf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000250086AC5F0>]}
+[0m09:16:36.744630 [info ] [MainThread]: Found 3 models, 4 data tests, 1 source, 561 macros
+[0m09:16:36.744981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a5f4b9d8-4fff-4878-a061-ccc0e5811baf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000250086A25F0>]}
+[0m09:16:36.746612 [info ] [MainThread]: 
+[0m09:16:36.746961 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:16:36.747253 [info ] [MainThread]: 
+[0m09:16:36.747717 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:16:36.751621 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_fec_dev_marts'
+[0m09:16:36.751895 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:16:36.782528 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_fec_dev_staging'
+[0m09:16:36.782937 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:16:38.276234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a5f4b9d8-4fff-4878-a061-ccc0e5811baf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025063C0AC30>]}
+[0m09:16:38.278238 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:16:38.334223 [debug] [Thread-4 (]: Began running node test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d
+[0m09:16:38.334911 [debug] [Thread-5 (]: Began running node test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2
+[0m09:16:38.334589 [info ] [Thread-4 (]: 2 of 4 START test not_null_stg_nba_team_game_totals_game_id .................... [RUN]
+[0m09:16:38.335750 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d'
+[0m09:16:38.336048 [debug] [Thread-4 (]: Began compiling node test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d
+[0m09:16:38.342709 [debug] [Thread-6 (]: Began running node test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3
+[0m09:16:38.353205 [debug] [Thread-4 (]: Writing injected SQL for node "test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d"
+[0m09:16:38.353548 [debug] [Thread-3 (]: Began running node test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f
+[0m09:16:38.335282 [info ] [Thread-5 (]: 3 of 4 START test not_null_stg_nba_team_game_totals_team_id .................... [RUN]
+[0m09:16:38.354972 [debug] [Thread-5 (]: Acquiring new bigquery connection 'test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2'
+[0m09:16:38.355273 [debug] [Thread-5 (]: Began compiling node test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2
+[0m09:16:38.360833 [debug] [Thread-5 (]: Writing injected SQL for node "test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2"
+[0m09:16:38.353959 [info ] [Thread-6 (]: 4 of 4 START test unique_mart_league_shooting_trends_season_year ............... [RUN]
+[0m09:16:38.361606 [debug] [Thread-6 (]: Acquiring new bigquery connection 'test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3'
+[0m09:16:38.361919 [debug] [Thread-6 (]: Began compiling node test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3
+[0m09:16:38.368411 [debug] [Thread-6 (]: Writing injected SQL for node "test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3"
+[0m09:16:38.354502 [info ] [Thread-3 (]: 1 of 4 START test not_null_mart_league_shooting_trends_season_year ............. [RUN]
+[0m09:16:38.369119 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f'
+[0m09:16:38.369414 [debug] [Thread-3 (]: Began compiling node test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f
+[0m09:16:38.369838 [debug] [Thread-6 (]: Began executing node test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3
+[0m09:16:38.375563 [debug] [Thread-3 (]: Writing injected SQL for node "test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f"
+[0m09:16:38.375922 [debug] [Thread-4 (]: Began executing node test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d
+[0m09:16:38.376202 [debug] [Thread-5 (]: Began executing node test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2
+[0m09:16:38.393613 [debug] [Thread-6 (]: Writing runtime sql for node "test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3"
+[0m09:16:38.395118 [debug] [Thread-4 (]: Writing runtime sql for node "test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d"
+[0m09:16:38.396404 [debug] [Thread-5 (]: Writing runtime sql for node "test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2"
+[0m09:16:38.397028 [debug] [Thread-3 (]: Began executing node test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f
+[0m09:16:38.400607 [debug] [Thread-3 (]: Writing runtime sql for node "test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f"
+[0m09:16:38.401209 [debug] [Thread-6 (]: On test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "nba_team_stats_pipeline", "target_name": "dev", "node_id": "test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select season_year as unique_field
+  from `dataanalytics-504114`.`fec_dev_marts`.`mart_league_shooting_trends`
+  where season_year is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m09:16:38.401599 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m09:16:38.401970 [debug] [Thread-4 (]: On test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "nba_team_stats_pipeline", "target_name": "dev", "node_id": "test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select game_id
+from `dataanalytics-504114`.`fec_dev_staging`.`stg_nba_team_game_totals`
+where game_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m09:16:38.402317 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m09:16:38.402674 [debug] [Thread-5 (]: On test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "nba_team_stats_pipeline", "target_name": "dev", "node_id": "test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select team_id
+from `dataanalytics-504114`.`fec_dev_staging`.`stg_nba_team_game_totals`
+where team_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m09:16:38.403014 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m09:16:38.403545 [debug] [Thread-3 (]: On test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "nba_team_stats_pipeline", "target_name": "dev", "node_id": "test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select season_year
+from `dataanalytics-504114`.`fec_dev_marts`.`mart_league_shooting_trends`
+where season_year is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m09:16:38.403893 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:16:40.200647 [debug] [Thread-6 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:45ca02a4-3d82-4f20-a67c-a24411c4be98&page=queryresults
+[0m09:16:40.223128 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:94f56315-7453-4ea6-902f-07782f923ac1&page=queryresults
+[0m09:16:40.234123 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:73741c2f-980a-40c0-b6b4-da7db561646f&page=queryresults
+[0m09:16:40.288226 [debug] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:5a6ab238-1365-4acd-ac9f-6fe0460aaf4c&page=queryresults
+[0m09:16:40.448532 [debug] [Thread-6 (]: SQL status: OK in 0.246 seconds
+[0m09:16:40.453103 [debug] [Thread-3 (]: SQL status: OK in 0.228 seconds
+[0m09:16:40.475211 [debug] [Thread-4 (]: SQL status: OK in 0.240 seconds
+[0m09:16:40.509373 [debug] [Thread-5 (]: SQL status: OK in 0.220 seconds
+[0m09:16:40.980684 [info ] [Thread-6 (]: 4 of 4 PASS unique_mart_league_shooting_trends_season_year ..................... [[32mPASS[0m in 2.62s]
+[0m09:16:40.988604 [debug] [Thread-6 (]: Finished running node test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3
+[0m09:16:40.985568 [info ] [Thread-4 (]: 2 of 4 PASS not_null_stg_nba_team_game_totals_game_id .......................... [[32mPASS[0m in 2.65s]
+[0m09:16:40.990019 [debug] [Thread-4 (]: Finished running node test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d
+[0m09:16:40.987624 [info ] [Thread-5 (]: 3 of 4 PASS not_null_stg_nba_team_game_totals_team_id .......................... [[32mPASS[0m in 2.63s]
+[0m09:16:40.991348 [debug] [Thread-5 (]: Finished running node test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2
+[0m09:16:41.135811 [info ] [Thread-3 (]: 1 of 4 PASS not_null_mart_league_shooting_trends_season_year ................... [[32mPASS[0m in 2.77s]
+[0m09:16:41.136827 [debug] [Thread-3 (]: Finished running node test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f
+[0m09:16:41.138299 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:16:41.166556 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:16:41.166870 [debug] [MainThread]: Connection 'list_dataanalytics-504114_fec_dev_marts' was properly closed.
+[0m09:16:41.167101 [debug] [MainThread]: Connection 'list_dataanalytics-504114_fec_dev_staging' was properly closed.
+[0m09:16:41.167324 [debug] [MainThread]: Connection 'test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d' was properly closed.
+[0m09:16:41.167588 [debug] [MainThread]: Connection 'test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2' was properly closed.
+[0m09:16:41.167818 [debug] [MainThread]: Connection 'test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3' was properly closed.
+[0m09:16:41.168041 [debug] [MainThread]: Connection 'test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f' was properly closed.
+[0m09:16:41.168311 [info ] [MainThread]: 
+[0m09:16:41.168724 [info ] [MainThread]: Finished running 4 data tests in 0 hours 0 minutes and 4.42 seconds (4.42s).
+[0m09:16:41.169878 [debug] [MainThread]: Command end result
+[0m09:16:41.201072 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\manifest.json
+[0m09:16:41.204029 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\semantic_manifest.json
+[0m09:16:41.206984 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\osi_document.json
+[0m09:16:41.213951 [debug] [MainThread]: Wrote artifact RunExecutionResult to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\run_results.json
+[0m09:16:41.214256 [info ] [MainThread]: 
+[0m09:16:41.214675 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:16:41.214996 [info ] [MainThread]: 
+[0m09:16:41.215327 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=4
+[0m09:16:41.216075 [debug] [MainThread]: Command `dbt test` succeeded at 09:16:41.215975 after 6.64 seconds
+[0m09:16:41.216392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000250631AD0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000250086FC100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000250086FD4F0>]}
+[0m09:16:41.216690 [debug] [MainThread]: Flushing usage events
+[0m09:16:41.674440 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:22:09.578960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021300824D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021302DABED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021302DABB10>]}
+
+
+============================== 09:22:09.582638 | d473aa7b-2a28-48d8-8d85-6c81a62ab7b4 ==============================
+[0m09:22:09.582638 [info ] [MainThread]: Running with dbt=1.12.0
+[0m09:22:09.583172 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'F:\\Dropbox\\Hq Data Services\\nba-team-stats-pipeline\\logs'}
+[0m09:22:10.639730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd473aa7b-2a28-48d8-8d85-6c81a62ab7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021300D1D350>]}
+[0m09:22:10.699483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd473aa7b-2a28-48d8-8d85-6c81a62ab7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213268CEF10>]}
+[0m09:22:10.700182 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m09:22:11.220778 [debug] [MainThread]: checksum: eb983d7b42e77fe6add7b3234a98cd1bf2af07d75b1141db3238a4151bf2203b, vars: {}, profile: nba_team_stats_pipeline, target: dev, version: 1.12.0
+[0m09:22:11.327198 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m09:22:11.327683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd473aa7b-2a28-48d8-8d85-6c81a62ab7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021327D92150>]}
+[0m09:22:12.732055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd473aa7b-2a28-48d8-8d85-6c81a62ab7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021326D0F980>]}
+[0m09:22:12.822712 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\manifest.json
+[0m09:22:12.825612 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\semantic_manifest.json
+[0m09:22:12.844518 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\osi_document.json
+[0m09:22:12.854099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd473aa7b-2a28-48d8-8d85-6c81a62ab7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213282C4AD0>]}
+[0m09:22:12.854489 [info ] [MainThread]: Found 3 models, 4 data tests, 1 source, 561 macros
+[0m09:22:12.854919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd473aa7b-2a28-48d8-8d85-6c81a62ab7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002132826A410>]}
+[0m09:22:12.856478 [info ] [MainThread]: 
+[0m09:22:12.856895 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:22:12.857198 [info ] [MainThread]: 
+[0m09:22:12.857656 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:22:12.861180 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m09:22:12.861527 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:22:12.862084 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m09:22:12.862405 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:22:14.216241 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataanalytics-504114, now create_dataanalytics-504114_nba_dev_marts)
+[0m09:22:14.218586 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataanalytics-504114, now create_dataanalytics-504114_nba_dev_staging)
+[0m09:22:14.220884 [debug] [ThreadPool]: Creating schema "database: "dataanalytics-504114"
+schema: "nba_dev_marts"
+"
+[0m09:22:14.223057 [debug] [ThreadPool]: Creating schema "database: "dataanalytics-504114"
+schema: "nba_dev_staging"
+"
+[0m09:22:14.290788 [debug] [ThreadPool]: On create_dataanalytics-504114_nba_dev_marts: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "nba_team_stats_pipeline", "target_name": "dev", "connection_name": "create_dataanalytics-504114_nba_dev_marts"} */
+create schema if not exists `dataanalytics-504114`.`nba_dev_marts`
+  
+[0m09:22:14.292588 [debug] [ThreadPool]: On create_dataanalytics-504114_nba_dev_staging: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "nba_team_stats_pipeline", "target_name": "dev", "connection_name": "create_dataanalytics-504114_nba_dev_staging"} */
+create schema if not exists `dataanalytics-504114`.`nba_dev_staging`
+  
+[0m09:22:14.293828 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:22:14.295197 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:22:15.860215 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:0933d19d-1158-4c65-87f4-c266a452cc3f&page=queryresults
+[0m09:22:15.876127 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:7dac3bf6-7684-47f7-9521-6bf76f1150ec&page=queryresults
+[0m09:22:16.674809 [debug] [ThreadPool]: SQL status: OK in 0.798 seconds
+[0m09:22:16.710497 [debug] [ThreadPool]: SQL status: OK in 0.849 seconds
+[0m09:22:16.872739 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_nba_dev_marts'
+[0m09:22:16.873205 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:22:16.873660 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_nba_dev_staging'
+[0m09:22:16.874008 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:22:18.332076 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd473aa7b-2a28-48d8-8d85-6c81a62ab7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021327DBAE10>]}
+[0m09:22:18.332551 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:22:18.367276 [debug] [Thread-7 (]: Began running node model.nba_team_stats_pipeline.stg_nba_team_game_totals
+[0m09:22:18.367737 [info ] [Thread-7 (]: 1 of 3 START sql view model nba_dev_staging.stg_nba_team_game_totals ........... [RUN]
+[0m09:22:18.368336 [debug] [Thread-7 (]: Acquiring new bigquery connection 'model.nba_team_stats_pipeline.stg_nba_team_game_totals'
+[0m09:22:18.368635 [debug] [Thread-7 (]: Began compiling node model.nba_team_stats_pipeline.stg_nba_team_game_totals
+[0m09:22:18.374175 [debug] [Thread-7 (]: Writing injected SQL for node "model.nba_team_stats_pipeline.stg_nba_team_game_totals"
+[0m09:22:18.375201 [debug] [Thread-7 (]: Began executing node model.nba_team_stats_pipeline.stg_nba_team_game_totals
+[0m09:22:18.394724 [debug] [Thread-7 (]: Writing runtime sql for node "model.nba_team_stats_pipeline.stg_nba_team_game_totals"
+[0m09:22:18.395986 [debug] [Thread-7 (]: On model.nba_team_stats_pipeline.stg_nba_team_game_totals: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "nba_team_stats_pipeline", "target_name": "dev", "node_id": "model.nba_team_stats_pipeline.stg_nba_team_game_totals"} */
+
+
+  create or replace view `dataanalytics-504114`.`nba_dev_staging`.`stg_nba_team_game_totals`
+  OPTIONS()
+  as -- Staging: light cleaning and renaming only. No business logic here.
+--
+-- Source: NocturneBear/NBA-Data-2010-2024 GitHub repo, "regular season
+-- totals" file. Column names below match the repo's own documented README
+-- schema exactly, verified against the source before writing this model —
+-- one row per team per game (each game produces two rows).
+--
+-- Note: PLUS_MINUS is the team's point differential for that specific
+-- game — using this directly avoids needing a self-join against the
+-- opponent's row to calculate scoring margin.
+
+with source as (
+
+    select * from `dataanalytics-504114`.`nba_raw`.`team_game_totals_raw`
+
+),
+
+renamed as (
+
+    select
+        cast(SEASON_YEAR as string)        as season_year,
+        TEAM_ID                            as team_id,
+        TEAM_ABBREVIATION                  as team_abbreviation,
+        TEAM_NAME                          as team_name,
+        GAME_ID                            as game_id,
+        GAME_DATE                          as game_date,
+        MATCHUP                            as matchup,
+        WL                                 as win_loss,
+        cast(FGM as int64)                 as field_goals_made,
+        cast(FGA as int64)                 as field_goals_attempted,
+        cast(FG_PCT as float64)            as field_goal_pct,
+        cast(FG3M as int64)                as three_pointers_made,
+        cast(FG3A as int64)                as three_pointers_attempted,
+        cast(FG3_PCT as float64)           as three_point_pct,
+        cast(FTM as int64)                 as free_throws_made,
+        cast(FTA as int64)                 as free_throws_attempted,
+        cast(FT_PCT as float64)            as free_throw_pct,
+        cast(OREB as int64)                as offensive_rebounds,
+        cast(DREB as int64)                as defensive_rebounds,
+        cast(REB as int64)                 as total_rebounds,
+        cast(AST as int64)                 as assists,
+        cast(TOV as int64)                 as turnovers,
+        cast(STL as int64)                 as steals,
+        cast(BLK as int64)                 as blocks,
+        cast(PF as int64)                  as personal_fouls,
+        cast(PTS as int64)                 as points,
+        cast(PLUS_MINUS as float64)        as point_differential
+
+    from source
+    where GAME_ID is not null
+
+)
+
+select * from renamed;
+
+
+[0m09:22:18.396434 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m09:22:19.701245 [debug] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:1b8836db-311b-4a5c-9bb1-7c1c45c59dbb&page=queryresults
+[0m09:22:20.042233 [debug] [Thread-7 (]: SQL status: OK in 0.340 seconds
+[0m09:22:20.101573 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd473aa7b-2a28-48d8-8d85-6c81a62ab7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002132828E830>]}
+[0m09:22:20.102455 [info ] [Thread-7 (]: 1 of 3 OK created sql view model nba_dev_staging.stg_nba_team_game_totals ...... [[32mCREATE VIEW (0 processed)[0m in 1.73s]
+[0m09:22:20.103371 [debug] [Thread-7 (]: Finished running node model.nba_team_stats_pipeline.stg_nba_team_game_totals
+[0m09:22:20.104208 [debug] [Thread-9 (]: Began running node model.nba_team_stats_pipeline.mart_team_season_summary
+[0m09:22:20.105274 [debug] [Thread-8 (]: Began running node model.nba_team_stats_pipeline.mart_league_shooting_trends
+[0m09:22:20.104869 [info ] [Thread-9 (]: 3 of 3 START sql table model nba_dev_marts.mart_team_season_summary ............ [RUN]
+[0m09:22:20.106083 [info ] [Thread-8 (]: 2 of 3 START sql table model nba_dev_marts.mart_league_shooting_trends ......... [RUN]
+[0m09:22:20.106784 [debug] [Thread-9 (]: Acquiring new bigquery connection 'model.nba_team_stats_pipeline.mart_team_season_summary'
+[0m09:22:20.107208 [debug] [Thread-8 (]: Acquiring new bigquery connection 'model.nba_team_stats_pipeline.mart_league_shooting_trends'
+[0m09:22:20.107515 [debug] [Thread-9 (]: Began compiling node model.nba_team_stats_pipeline.mart_team_season_summary
+[0m09:22:20.107813 [debug] [Thread-8 (]: Began compiling node model.nba_team_stats_pipeline.mart_league_shooting_trends
+[0m09:22:20.109468 [debug] [Thread-9 (]: Writing injected SQL for node "model.nba_team_stats_pipeline.mart_team_season_summary"
+[0m09:22:20.110973 [debug] [Thread-8 (]: Writing injected SQL for node "model.nba_team_stats_pipeline.mart_league_shooting_trends"
+[0m09:22:20.112172 [debug] [Thread-9 (]: Began executing node model.nba_team_stats_pipeline.mart_team_season_summary
+[0m09:22:20.126223 [debug] [Thread-8 (]: Began executing node model.nba_team_stats_pipeline.mart_league_shooting_trends
+[0m09:22:20.137207 [debug] [Thread-9 (]: Writing runtime sql for node "model.nba_team_stats_pipeline.mart_team_season_summary"
+[0m09:22:20.138984 [debug] [Thread-8 (]: Writing runtime sql for node "model.nba_team_stats_pipeline.mart_league_shooting_trends"
+[0m09:22:20.140430 [debug] [Thread-8 (]: On model.nba_team_stats_pipeline.mart_league_shooting_trends: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "nba_team_stats_pipeline", "target_name": "dev", "node_id": "model.nba_team_stats_pipeline.mart_league_shooting_trends"} */
+
+  
+    
+
+    create or replace table `dataanalytics-504114`.`nba_dev_marts`.`mart_league_shooting_trends`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- Production mart: league-wide averages by season (across all teams and
+-- games). Powers the "3-point revolution" story — this era (2010-2024)
+-- captures one of the most dramatic tactical shifts in NBA history, as
+-- 3-point attempt volume rose sharply while long-2 attempts declined.
+
+with games as (
+
+    select * from `dataanalytics-504114`.`nba_dev_staging`.`stg_nba_team_game_totals`
+
+),
+
+league_trends as (
+
+    select
+        season_year,
+        count(distinct game_id)                   as total_games,
+        avg(points)                                as avg_points_per_team_game,
+        avg(three_pointers_attempted)              as avg_three_pt_attempts,
+        avg(three_pointers_made)                   as avg_three_pt_made,
+        avg(three_point_pct)                       as avg_three_pt_pct,
+        avg(field_goals_attempted)                 as avg_field_goal_attempts,
+        avg(field_goal_pct)                        as avg_field_goal_pct,
+        avg(total_rebounds)                        as avg_rebounds,
+        avg(assists)                                as avg_assists
+
+    from games
+    group by
+        season_year
+
+)
+
+select * from league_trends
+    );
+  
+[0m09:22:20.140848 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m09:22:20.141267 [debug] [Thread-9 (]: On model.nba_team_stats_pipeline.mart_team_season_summary: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "nba_team_stats_pipeline", "target_name": "dev", "node_id": "model.nba_team_stats_pipeline.mart_team_season_summary"} */
+
+  
+    
+
+    create or replace table `dataanalytics-504114`.`nba_dev_marts`.`mart_team_season_summary`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- Production mart: one row per team per season. Powers the team
+-- performance views — wins/losses, scoring, shooting efficiency, and
+-- point differential across a full season.
+
+with games as (
+
+    select * from `dataanalytics-504114`.`nba_dev_staging`.`stg_nba_team_game_totals`
+
+),
+
+team_season_summary as (
+
+    select
+        season_year,
+        team_id,
+        team_abbreviation,
+        any_value(team_name)                     as team_name,
+        count(distinct game_id)                  as games_played,
+        countif(win_loss = 'W')                  as wins,
+        countif(win_loss = 'L')                  as losses,
+        safe_divide(countif(win_loss = 'W'), count(distinct game_id)) as win_pct,
+        avg(points)                              as avg_points_per_game,
+        avg(point_differential)                  as avg_point_differential,
+        avg(field_goal_pct)                      as avg_field_goal_pct,
+        avg(three_point_pct)                     as avg_three_point_pct,
+        avg(free_throw_pct)                      as avg_free_throw_pct,
+        avg(total_rebounds)                      as avg_rebounds_per_game,
+        avg(assists)                             as avg_assists_per_game,
+        avg(turnovers)                           as avg_turnovers_per_game
+
+    from games
+    group by
+        season_year,
+        team_id,
+        team_abbreviation
+
+)
+
+select * from team_season_summary
+    );
+  
+[0m09:22:20.141716 [debug] [Thread-9 (]: Opening a new connection, currently in state init
+[0m09:22:21.912857 [debug] [Thread-8 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:cb679bd9-f682-416c-b744-8fc597a35ec8&page=queryresults
+[0m09:22:22.135302 [debug] [Thread-9 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:5860be2f-31b6-4058-88ab-4bb22d883ef2&page=queryresults
+[0m09:22:23.608140 [debug] [Thread-9 (]: SQL status: OK in 1.471 seconds
+[0m09:22:23.793551 [debug] [Thread-8 (]: SQL status: OK in 1.879 seconds
+[0m09:22:23.822735 [debug] [Thread-9 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd473aa7b-2a28-48d8-8d85-6c81a62ab7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213281B4050>]}
+[0m09:22:23.824445 [info ] [Thread-9 (]: 3 of 3 OK created sql table model nba_dev_marts.mart_team_season_summary ....... [[32mCREATE TABLE (420.0 rows, 3.6 MiB processed)[0m in 3.72s]
+[0m09:22:23.826474 [debug] [Thread-9 (]: Finished running node model.nba_team_stats_pipeline.mart_team_season_summary
+[0m09:22:24.001932 [debug] [Thread-8 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd473aa7b-2a28-48d8-8d85-6c81a62ab7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021302DA08D0>]}
+[0m09:22:24.003591 [info ] [Thread-8 (]: 2 of 3 OK created sql table model nba_dev_marts.mart_league_shooting_trends .... [[32mCREATE TABLE (14.0 rows, 2.6 MiB processed)[0m in 3.89s]
+[0m09:22:24.005555 [debug] [Thread-8 (]: Finished running node model.nba_team_stats_pipeline.mart_league_shooting_trends
+[0m09:22:24.009367 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:22:24.063037 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:22:24.063346 [debug] [MainThread]: Connection 'create_dataanalytics-504114_nba_dev_staging' was properly closed.
+[0m09:22:24.063585 [debug] [MainThread]: Connection 'create_dataanalytics-504114_nba_dev_marts' was properly closed.
+[0m09:22:24.063808 [debug] [MainThread]: Connection 'list_dataanalytics-504114_nba_dev_marts' was properly closed.
+[0m09:22:24.064027 [debug] [MainThread]: Connection 'list_dataanalytics-504114_nba_dev_staging' was properly closed.
+[0m09:22:24.064291 [debug] [MainThread]: Connection 'model.nba_team_stats_pipeline.stg_nba_team_game_totals' was properly closed.
+[0m09:22:24.064524 [debug] [MainThread]: Connection 'model.nba_team_stats_pipeline.mart_team_season_summary' was properly closed.
+[0m09:22:24.064746 [debug] [MainThread]: Connection 'model.nba_team_stats_pipeline.mart_league_shooting_trends' was properly closed.
+[0m09:22:24.065042 [info ] [MainThread]: 
+[0m09:22:24.065485 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 11.21 seconds (11.21s).
+[0m09:22:24.066509 [debug] [MainThread]: Command end result
+[0m09:22:24.100060 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\manifest.json
+[0m09:22:24.102929 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\semantic_manifest.json
+[0m09:22:24.105687 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\osi_document.json
+[0m09:22:24.112116 [debug] [MainThread]: Wrote artifact RunExecutionResult to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\run_results.json
+[0m09:22:24.112389 [info ] [MainThread]: 
+[0m09:22:24.112822 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:22:24.113187 [info ] [MainThread]: 
+[0m09:22:24.113526 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m09:22:24.114263 [debug] [MainThread]: Command `dbt run` succeeded at 09:22:24.114164 after 14.73 seconds
+[0m09:22:24.114555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021302E600C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002137ACBA190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021327F7AD50>]}
+[0m09:22:24.114844 [debug] [MainThread]: Flushing usage events
+[0m09:22:24.612554 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:22:29.004230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002300E844D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023010DCFED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023010DCFB10>]}
+
+
+============================== 09:22:29.007902 | 34ca5767-86f7-45f8-a132-05d9c904fb2a ==============================
+[0m09:22:29.007902 [info ] [MainThread]: Running with dbt=1.12.0
+[0m09:22:29.008401 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'F:\\Dropbox\\Hq Data Services\\nba-team-stats-pipeline\\logs'}
+[0m09:22:30.057714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '34ca5767-86f7-45f8-a132-05d9c904fb2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002300ED39350>]}
+[0m09:22:30.116954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '34ca5767-86f7-45f8-a132-05d9c904fb2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230348CEF10>]}
+[0m09:22:30.117729 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m09:22:30.631580 [debug] [MainThread]: checksum: eb983d7b42e77fe6add7b3234a98cd1bf2af07d75b1141db3238a4151bf2203b, vars: {}, profile: nba_team_stats_pipeline, target: dev, version: 1.12.0
+[0m09:22:30.782765 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:22:30.783071 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m09:22:30.783289 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:22:30.791230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '34ca5767-86f7-45f8-a132-05d9c904fb2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023034DC2850>]}
+[0m09:22:30.917984 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\manifest.json
+[0m09:22:30.920832 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\semantic_manifest.json
+[0m09:22:30.939985 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\osi_document.json
+[0m09:22:30.957311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '34ca5767-86f7-45f8-a132-05d9c904fb2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023035F9C5F0>]}
+[0m09:22:30.957678 [info ] [MainThread]: Found 3 models, 4 data tests, 1 source, 561 macros
+[0m09:22:30.958083 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '34ca5767-86f7-45f8-a132-05d9c904fb2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023035F925F0>]}
+[0m09:22:30.959739 [info ] [MainThread]: 
+[0m09:22:30.960126 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:22:30.960477 [info ] [MainThread]: 
+[0m09:22:30.960948 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:22:30.964844 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_nba_dev_marts'
+[0m09:22:30.965134 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:22:30.965789 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_nba_dev_staging'
+[0m09:22:30.966060 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:22:32.445970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '34ca5767-86f7-45f8-a132-05d9c904fb2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002301167AC30>]}
+[0m09:22:32.446383 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:22:32.477676 [debug] [Thread-5 (]: Began running node test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2
+[0m09:22:32.478339 [debug] [Thread-3 (]: Began running node test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f
+[0m09:22:32.478055 [info ] [Thread-5 (]: 3 of 4 START test not_null_stg_nba_team_game_totals_team_id .................... [RUN]
+[0m09:22:32.479119 [debug] [Thread-5 (]: Acquiring new bigquery connection 'test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2'
+[0m09:22:32.479417 [debug] [Thread-5 (]: Began compiling node test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2
+[0m09:22:32.495049 [debug] [Thread-4 (]: Began running node test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d
+[0m09:22:32.495710 [debug] [Thread-6 (]: Began running node test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3
+[0m09:22:32.497596 [debug] [Thread-5 (]: Writing injected SQL for node "test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2"
+[0m09:22:32.478651 [info ] [Thread-3 (]: 1 of 4 START test not_null_mart_league_shooting_trends_season_year ............. [RUN]
+[0m09:22:32.495449 [info ] [Thread-4 (]: 2 of 4 START test not_null_stg_nba_team_game_totals_game_id .................... [RUN]
+[0m09:22:32.498637 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f'
+[0m09:22:32.497934 [info ] [Thread-6 (]: 4 of 4 START test unique_mart_league_shooting_trends_season_year ............... [RUN]
+[0m09:22:32.499229 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d'
+[0m09:22:32.499565 [debug] [Thread-3 (]: Began compiling node test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f
+[0m09:22:32.500032 [debug] [Thread-6 (]: Acquiring new bigquery connection 'test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3'
+[0m09:22:32.500326 [debug] [Thread-5 (]: Began executing node test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2
+[0m09:22:32.500629 [debug] [Thread-4 (]: Began compiling node test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d
+[0m09:22:32.505946 [debug] [Thread-3 (]: Writing injected SQL for node "test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f"
+[0m09:22:32.506308 [debug] [Thread-6 (]: Began compiling node test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3
+[0m09:22:32.524347 [debug] [Thread-5 (]: Writing runtime sql for node "test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2"
+[0m09:22:32.529494 [debug] [Thread-4 (]: Writing injected SQL for node "test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d"
+[0m09:22:32.536162 [debug] [Thread-6 (]: Writing injected SQL for node "test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3"
+[0m09:22:32.537397 [debug] [Thread-5 (]: On test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "nba_team_stats_pipeline", "target_name": "dev", "node_id": "test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select team_id
+from `dataanalytics-504114`.`nba_dev_staging`.`stg_nba_team_game_totals`
+where team_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m09:22:32.537789 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m09:22:32.538154 [debug] [Thread-3 (]: Began executing node test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f
+[0m09:22:32.539491 [debug] [Thread-3 (]: Writing runtime sql for node "test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f"
+[0m09:22:32.567575 [debug] [Thread-6 (]: Began executing node test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3
+[0m09:22:32.567975 [debug] [Thread-4 (]: Began executing node test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d
+[0m09:22:32.569325 [debug] [Thread-6 (]: Writing runtime sql for node "test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3"
+[0m09:22:32.570653 [debug] [Thread-4 (]: Writing runtime sql for node "test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d"
+[0m09:22:32.571728 [debug] [Thread-3 (]: On test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "nba_team_stats_pipeline", "target_name": "dev", "node_id": "test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select season_year
+from `dataanalytics-504114`.`nba_dev_marts`.`mart_league_shooting_trends`
+where season_year is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m09:22:32.572294 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:22:32.601271 [debug] [Thread-4 (]: On test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "nba_team_stats_pipeline", "target_name": "dev", "node_id": "test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select game_id
+from `dataanalytics-504114`.`nba_dev_staging`.`stg_nba_team_game_totals`
+where game_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m09:22:32.601680 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m09:22:32.630245 [debug] [Thread-6 (]: On test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "nba_team_stats_pipeline", "target_name": "dev", "node_id": "test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select season_year as unique_field
+  from `dataanalytics-504114`.`nba_dev_marts`.`mart_league_shooting_trends`
+  where season_year is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m09:22:32.630747 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m09:22:34.302676 [debug] [Thread-6 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:3595f852-50e8-4429-8cca-8d803c4e6c34&page=queryresults
+[0m09:22:34.354448 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:86ee8654-c391-4f64-bd3b-66fb10f761c7&page=queryresults
+[0m09:22:34.406088 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:5c586fac-9174-4522-bbbc-d9e45fe179b8&page=queryresults
+[0m09:22:34.452066 [debug] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:0bf9790f-e3b7-4a9a-9d7f-5036edd4f728&page=queryresults
+[0m09:22:34.497171 [debug] [Thread-6 (]: SQL status: OK in 0.193 seconds
+[0m09:22:34.566512 [debug] [Thread-3 (]: SQL status: OK in 0.211 seconds
+[0m09:22:34.619149 [debug] [Thread-4 (]: SQL status: OK in 0.212 seconds
+[0m09:22:34.706713 [debug] [Thread-5 (]: SQL status: OK in 0.253 seconds
+[0m09:22:35.016642 [info ] [Thread-6 (]: 4 of 4 PASS unique_mart_league_shooting_trends_season_year ..................... [[32mPASS[0m in 2.52s]
+[0m09:22:35.021595 [debug] [Thread-6 (]: Finished running node test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3
+[0m09:22:35.025531 [info ] [Thread-4 (]: 2 of 4 PASS not_null_stg_nba_team_game_totals_game_id .......................... [[32mPASS[0m in 2.53s]
+[0m09:22:35.027598 [debug] [Thread-4 (]: Finished running node test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d
+[0m09:22:35.033673 [info ] [Thread-3 (]: 1 of 4 PASS not_null_mart_league_shooting_trends_season_year ................... [[32mPASS[0m in 2.53s]
+[0m09:22:35.035658 [debug] [Thread-3 (]: Finished running node test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f
+[0m09:22:35.077049 [info ] [Thread-5 (]: 3 of 4 PASS not_null_stg_nba_team_game_totals_team_id .......................... [[32mPASS[0m in 2.60s]
+[0m09:22:35.080680 [debug] [Thread-5 (]: Finished running node test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2
+[0m09:22:35.087270 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:22:35.150436 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:22:35.150753 [debug] [MainThread]: Connection 'list_dataanalytics-504114_nba_dev_marts' was properly closed.
+[0m09:22:35.150992 [debug] [MainThread]: Connection 'list_dataanalytics-504114_nba_dev_staging' was properly closed.
+[0m09:22:35.151225 [debug] [MainThread]: Connection 'test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_team_id.5e36ea44b2' was properly closed.
+[0m09:22:35.151460 [debug] [MainThread]: Connection 'test.nba_team_stats_pipeline.not_null_mart_league_shooting_trends_season_year.db8d53eb6f' was properly closed.
+[0m09:22:35.151689 [debug] [MainThread]: Connection 'test.nba_team_stats_pipeline.not_null_stg_nba_team_game_totals_game_id.7e5518678d' was properly closed.
+[0m09:22:35.151916 [debug] [MainThread]: Connection 'test.nba_team_stats_pipeline.unique_mart_league_shooting_trends_season_year.2e2346e6e3' was properly closed.
+[0m09:22:35.152190 [info ] [MainThread]: 
+[0m09:22:35.152615 [info ] [MainThread]: Finished running 4 data tests in 0 hours 0 minutes and 4.19 seconds (4.19s).
+[0m09:22:35.153780 [debug] [MainThread]: Command end result
+[0m09:22:35.185342 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\manifest.json
+[0m09:22:35.188285 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\semantic_manifest.json
+[0m09:22:35.191195 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\osi_document.json
+[0m09:22:35.198091 [debug] [MainThread]: Wrote artifact RunExecutionResult to F:\Dropbox\Hq Data Services\nba-team-stats-pipeline\target\run_results.json
+[0m09:22:35.198349 [info ] [MainThread]: 
+[0m09:22:35.198788 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:22:35.199156 [info ] [MainThread]: 
+[0m09:22:35.199496 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=4
+[0m09:22:35.200238 [debug] [MainThread]: Command `dbt test` succeeded at 09:22:35.200137 after 6.39 seconds
+[0m09:22:35.200538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023010C1D0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023035FEC100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023035FED700>]}
+[0m09:22:35.200845 [debug] [MainThread]: Flushing usage events
+[0m09:22:35.619093 [debug] [MainThread]: An error was encountered while trying to flush usage events
