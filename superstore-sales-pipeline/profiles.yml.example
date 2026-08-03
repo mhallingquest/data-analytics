@@ -1,0 +1,23 @@
+# Copy this into ~/.dbt/profiles.yml as a third named profile, alongside
+# medicare_data_pipeline and ga4_ecommerce_pipeline (dbt supports multiple
+# profiles in one file -- see those two projects for the existing entries).
+#
+# Location: unlike GA4 (which had to match "US" to align with a public
+# dataset), this project has no such constraint since you're uploading the
+# CSV directly into your own project from scratch. Match whatever location
+# you pick when creating the superstore_raw dataset -- us-east5 (same as
+# Medicare) is a perfectly fine default if you don't have a reason to pick
+# something else.
+
+superstore_sales_pipeline:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: your-gcp-project-id
+      dataset: superstore_dev
+      threads: 4
+      timeout_seconds: 300
+      location: us-east5
+      keyfile: "C:/path/to/your-key.json"

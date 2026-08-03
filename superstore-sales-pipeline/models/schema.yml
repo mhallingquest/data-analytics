@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_superstore_orders
+    description: Cleaned, typed staging layer over the raw Superstore CSV load.
+    columns:
+      - name: category
+        tests:
+          - not_null
+      - name: region
+        tests:
+          - not_null
+
+  - name: mart_category_region_summary
+    description: One row per (category, sub_category, region) — sales, profit, discount, margin.
+
+  - name: mart_segment_state_summary
+    description: One row per (segment, state, region) — sales, profit, discount, margin.

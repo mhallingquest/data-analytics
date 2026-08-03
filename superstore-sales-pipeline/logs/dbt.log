@@ -1,0 +1,1179 @@
+[0m16:46:18.772726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3EC824D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3EEDA7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3EEDA7B10>]}
+
+
+============================== 16:46:18.778828 | 64e625c2-6931-4f6d-ab26-635f589feb73 ==============================
+[0m16:46:18.778828 [info ] [MainThread]: Running with dbt=1.12.0
+[0m16:46:18.779345 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'F:\\Dropbox\\Hq Data Services\\superstore-sales-pipeline\\logs'}
+[0m16:46:26.553564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '64e625c2-6931-4f6d-ab26-635f589feb73', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3ECD19350>]}
+[0m16:46:26.613034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '64e625c2-6931-4f6d-ab26-635f589feb73', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C392DDAF10>]}
+[0m16:46:26.613808 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m16:46:27.167138 [debug] [MainThread]: checksum: 9f850a4c8519dda9c2cdec9ac7033dce7662068bcd2aa6b6c9709c735746ffa8, vars: {}, profile: superstore_sales_pipeline, target: dev, version: 1.12.0
+[0m16:46:27.167990 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:46:27.168455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '64e625c2-6931-4f6d-ab26-635f589feb73', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C392D06350>]}
+[0m16:46:28.654706 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '64e625c2-6931-4f6d-ab26-635f589feb73', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3931657C0>]}
+[0m16:46:28.754766 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\manifest.json
+[0m16:46:28.760492 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\semantic_manifest.json
+[0m16:46:28.800866 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\osi_document.json
+[0m16:46:28.819029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '64e625c2-6931-4f6d-ab26-635f589feb73', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3944F4F30>]}
+[0m16:46:28.819401 [info ] [MainThread]: Found 3 models, 4 data tests, 1 source, 561 macros
+[0m16:46:28.819745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '64e625c2-6931-4f6d-ab26-635f589feb73', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3947ED570>]}
+[0m16:46:28.821283 [info ] [MainThread]: 
+[0m16:46:28.821620 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:46:28.821940 [info ] [MainThread]: 
+[0m16:46:28.822431 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:46:28.825923 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m16:46:28.826210 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:46:28.826901 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m16:46:28.827189 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:46:30.499274 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataanalytics-504114, now create_dataanalytics-504114_superstore_dev_marts)
+[0m16:46:30.500349 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataanalytics-504114, now create_dataanalytics-504114_superstore_dev_staging)
+[0m16:46:30.501465 [debug] [ThreadPool]: Creating schema "database: "dataanalytics-504114"
+schema: "superstore_dev_marts"
+"
+[0m16:46:30.502536 [debug] [ThreadPool]: Creating schema "database: "dataanalytics-504114"
+schema: "superstore_dev_staging"
+"
+[0m16:46:30.523026 [debug] [ThreadPool]: On create_dataanalytics-504114_superstore_dev_staging: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "superstore_sales_pipeline", "target_name": "dev", "connection_name": "create_dataanalytics-504114_superstore_dev_staging"} */
+create schema if not exists `dataanalytics-504114`.`superstore_dev_staging`
+  
+[0m16:46:30.529335 [debug] [ThreadPool]: On create_dataanalytics-504114_superstore_dev_marts: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "superstore_sales_pipeline", "target_name": "dev", "connection_name": "create_dataanalytics-504114_superstore_dev_marts"} */
+create schema if not exists `dataanalytics-504114`.`superstore_dev_marts`
+  
+[0m16:46:30.529766 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:46:30.530148 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:46:31.889786 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:d990ab0d-9bf6-4995-885e-d00767aa1070&page=queryresults
+[0m16:46:31.925524 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:c56eea3a-11ba-45eb-abbd-b81ece398a83&page=queryresults
+[0m16:46:32.653799 [debug] [ThreadPool]: SQL status: OK in 0.762 seconds
+[0m16:46:32.773293 [debug] [ThreadPool]: SQL status: OK in 0.846 seconds
+[0m16:46:32.903517 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_superstore_dev_staging'
+[0m16:46:32.903842 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:46:32.933773 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_superstore_dev_marts'
+[0m16:46:32.934123 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:46:34.329692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '64e625c2-6931-4f6d-ab26-635f589feb73', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3947EA8D0>]}
+[0m16:46:34.331811 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:46:34.412055 [debug] [Thread-7 (]: Began running node model.superstore_sales_pipeline.stg_superstore_orders
+[0m16:46:34.412519 [info ] [Thread-7 (]: 1 of 3 START sql view model superstore_dev_staging.stg_superstore_orders ....... [RUN]
+[0m16:46:34.413122 [debug] [Thread-7 (]: Acquiring new bigquery connection 'model.superstore_sales_pipeline.stg_superstore_orders'
+[0m16:46:34.413478 [debug] [Thread-7 (]: Began compiling node model.superstore_sales_pipeline.stg_superstore_orders
+[0m16:46:34.418788 [debug] [Thread-7 (]: Writing injected SQL for node "model.superstore_sales_pipeline.stg_superstore_orders"
+[0m16:46:34.424875 [debug] [Thread-7 (]: Began executing node model.superstore_sales_pipeline.stg_superstore_orders
+[0m16:46:34.444786 [debug] [Thread-7 (]: Writing runtime sql for node "model.superstore_sales_pipeline.stg_superstore_orders"
+[0m16:46:34.447146 [debug] [Thread-7 (]: On model.superstore_sales_pipeline.stg_superstore_orders: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "superstore_sales_pipeline", "target_name": "dev", "node_id": "model.superstore_sales_pipeline.stg_superstore_orders"} */
+
+
+  create or replace view `dataanalytics-504114`.`superstore_dev_staging`.`stg_superstore_orders`
+  OPTIONS()
+  as -- Staging: light cleaning and renaming only. No business logic here.
+--
+-- Column names below reflect how BigQuery's CSV autodetect typically
+-- normalizes the Kaggle "Sample Superstore" headers (spaces/hyphens become
+-- underscores, e.g. "Sub-Category" -> Sub_Category). Verify against your
+-- actual uploaded table's schema tab before running -- if BigQuery detected
+-- slightly different names, adjust the mapping below to match.
+
+with source as (
+
+    select * from `your-gcp-project-id`.`superstore_raw`.`orders_raw`
+
+),
+
+renamed as (
+
+    select
+        Row_ID                as row_id,
+        Order_ID              as order_id,
+        -- BigQuery's CSV autodetect often recognizes M/D/YYYY dates and
+        -- types these columns as DATE automatically -- in which case this
+        -- passthrough is correct as-is. If autodetect instead left them as
+        -- STRING, swap the line for:
+        --   parse_date('%m/%d/%Y', Order_Date) as order_date
+        Order_Date             as order_date,
+        Ship_Date              as ship_date,
+        Ship_Mode              as ship_mode,
+        Customer_ID            as customer_id,
+        Customer_Name          as customer_name,
+        Segment                as segment,
+        Country                as country,
+        City                   as city,
+        State                  as state,
+        Region                 as region,
+        Product_ID             as product_id,
+        Category               as category,
+        Sub_Category           as sub_category,
+        Product_Name           as product_name,
+        cast(Sales as float64)     as sales,
+        cast(Quantity as int64)    as quantity,
+        cast(Discount as float64)  as discount,
+        cast(Profit as float64)    as profit
+
+    from source
+    where Order_ID is not null
+
+)
+
+select * from renamed;
+
+
+[0m16:46:34.447559 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m16:46:35.689470 [debug] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:1474d2c7-1d80-4456-a154-98e76a00e6b8&page=queryresults
+[0m16:46:35.691705 [error] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:1474d2c7-1d80-4456-a154-98e76a00e6b8&page=queryresults
+[0m16:46:35.738351 [debug] [Thread-7 (]: Database Error in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+  Access Denied: Table your-gcp-project-id:superstore_raw.orders_raw: User does not have permission to query table your-gcp-project-id:superstore_raw.orders_raw, or perhaps it does not exist.
+  compiled code at target\run\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql
+[0m16:46:35.743339 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '64e625c2-6931-4f6d-ab26-635f589feb73', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C394BC0EC0>]}
+[0m16:46:35.744934 [error] [Thread-7 (]: 1 of 3 ERROR creating sql view model superstore_dev_staging.stg_superstore_orders  [[31mERROR[0m in 1.33s]
+[0m16:46:35.746927 [debug] [Thread-7 (]: Finished running node model.superstore_sales_pipeline.stg_superstore_orders
+[0m16:46:35.748395 [debug] [Thread-13 ]: Marking all children of 'model.superstore_sales_pipeline.stg_superstore_orders' to be skipped because of status 'error'.  Reason: Database Error in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+  Access Denied: Table your-gcp-project-id:superstore_raw.orders_raw: User does not have permission to query table your-gcp-project-id:superstore_raw.orders_raw, or perhaps it does not exist.
+  compiled code at target\run\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql.
+[0m16:46:35.751463 [debug] [Thread-8 (]: Began running node model.superstore_sales_pipeline.mart_category_region_summary
+[0m16:46:35.753595 [debug] [Thread-9 (]: Began running node model.superstore_sales_pipeline.mart_product_performance
+[0m16:46:35.752645 [info ] [Thread-8 (]: 2 of 3 SKIP relation superstore_dev_marts.mart_category_region_summary ......... [[33mSKIP[0m]
+[0m16:46:35.755981 [debug] [Thread-8 (]: Finished running node model.superstore_sales_pipeline.mart_category_region_summary
+[0m16:46:35.754682 [info ] [Thread-9 (]: 3 of 3 SKIP relation superstore_dev_marts.mart_product_performance ............. [[33mSKIP[0m]
+[0m16:46:35.757672 [debug] [Thread-9 (]: Finished running node model.superstore_sales_pipeline.mart_product_performance
+[0m16:46:35.761049 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:46:35.820955 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:46:35.821271 [debug] [MainThread]: Connection 'create_dataanalytics-504114_superstore_dev_staging' was properly closed.
+[0m16:46:35.821510 [debug] [MainThread]: Connection 'create_dataanalytics-504114_superstore_dev_marts' was properly closed.
+[0m16:46:35.821744 [debug] [MainThread]: Connection 'list_dataanalytics-504114_superstore_dev_staging' was properly closed.
+[0m16:46:35.821984 [debug] [MainThread]: Connection 'list_dataanalytics-504114_superstore_dev_marts' was properly closed.
+[0m16:46:35.822213 [debug] [MainThread]: Connection 'model.superstore_sales_pipeline.stg_superstore_orders' was properly closed.
+[0m16:46:35.822539 [info ] [MainThread]: 
+[0m16:46:35.822994 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 7.00 seconds (7.00s).
+[0m16:46:35.823773 [debug] [MainThread]: Command end result
+[0m16:46:35.856758 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\manifest.json
+[0m16:46:35.859659 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\semantic_manifest.json
+[0m16:46:35.862408 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\osi_document.json
+[0m16:46:35.868620 [debug] [MainThread]: Wrote artifact RunExecutionResult to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\run_results.json
+[0m16:46:35.868868 [info ] [MainThread]: 
+[0m16:46:35.869236 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:46:35.869565 [info ] [MainThread]: 
+[0m16:46:35.869972 [error] [MainThread]: [[31mERROR[0m]: in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+[0m16:46:35.870374 [error] [MainThread]:   Database Error in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+  Access Denied: Table your-gcp-project-id:superstore_raw.orders_raw: User does not have permission to query table your-gcp-project-id:superstore_raw.orders_raw, or perhaps it does not exist.
+  compiled code at target\run\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql
+[0m16:46:35.870718 [info ] [MainThread]: 
+[0m16:46:35.871090 [info ] [MainThread]:   compiled code at target\compiled\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql
+[0m16:46:35.871387 [info ] [MainThread]: 
+[0m16:46:35.871710 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 REUSED=0 TOTAL=3
+[0m16:46:35.872437 [debug] [MainThread]: Command `dbt run` failed at 16:46:35.872340 after 17.33 seconds
+[0m16:46:35.872744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C394A976B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C394AF4680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3ECCAD950>]}
+[0m16:46:35.873354 [debug] [MainThread]: Flushing usage events
+[0m16:46:36.433404 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:49:51.225191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F25FEA4D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F262427ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F262427B10>]}
+
+
+============================== 16:49:51.228928 | 82a4d3c0-326e-40b7-bc34-57cfc1c30a43 ==============================
+[0m16:49:51.228928 [info ] [MainThread]: Running with dbt=1.12.0
+[0m16:49:51.229461 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'F:\\Dropbox\\Hq Data Services\\superstore-sales-pipeline\\logs'}
+[0m16:49:52.279265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '82a4d3c0-326e-40b7-bc34-57cfc1c30a43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F26039D350>]}
+[0m16:49:52.337801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '82a4d3c0-326e-40b7-bc34-57cfc1c30a43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F206DDEF10>]}
+[0m16:49:52.338504 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m16:49:52.866853 [debug] [MainThread]: checksum: 9f850a4c8519dda9c2cdec9ac7033dce7662068bcd2aa6b6c9709c735746ffa8, vars: {}, profile: superstore_sales_pipeline, target: dev, version: 1.12.0
+[0m16:49:53.022550 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:49:53.023266 [debug] [MainThread]: Partial parsing: updated file: superstore_sales_pipeline://models\staging\_staging__sources.yml
+[0m16:49:53.661189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '82a4d3c0-326e-40b7-bc34-57cfc1c30a43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2082A3950>]}
+[0m16:49:53.753756 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\manifest.json
+[0m16:49:53.756638 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\semantic_manifest.json
+[0m16:49:53.775549 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\osi_document.json
+[0m16:49:53.785219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '82a4d3c0-326e-40b7-bc34-57cfc1c30a43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2084F56D0>]}
+[0m16:49:53.785576 [info ] [MainThread]: Found 3 models, 4 data tests, 1 source, 561 macros
+[0m16:49:53.786004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '82a4d3c0-326e-40b7-bc34-57cfc1c30a43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F208607D90>]}
+[0m16:49:53.787579 [info ] [MainThread]: 
+[0m16:49:53.787972 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:49:53.788329 [info ] [MainThread]: 
+[0m16:49:53.788841 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:49:53.792291 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m16:49:53.792575 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:49:53.793210 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m16:49:53.793486 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:49:55.177671 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_superstore_dev_staging'
+[0m16:49:55.179301 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:49:55.180890 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_superstore_dev_marts'
+[0m16:49:55.182401 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:49:56.620037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '82a4d3c0-326e-40b7-bc34-57cfc1c30a43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F262CDEA90>]}
+[0m16:49:56.621832 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:49:56.691406 [debug] [Thread-5 (]: Began running node model.superstore_sales_pipeline.stg_superstore_orders
+[0m16:49:56.691875 [info ] [Thread-5 (]: 1 of 3 START sql view model superstore_dev_staging.stg_superstore_orders ....... [RUN]
+[0m16:49:56.692386 [debug] [Thread-5 (]: Acquiring new bigquery connection 'model.superstore_sales_pipeline.stg_superstore_orders'
+[0m16:49:56.692681 [debug] [Thread-5 (]: Began compiling node model.superstore_sales_pipeline.stg_superstore_orders
+[0m16:49:56.698188 [debug] [Thread-5 (]: Writing injected SQL for node "model.superstore_sales_pipeline.stg_superstore_orders"
+[0m16:49:56.699229 [debug] [Thread-5 (]: Began executing node model.superstore_sales_pipeline.stg_superstore_orders
+[0m16:49:56.722712 [debug] [Thread-5 (]: Writing runtime sql for node "model.superstore_sales_pipeline.stg_superstore_orders"
+[0m16:49:56.723960 [debug] [Thread-5 (]: On model.superstore_sales_pipeline.stg_superstore_orders: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "superstore_sales_pipeline", "target_name": "dev", "node_id": "model.superstore_sales_pipeline.stg_superstore_orders"} */
+
+
+  create or replace view `dataanalytics-504114`.`superstore_dev_staging`.`stg_superstore_orders`
+  OPTIONS()
+  as -- Staging: light cleaning and renaming only. No business logic here.
+--
+-- Column names below reflect how BigQuery's CSV autodetect typically
+-- normalizes the Kaggle "Sample Superstore" headers (spaces/hyphens become
+-- underscores, e.g. "Sub-Category" -> Sub_Category). Verify against your
+-- actual uploaded table's schema tab before running -- if BigQuery detected
+-- slightly different names, adjust the mapping below to match.
+
+with source as (
+
+    select * from `dataanalytics-504114`.`superstore_raw`.`orders_raw`
+
+),
+
+renamed as (
+
+    select
+        Row_ID                as row_id,
+        Order_ID              as order_id,
+        -- BigQuery's CSV autodetect often recognizes M/D/YYYY dates and
+        -- types these columns as DATE automatically -- in which case this
+        -- passthrough is correct as-is. If autodetect instead left them as
+        -- STRING, swap the line for:
+        --   parse_date('%m/%d/%Y', Order_Date) as order_date
+        Order_Date             as order_date,
+        Ship_Date              as ship_date,
+        Ship_Mode              as ship_mode,
+        Customer_ID            as customer_id,
+        Customer_Name          as customer_name,
+        Segment                as segment,
+        Country                as country,
+        City                   as city,
+        State                  as state,
+        Region                 as region,
+        Product_ID             as product_id,
+        Category               as category,
+        Sub_Category           as sub_category,
+        Product_Name           as product_name,
+        cast(Sales as float64)     as sales,
+        cast(Quantity as int64)    as quantity,
+        cast(Discount as float64)  as discount,
+        cast(Profit as float64)    as profit
+
+    from source
+    where Order_ID is not null
+
+)
+
+select * from renamed;
+
+
+[0m16:49:56.724420 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m16:49:58.101423 [debug] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:40e3835f-17f5-4b04-956b-111a25ba7f0a&page=queryresults
+[0m16:49:58.103979 [error] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:40e3835f-17f5-4b04-956b-111a25ba7f0a&page=queryresults
+[0m16:49:58.153715 [debug] [Thread-5 (]: Database Error in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+  Not found: Table dataanalytics-504114:superstore_raw.orders_raw was not found in location US
+  compiled code at target\run\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql
+[0m16:49:58.157156 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '82a4d3c0-326e-40b7-bc34-57cfc1c30a43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F208836D50>]}
+[0m16:49:58.158354 [error] [Thread-5 (]: 1 of 3 ERROR creating sql view model superstore_dev_staging.stg_superstore_orders  [[31mERROR[0m in 1.46s]
+[0m16:49:58.159745 [debug] [Thread-5 (]: Finished running node model.superstore_sales_pipeline.stg_superstore_orders
+[0m16:49:58.160851 [debug] [Thread-11 ]: Marking all children of 'model.superstore_sales_pipeline.stg_superstore_orders' to be skipped because of status 'error'.  Reason: Database Error in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+  Not found: Table dataanalytics-504114:superstore_raw.orders_raw was not found in location US
+  compiled code at target\run\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql.
+[0m16:49:58.163121 [debug] [Thread-7 (]: Began running node model.superstore_sales_pipeline.mart_product_performance
+[0m16:49:58.164790 [debug] [Thread-6 (]: Began running node model.superstore_sales_pipeline.mart_category_region_summary
+[0m16:49:58.164038 [info ] [Thread-7 (]: 3 of 3 SKIP relation superstore_dev_marts.mart_product_performance ............. [[33mSKIP[0m]
+[0m16:49:58.166613 [debug] [Thread-7 (]: Finished running node model.superstore_sales_pipeline.mart_product_performance
+[0m16:49:58.165639 [info ] [Thread-6 (]: 2 of 3 SKIP relation superstore_dev_marts.mart_category_region_summary ......... [[33mSKIP[0m]
+[0m16:49:58.167969 [debug] [Thread-6 (]: Finished running node model.superstore_sales_pipeline.mart_category_region_summary
+[0m16:49:58.170511 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:49:58.225491 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:49:58.225836 [debug] [MainThread]: Connection 'list_dataanalytics-504114' was properly closed.
+[0m16:49:58.226099 [debug] [MainThread]: Connection 'list_dataanalytics-504114' was properly closed.
+[0m16:49:58.226350 [debug] [MainThread]: Connection 'list_dataanalytics-504114_superstore_dev_staging' was properly closed.
+[0m16:49:58.226600 [debug] [MainThread]: Connection 'list_dataanalytics-504114_superstore_dev_marts' was properly closed.
+[0m16:49:58.226858 [debug] [MainThread]: Connection 'model.superstore_sales_pipeline.stg_superstore_orders' was properly closed.
+[0m16:49:58.227190 [info ] [MainThread]: 
+[0m16:49:58.227657 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 4.44 seconds (4.44s).
+[0m16:49:58.228519 [debug] [MainThread]: Command end result
+[0m16:49:58.260803 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\manifest.json
+[0m16:49:58.263811 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\semantic_manifest.json
+[0m16:49:58.266569 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\osi_document.json
+[0m16:49:58.273015 [debug] [MainThread]: Wrote artifact RunExecutionResult to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\run_results.json
+[0m16:49:58.273267 [info ] [MainThread]: 
+[0m16:49:58.273623 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:49:58.273954 [info ] [MainThread]: 
+[0m16:49:58.274376 [error] [MainThread]: [[31mERROR[0m]: in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+[0m16:49:58.274749 [error] [MainThread]:   Database Error in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+  Not found: Table dataanalytics-504114:superstore_raw.orders_raw was not found in location US
+  compiled code at target\run\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql
+[0m16:49:58.275051 [info ] [MainThread]: 
+[0m16:49:58.275396 [info ] [MainThread]:   compiled code at target\compiled\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql
+[0m16:49:58.275691 [info ] [MainThread]: 
+[0m16:49:58.276018 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 REUSED=0 TOTAL=3
+[0m16:49:58.276747 [debug] [MainThread]: Command `dbt run` failed at 16:49:58.276650 after 7.25 seconds
+[0m16:49:58.277051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2088509F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2087422B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F208742350>]}
+[0m16:49:58.277343 [debug] [MainThread]: Flushing usage events
+[0m16:49:58.717565 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:56:01.039805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EF3CD44D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EF3F2C7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EF3F2C7B10>]}
+
+
+============================== 16:56:01.043493 | 7fc70a71-1a91-4ac4-bcc8-3eed1d36f029 ==============================
+[0m16:56:01.043493 [info ] [MainThread]: Running with dbt=1.12.0
+[0m16:56:01.043987 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'F:\\Dropbox\\Hq Data Services\\superstore-sales-pipeline\\logs'}
+[0m16:56:02.084611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7fc70a71-1a91-4ac4-bcc8-3eed1d36f029', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EF3D239350>]}
+[0m16:56:02.142801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7fc70a71-1a91-4ac4-bcc8-3eed1d36f029', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EF62DBAF10>]}
+[0m16:56:02.143503 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m16:56:02.668883 [debug] [MainThread]: checksum: 9f850a4c8519dda9c2cdec9ac7033dce7662068bcd2aa6b6c9709c735746ffa8, vars: {}, profile: superstore_sales_pipeline, target: dev, version: 1.12.0
+[0m16:56:02.822819 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:56:02.823135 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m16:56:02.823364 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:56:02.831303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7fc70a71-1a91-4ac4-bcc8-3eed1d36f029', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EF64282850>]}
+[0m16:56:02.958033 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\manifest.json
+[0m16:56:02.960843 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\semantic_manifest.json
+[0m16:56:02.980090 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\osi_document.json
+[0m16:56:02.989379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7fc70a71-1a91-4ac4-bcc8-3eed1d36f029', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EF6449A3F0>]}
+[0m16:56:02.989711 [info ] [MainThread]: Found 3 models, 4 data tests, 1 source, 561 macros
+[0m16:56:02.990144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7fc70a71-1a91-4ac4-bcc8-3eed1d36f029', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EF644A67B0>]}
+[0m16:56:02.991712 [info ] [MainThread]: 
+[0m16:56:02.992096 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:56:02.992445 [info ] [MainThread]: 
+[0m16:56:02.992910 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:56:02.996690 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m16:56:02.997011 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:56:02.998312 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m16:56:02.998586 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:56:04.264574 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataanalytics-504114, now create_dataanalytics-504114_superstore_dev_staging)
+[0m16:56:04.265561 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataanalytics-504114, now create_dataanalytics-504114_superstore_dev_marts)
+[0m16:56:04.266638 [debug] [ThreadPool]: Creating schema "database: "dataanalytics-504114"
+schema: "superstore_dev_staging"
+"
+[0m16:56:04.267641 [debug] [ThreadPool]: Creating schema "database: "dataanalytics-504114"
+schema: "superstore_dev_marts"
+"
+[0m16:56:04.282065 [debug] [ThreadPool]: On create_dataanalytics-504114_superstore_dev_staging: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "superstore_sales_pipeline", "target_name": "dev", "connection_name": "create_dataanalytics-504114_superstore_dev_staging"} */
+create schema if not exists `dataanalytics-504114`.`superstore_dev_staging`
+  
+[0m16:56:04.282964 [debug] [ThreadPool]: On create_dataanalytics-504114_superstore_dev_marts: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "superstore_sales_pipeline", "target_name": "dev", "connection_name": "create_dataanalytics-504114_superstore_dev_marts"} */
+create schema if not exists `dataanalytics-504114`.`superstore_dev_marts`
+  
+[0m16:56:04.283284 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:56:04.283612 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:56:05.664421 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:4a4e9ee2-5ca1-444e-b7c6-fc8064fa41d0&page=queryresults
+[0m16:56:05.734583 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:71b678a0-0be2-4a86-a36e-84d31a14314d&page=queryresults
+[0m16:56:06.409962 [debug] [ThreadPool]: SQL status: OK in 0.744 seconds
+[0m16:56:06.568653 [debug] [ThreadPool]: SQL status: OK in 0.833 seconds
+[0m16:56:06.572106 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_superstore_dev_staging'
+[0m16:56:06.572415 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:56:06.573035 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_superstore_dev_marts'
+[0m16:56:06.573347 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:56:08.038754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7fc70a71-1a91-4ac4-bcc8-3eed1d36f029', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EF6448E680>]}
+[0m16:56:08.040748 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:56:08.122605 [debug] [Thread-7 (]: Began running node model.superstore_sales_pipeline.stg_superstore_orders
+[0m16:56:08.123082 [info ] [Thread-7 (]: 1 of 3 START sql view model superstore_dev_staging.stg_superstore_orders ....... [RUN]
+[0m16:56:08.123619 [debug] [Thread-7 (]: Acquiring new bigquery connection 'model.superstore_sales_pipeline.stg_superstore_orders'
+[0m16:56:08.123935 [debug] [Thread-7 (]: Began compiling node model.superstore_sales_pipeline.stg_superstore_orders
+[0m16:56:08.129428 [debug] [Thread-7 (]: Writing injected SQL for node "model.superstore_sales_pipeline.stg_superstore_orders"
+[0m16:56:08.130484 [debug] [Thread-7 (]: Began executing node model.superstore_sales_pipeline.stg_superstore_orders
+[0m16:56:08.150150 [debug] [Thread-7 (]: Writing runtime sql for node "model.superstore_sales_pipeline.stg_superstore_orders"
+[0m16:56:08.151306 [debug] [Thread-7 (]: On model.superstore_sales_pipeline.stg_superstore_orders: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "superstore_sales_pipeline", "target_name": "dev", "node_id": "model.superstore_sales_pipeline.stg_superstore_orders"} */
+
+
+  create or replace view `dataanalytics-504114`.`superstore_dev_staging`.`stg_superstore_orders`
+  OPTIONS()
+  as -- Staging: light cleaning and renaming only. No business logic here.
+--
+-- Column names below reflect how BigQuery's CSV autodetect typically
+-- normalizes the Kaggle "Sample Superstore" headers (spaces/hyphens become
+-- underscores, e.g. "Sub-Category" -> Sub_Category). Verify against your
+-- actual uploaded table's schema tab before running -- if BigQuery detected
+-- slightly different names, adjust the mapping below to match.
+
+with source as (
+
+    select * from `dataanalytics-504114`.`superstore_raw`.`orders_raw`
+
+),
+
+renamed as (
+
+    select
+        Row_ID                as row_id,
+        Order_ID              as order_id,
+        -- BigQuery's CSV autodetect often recognizes M/D/YYYY dates and
+        -- types these columns as DATE automatically -- in which case this
+        -- passthrough is correct as-is. If autodetect instead left them as
+        -- STRING, swap the line for:
+        --   parse_date('%m/%d/%Y', Order_Date) as order_date
+        Order_Date             as order_date,
+        Ship_Date              as ship_date,
+        Ship_Mode              as ship_mode,
+        Customer_ID            as customer_id,
+        Customer_Name          as customer_name,
+        Segment                as segment,
+        Country                as country,
+        City                   as city,
+        State                  as state,
+        Region                 as region,
+        Product_ID             as product_id,
+        Category               as category,
+        Sub_Category           as sub_category,
+        Product_Name           as product_name,
+        cast(Sales as float64)     as sales,
+        cast(Quantity as int64)    as quantity,
+        cast(Discount as float64)  as discount,
+        cast(Profit as float64)    as profit
+
+    from source
+    where Order_ID is not null
+
+)
+
+select * from renamed;
+
+
+[0m16:56:08.151717 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m16:56:09.437818 [debug] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:5af21840-bbd6-4071-815f-36e4d0f8d7ee&page=queryresults
+[0m16:56:09.625205 [error] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:5af21840-bbd6-4071-815f-36e4d0f8d7ee&page=queryresults
+[0m16:56:09.635683 [debug] [Thread-7 (]: Database Error in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+  Unrecognized name: Order_ID at [50:11]
+  compiled code at target\run\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql
+[0m16:56:09.637451 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fc70a71-1a91-4ac4-bcc8-3eed1d36f029', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EF6442E210>]}
+[0m16:56:09.638033 [error] [Thread-7 (]: 1 of 3 ERROR creating sql view model superstore_dev_staging.stg_superstore_orders  [[31mERROR[0m in 1.51s]
+[0m16:56:09.638859 [debug] [Thread-7 (]: Finished running node model.superstore_sales_pipeline.stg_superstore_orders
+[0m16:56:09.639575 [debug] [Thread-13 ]: Marking all children of 'model.superstore_sales_pipeline.stg_superstore_orders' to be skipped because of status 'error'.  Reason: Database Error in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+  Unrecognized name: Order_ID at [50:11]
+  compiled code at target\run\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql.
+[0m16:56:09.640864 [debug] [Thread-8 (]: Began running node model.superstore_sales_pipeline.mart_category_region_summary
+[0m16:56:09.641335 [debug] [Thread-9 (]: Began running node model.superstore_sales_pipeline.mart_product_performance
+[0m16:56:09.641713 [info ] [Thread-8 (]: 2 of 3 SKIP relation superstore_dev_marts.mart_category_region_summary ......... [[33mSKIP[0m]
+[0m16:56:09.642749 [debug] [Thread-8 (]: Finished running node model.superstore_sales_pipeline.mart_category_region_summary
+[0m16:56:09.642190 [info ] [Thread-9 (]: 3 of 3 SKIP relation superstore_dev_marts.mart_product_performance ............. [[33mSKIP[0m]
+[0m16:56:09.643401 [debug] [Thread-9 (]: Finished running node model.superstore_sales_pipeline.mart_product_performance
+[0m16:56:09.644906 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:56:09.676018 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:56:09.676343 [debug] [MainThread]: Connection 'create_dataanalytics-504114_superstore_dev_marts' was properly closed.
+[0m16:56:09.676577 [debug] [MainThread]: Connection 'create_dataanalytics-504114_superstore_dev_staging' was properly closed.
+[0m16:56:09.676800 [debug] [MainThread]: Connection 'list_dataanalytics-504114_superstore_dev_staging' was properly closed.
+[0m16:56:09.677019 [debug] [MainThread]: Connection 'list_dataanalytics-504114_superstore_dev_marts' was properly closed.
+[0m16:56:09.677238 [debug] [MainThread]: Connection 'model.superstore_sales_pipeline.stg_superstore_orders' was properly closed.
+[0m16:56:09.677630 [info ] [MainThread]: 
+[0m16:56:09.678086 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 6.68 seconds (6.68s).
+[0m16:56:09.678871 [debug] [MainThread]: Command end result
+[0m16:56:09.714180 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\manifest.json
+[0m16:56:09.717413 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\semantic_manifest.json
+[0m16:56:09.720433 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\osi_document.json
+[0m16:56:09.727255 [debug] [MainThread]: Wrote artifact RunExecutionResult to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\run_results.json
+[0m16:56:09.727535 [info ] [MainThread]: 
+[0m16:56:09.728042 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:56:09.728424 [info ] [MainThread]: 
+[0m16:56:09.728848 [error] [MainThread]: [[31mERROR[0m]: in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+[0m16:56:09.729247 [error] [MainThread]:   Database Error in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+  Unrecognized name: Order_ID at [50:11]
+  compiled code at target\run\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql
+[0m16:56:09.729561 [info ] [MainThread]: 
+[0m16:56:09.730017 [info ] [MainThread]:   compiled code at target\compiled\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql
+[0m16:56:09.730414 [info ] [MainThread]: 
+[0m16:56:09.730782 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 REUSED=0 TOTAL=3
+[0m16:56:09.731591 [debug] [MainThread]: Command `dbt run` failed at 16:56:09.731487 after 8.90 seconds
+[0m16:56:09.731915 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EF644B75F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EF64772030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EF64772A30>]}
+[0m16:56:09.732232 [debug] [MainThread]: Flushing usage events
+[0m16:56:10.208718 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:01:57.605722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4FDD04D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4802F7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4802F7B10>]}
+
+
+============================== 17:01:57.609392 | c1ccfde7-6cb2-4c0d-a319-e050114a6536 ==============================
+[0m17:01:57.609392 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:01:57.609890 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'F:\\Dropbox\\Hq Data Services\\superstore-sales-pipeline\\logs'}
+[0m17:01:58.659928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c1ccfde7-6cb2-4c0d-a319-e050114a6536', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4FE1FD350>]}
+[0m17:01:58.718653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c1ccfde7-6cb2-4c0d-a319-e050114a6536', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4A3F0EF10>]}
+[0m17:01:58.719410 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m17:01:59.242805 [debug] [MainThread]: checksum: 9f850a4c8519dda9c2cdec9ac7033dce7662068bcd2aa6b6c9709c735746ffa8, vars: {}, profile: superstore_sales_pipeline, target: dev, version: 1.12.0
+[0m17:01:59.398298 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 4 files changed.
+[0m17:01:59.398728 [debug] [MainThread]: Partial parsing: added file: superstore_sales_pipeline://models\marts\mart_segment_state_summary.sql
+[0m17:01:59.399314 [debug] [MainThread]: Partial parsing: updated file: superstore_sales_pipeline://models\staging\_staging__sources.yml
+[0m17:01:59.399668 [debug] [MainThread]: Partial parsing: updated file: superstore_sales_pipeline://models\schema.yml
+[0m17:01:59.399955 [debug] [MainThread]: Partial parsing: updated file: superstore_sales_pipeline://models\staging\stg_superstore_orders.sql
+[0m17:01:59.400236 [debug] [MainThread]: Partial parsing: updated file: superstore_sales_pipeline://models\marts\mart_category_region_summary.sql
+[0m17:02:00.036083 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c1ccfde7-6cb2-4c0d-a319-e050114a6536', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4A53D3750>]}
+[0m17:02:00.127961 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\manifest.json
+[0m17:02:00.131278 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\semantic_manifest.json
+[0m17:02:00.151534 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\osi_document.json
+[0m17:02:00.162222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c1ccfde7-6cb2-4c0d-a319-e050114a6536', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4A5646990>]}
+[0m17:02:00.162622 [info ] [MainThread]: Found 4 models, 4 data tests, 1 source, 561 macros
+[0m17:02:00.163065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c1ccfde7-6cb2-4c0d-a319-e050114a6536', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4A573A510>]}
+[0m17:02:00.164863 [info ] [MainThread]: 
+[0m17:02:00.165325 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:02:00.165707 [info ] [MainThread]: 
+[0m17:02:00.166226 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:02:00.170031 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m17:02:00.170560 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:02:00.171096 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m17:02:00.171473 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:02:01.588421 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataanalytics-504114, now create_dataanalytics-504114_superstore_dev_marts)
+[0m17:02:01.590436 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataanalytics-504114, now create_dataanalytics-504114_superstore_dev_staging)
+[0m17:02:01.592596 [debug] [ThreadPool]: Creating schema "database: "dataanalytics-504114"
+schema: "superstore_dev_marts"
+"
+[0m17:02:01.594797 [debug] [ThreadPool]: Creating schema "database: "dataanalytics-504114"
+schema: "superstore_dev_staging"
+"
+[0m17:02:01.623641 [debug] [ThreadPool]: On create_dataanalytics-504114_superstore_dev_staging: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "superstore_sales_pipeline", "target_name": "dev", "connection_name": "create_dataanalytics-504114_superstore_dev_staging"} */
+create schema if not exists `dataanalytics-504114`.`superstore_dev_staging`
+  
+[0m17:02:01.630560 [debug] [ThreadPool]: On create_dataanalytics-504114_superstore_dev_marts: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "superstore_sales_pipeline", "target_name": "dev", "connection_name": "create_dataanalytics-504114_superstore_dev_marts"} */
+create schema if not exists `dataanalytics-504114`.`superstore_dev_marts`
+  
+[0m17:02:01.631731 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:02:01.632799 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:02:03.040290 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:64766ff6-2ab6-49b6-b204-954d7d97aa19&page=queryresults
+[0m17:02:03.120765 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:7abfe332-4d27-4142-93f0-99941223c0ab&page=queryresults
+[0m17:02:03.795804 [debug] [ThreadPool]: SQL status: OK in 0.754 seconds
+[0m17:02:03.856008 [debug] [ThreadPool]: SQL status: OK in 0.734 seconds
+[0m17:02:03.889279 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_superstore_dev_marts'
+[0m17:02:03.889769 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:02:03.890191 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_superstore_dev_staging'
+[0m17:02:03.890456 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:02:05.379487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c1ccfde7-6cb2-4c0d-a319-e050114a6536', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4A59CAF70>]}
+[0m17:02:05.381368 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:02:05.451529 [debug] [Thread-7 (]: Began running node model.superstore_sales_pipeline.stg_superstore_orders
+[0m17:02:05.451989 [info ] [Thread-7 (]: 1 of 4 START sql view model superstore_dev_staging.stg_superstore_orders ....... [RUN]
+[0m17:02:05.452503 [debug] [Thread-7 (]: Acquiring new bigquery connection 'model.superstore_sales_pipeline.stg_superstore_orders'
+[0m17:02:05.452800 [debug] [Thread-7 (]: Began compiling node model.superstore_sales_pipeline.stg_superstore_orders
+[0m17:02:05.458112 [debug] [Thread-7 (]: Writing injected SQL for node "model.superstore_sales_pipeline.stg_superstore_orders"
+[0m17:02:05.459090 [debug] [Thread-7 (]: Began executing node model.superstore_sales_pipeline.stg_superstore_orders
+[0m17:02:05.478676 [debug] [Thread-7 (]: Writing runtime sql for node "model.superstore_sales_pipeline.stg_superstore_orders"
+[0m17:02:05.479903 [debug] [Thread-7 (]: On model.superstore_sales_pipeline.stg_superstore_orders: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "superstore_sales_pipeline", "target_name": "dev", "node_id": "model.superstore_sales_pipeline.stg_superstore_orders"} */
+
+
+  create or replace view `dataanalytics-504114`.`superstore_dev_staging`.`stg_superstore_orders`
+  OPTIONS()
+  as -- Staging: light cleaning and renaming only. No business logic here.
+--
+-- This variant of the Superstore dataset is leaner than some other
+-- "Superstore" uploads on Kaggle -- no order ID, product ID/name,
+-- customer info, or dates. Just the fields below. BigQuery kept the
+-- original headers' spaces/hyphens literally rather than converting them
+-- to underscores, so they need backtick-quoting here.
+
+with source as (
+
+    select * from `your-gcp-project-id`.`superstore_raw`.`orders_raw`
+
+),
+
+renamed as (
+
+    select
+        `Ship Mode`                    as ship_mode,
+        Segment                        as segment,
+        Country                        as country,
+        City                           as city,
+        State                          as state,
+        `Postal Code`                  as postal_code,
+        Region                         as region,
+        Category                       as category,
+        `Sub-Category`                 as sub_category,
+        cast(Sales as float64)         as sales,
+        cast(Quantity as int64)        as quantity,
+        cast(Discount as float64)      as discount,
+        cast(Profit as float64)        as profit
+
+    from source
+    where Category is not null
+
+)
+
+select * from renamed;
+
+
+[0m17:02:05.480306 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m17:02:06.784809 [debug] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:bfb87229-67d6-4c23-b7a3-029a6a082a85&page=queryresults
+[0m17:02:06.787169 [error] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:bfb87229-67d6-4c23-b7a3-029a6a082a85&page=queryresults
+[0m17:02:06.813652 [debug] [Thread-7 (]: Database Error in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+  Access Denied: Table your-gcp-project-id:superstore_raw.orders_raw: User does not have permission to query table your-gcp-project-id:superstore_raw.orders_raw, or perhaps it does not exist.
+  compiled code at target\run\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql
+[0m17:02:06.817589 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c1ccfde7-6cb2-4c0d-a319-e050114a6536', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4A5CBCDD0>]}
+[0m17:02:06.818941 [error] [Thread-7 (]: 1 of 4 ERROR creating sql view model superstore_dev_staging.stg_superstore_orders  [[31mERROR[0m in 1.36s]
+[0m17:02:06.820357 [debug] [Thread-7 (]: Finished running node model.superstore_sales_pipeline.stg_superstore_orders
+[0m17:02:06.821088 [debug] [Thread-13 ]: Marking all children of 'model.superstore_sales_pipeline.stg_superstore_orders' to be skipped because of status 'error'.  Reason: Database Error in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+  Access Denied: Table your-gcp-project-id:superstore_raw.orders_raw: User does not have permission to query table your-gcp-project-id:superstore_raw.orders_raw, or perhaps it does not exist.
+  compiled code at target\run\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql.
+[0m17:02:06.822702 [debug] [Thread-10 ]: Began running node model.superstore_sales_pipeline.mart_segment_state_summary
+[0m17:02:06.823189 [debug] [Thread-8 (]: Began running node model.superstore_sales_pipeline.mart_category_region_summary
+[0m17:02:06.823598 [debug] [Thread-9 (]: Began running node model.superstore_sales_pipeline.mart_product_performance
+[0m17:02:06.824044 [info ] [Thread-10 ]: 4 of 4 SKIP relation superstore_dev_marts.mart_segment_state_summary ........... [[33mSKIP[0m]
+[0m17:02:06.824746 [info ] [Thread-8 (]: 2 of 4 SKIP relation superstore_dev_marts.mart_category_region_summary ......... [[33mSKIP[0m]
+[0m17:02:06.825327 [info ] [Thread-9 (]: 3 of 4 SKIP relation superstore_dev_marts.mart_product_performance ............. [[33mSKIP[0m]
+[0m17:02:06.825912 [debug] [Thread-10 ]: Finished running node model.superstore_sales_pipeline.mart_segment_state_summary
+[0m17:02:06.826371 [debug] [Thread-8 (]: Finished running node model.superstore_sales_pipeline.mart_category_region_summary
+[0m17:02:06.826815 [debug] [Thread-9 (]: Finished running node model.superstore_sales_pipeline.mart_product_performance
+[0m17:02:06.828675 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:02:06.860639 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:02:06.860980 [debug] [MainThread]: Connection 'create_dataanalytics-504114_superstore_dev_marts' was properly closed.
+[0m17:02:06.861222 [debug] [MainThread]: Connection 'create_dataanalytics-504114_superstore_dev_staging' was properly closed.
+[0m17:02:06.861463 [debug] [MainThread]: Connection 'list_dataanalytics-504114_superstore_dev_marts' was properly closed.
+[0m17:02:06.861690 [debug] [MainThread]: Connection 'list_dataanalytics-504114_superstore_dev_staging' was properly closed.
+[0m17:02:06.861912 [debug] [MainThread]: Connection 'model.superstore_sales_pipeline.stg_superstore_orders' was properly closed.
+[0m17:02:06.862241 [info ] [MainThread]: 
+[0m17:02:06.862661 [info ] [MainThread]: Finished running 3 table models, 1 view model in 0 hours 0 minutes and 6.70 seconds (6.70s).
+[0m17:02:06.863459 [debug] [MainThread]: Command end result
+[0m17:02:06.894812 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\manifest.json
+[0m17:02:06.897860 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\semantic_manifest.json
+[0m17:02:06.900596 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\osi_document.json
+[0m17:02:06.906801 [debug] [MainThread]: Wrote artifact RunExecutionResult to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\run_results.json
+[0m17:02:06.907054 [info ] [MainThread]: 
+[0m17:02:06.907493 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:02:06.907817 [info ] [MainThread]: 
+[0m17:02:06.908188 [error] [MainThread]: [[31mERROR[0m]: in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+[0m17:02:06.908550 [error] [MainThread]:   Database Error in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+  Access Denied: Table your-gcp-project-id:superstore_raw.orders_raw: User does not have permission to query table your-gcp-project-id:superstore_raw.orders_raw, or perhaps it does not exist.
+  compiled code at target\run\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql
+[0m17:02:06.908854 [info ] [MainThread]: 
+[0m17:02:06.909211 [info ] [MainThread]:   compiled code at target\compiled\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql
+[0m17:02:06.909503 [info ] [MainThread]: 
+[0m17:02:06.909823 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=3 NO-OP=0 REUSED=0 TOTAL=4
+[0m17:02:06.910542 [debug] [MainThread]: Command `dbt run` failed at 17:02:06.910446 after 9.51 seconds
+[0m17:02:06.910879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4A599ADB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4A5C0EB70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4A5C0ED50>]}
+[0m17:02:06.911192 [debug] [MainThread]: Flushing usage events
+[0m17:02:07.461020 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:02:48.457522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AB1454D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AB39D7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AB39D7B10>]}
+
+
+============================== 17:02:48.461180 | 828a5915-452d-4e7d-b35b-39ad9f5c7da6 ==============================
+[0m17:02:48.461180 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:02:48.461702 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'F:\\Dropbox\\Hq Data Services\\superstore-sales-pipeline\\logs'}
+[0m17:02:49.507816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '828a5915-452d-4e7d-b35b-39ad9f5c7da6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AB1945350>]}
+[0m17:02:49.566918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '828a5915-452d-4e7d-b35b-39ad9f5c7da6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AD74DEF10>]}
+[0m17:02:49.567649 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m17:02:50.082440 [debug] [MainThread]: checksum: 9f850a4c8519dda9c2cdec9ac7033dce7662068bcd2aa6b6c9709c735746ffa8, vars: {}, profile: superstore_sales_pipeline, target: dev, version: 1.12.0
+[0m17:02:50.234243 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:02:50.234551 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:02:50.234774 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:02:50.242384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '828a5915-452d-4e7d-b35b-39ad9f5c7da6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AD89A2850>]}
+[0m17:02:50.367253 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\manifest.json
+[0m17:02:50.370301 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\semantic_manifest.json
+[0m17:02:50.389140 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\osi_document.json
+[0m17:02:50.398599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '828a5915-452d-4e7d-b35b-39ad9f5c7da6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AD8BC63F0>]}
+[0m17:02:50.398945 [info ] [MainThread]: Found 4 models, 4 data tests, 1 source, 561 macros
+[0m17:02:50.399371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '828a5915-452d-4e7d-b35b-39ad9f5c7da6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AD8BAA7B0>]}
+[0m17:02:50.400999 [info ] [MainThread]: 
+[0m17:02:50.401407 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:02:50.401759 [info ] [MainThread]: 
+[0m17:02:50.402225 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:02:50.405746 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m17:02:50.406025 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:02:50.406666 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m17:02:50.406957 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:02:51.626562 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_superstore_dev_staging'
+[0m17:02:51.628325 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:02:51.629889 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_superstore_dev_marts'
+[0m17:02:51.631341 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:02:53.063189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '828a5915-452d-4e7d-b35b-39ad9f5c7da6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AB428EA90>]}
+[0m17:02:53.064574 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:02:53.106781 [debug] [Thread-5 (]: Began running node model.superstore_sales_pipeline.stg_superstore_orders
+[0m17:02:53.107233 [info ] [Thread-5 (]: 1 of 4 START sql view model superstore_dev_staging.stg_superstore_orders ....... [RUN]
+[0m17:02:53.107729 [debug] [Thread-5 (]: Acquiring new bigquery connection 'model.superstore_sales_pipeline.stg_superstore_orders'
+[0m17:02:53.108060 [debug] [Thread-5 (]: Began compiling node model.superstore_sales_pipeline.stg_superstore_orders
+[0m17:02:53.114793 [debug] [Thread-5 (]: Writing injected SQL for node "model.superstore_sales_pipeline.stg_superstore_orders"
+[0m17:02:53.115856 [debug] [Thread-5 (]: Began executing node model.superstore_sales_pipeline.stg_superstore_orders
+[0m17:02:53.138879 [debug] [Thread-5 (]: Writing runtime sql for node "model.superstore_sales_pipeline.stg_superstore_orders"
+[0m17:02:53.140065 [debug] [Thread-5 (]: On model.superstore_sales_pipeline.stg_superstore_orders: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "superstore_sales_pipeline", "target_name": "dev", "node_id": "model.superstore_sales_pipeline.stg_superstore_orders"} */
+
+
+  create or replace view `dataanalytics-504114`.`superstore_dev_staging`.`stg_superstore_orders`
+  OPTIONS()
+  as -- Staging: light cleaning and renaming only. No business logic here.
+--
+-- This variant of the Superstore dataset is leaner than some other
+-- "Superstore" uploads on Kaggle -- no order ID, product ID/name,
+-- customer info, or dates. Just the fields below. BigQuery kept the
+-- original headers' spaces/hyphens literally rather than converting them
+-- to underscores, so they need backtick-quoting here.
+
+with source as (
+
+    select * from `your-gcp-project-id`.`superstore_raw`.`orders_raw`
+
+),
+
+renamed as (
+
+    select
+        `Ship Mode`                    as ship_mode,
+        Segment                        as segment,
+        Country                        as country,
+        City                           as city,
+        State                          as state,
+        `Postal Code`                  as postal_code,
+        Region                         as region,
+        Category                       as category,
+        `Sub-Category`                 as sub_category,
+        cast(Sales as float64)         as sales,
+        cast(Quantity as int64)        as quantity,
+        cast(Discount as float64)      as discount,
+        cast(Profit as float64)        as profit
+
+    from source
+    where Category is not null
+
+)
+
+select * from renamed;
+
+
+[0m17:02:53.140470 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m17:02:54.600670 [debug] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:3143f5b7-a17c-44b1-8619-b0391ca5e765&page=queryresults
+[0m17:02:54.602201 [error] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:3143f5b7-a17c-44b1-8619-b0391ca5e765&page=queryresults
+[0m17:02:54.632427 [debug] [Thread-5 (]: Database Error in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+  Access Denied: Table your-gcp-project-id:superstore_raw.orders_raw: User does not have permission to query table your-gcp-project-id:superstore_raw.orders_raw, or perhaps it does not exist.
+  compiled code at target\run\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql
+[0m17:02:54.636920 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '828a5915-452d-4e7d-b35b-39ad9f5c7da6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AD8B2D550>]}
+[0m17:02:54.638460 [error] [Thread-5 (]: 1 of 4 ERROR creating sql view model superstore_dev_staging.stg_superstore_orders  [[31mERROR[0m in 1.53s]
+[0m17:02:54.640336 [debug] [Thread-5 (]: Finished running node model.superstore_sales_pipeline.stg_superstore_orders
+[0m17:02:54.640996 [debug] [Thread-11 ]: Marking all children of 'model.superstore_sales_pipeline.stg_superstore_orders' to be skipped because of status 'error'.  Reason: Database Error in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+  Access Denied: Table your-gcp-project-id:superstore_raw.orders_raw: User does not have permission to query table your-gcp-project-id:superstore_raw.orders_raw, or perhaps it does not exist.
+  compiled code at target\run\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql.
+[0m17:02:54.642412 [debug] [Thread-8 (]: Began running node model.superstore_sales_pipeline.mart_segment_state_summary
+[0m17:02:54.643287 [debug] [Thread-7 (]: Began running node model.superstore_sales_pipeline.mart_product_performance
+[0m17:02:54.642909 [info ] [Thread-8 (]: 4 of 4 SKIP relation superstore_dev_marts.mart_segment_state_summary ........... [[33mSKIP[0m]
+[0m17:02:54.644248 [debug] [Thread-8 (]: Finished running node model.superstore_sales_pipeline.mart_segment_state_summary
+[0m17:02:54.644802 [debug] [Thread-6 (]: Began running node model.superstore_sales_pipeline.mart_category_region_summary
+[0m17:02:54.643743 [info ] [Thread-7 (]: 3 of 4 SKIP relation superstore_dev_marts.mart_product_performance ............. [[33mSKIP[0m]
+[0m17:02:54.645703 [info ] [Thread-6 (]: 2 of 4 SKIP relation superstore_dev_marts.mart_category_region_summary ......... [[33mSKIP[0m]
+[0m17:02:54.646363 [debug] [Thread-7 (]: Finished running node model.superstore_sales_pipeline.mart_product_performance
+[0m17:02:54.646806 [debug] [Thread-6 (]: Finished running node model.superstore_sales_pipeline.mart_category_region_summary
+[0m17:02:54.648345 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:02:54.677118 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:02:54.677422 [debug] [MainThread]: Connection 'list_dataanalytics-504114' was properly closed.
+[0m17:02:54.677672 [debug] [MainThread]: Connection 'list_dataanalytics-504114' was properly closed.
+[0m17:02:54.677954 [debug] [MainThread]: Connection 'list_dataanalytics-504114_superstore_dev_staging' was properly closed.
+[0m17:02:54.678187 [debug] [MainThread]: Connection 'list_dataanalytics-504114_superstore_dev_marts' was properly closed.
+[0m17:02:54.678416 [debug] [MainThread]: Connection 'model.superstore_sales_pipeline.stg_superstore_orders' was properly closed.
+[0m17:02:54.678727 [info ] [MainThread]: 
+[0m17:02:54.680035 [info ] [MainThread]: Finished running 3 table models, 1 view model in 0 hours 0 minutes and 4.28 seconds (4.28s).
+[0m17:02:54.680820 [debug] [MainThread]: Command end result
+[0m17:02:54.717815 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\manifest.json
+[0m17:02:54.720741 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\semantic_manifest.json
+[0m17:02:54.723443 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\osi_document.json
+[0m17:02:54.729912 [debug] [MainThread]: Wrote artifact RunExecutionResult to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\run_results.json
+[0m17:02:54.730197 [info ] [MainThread]: 
+[0m17:02:54.730679 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:02:54.731005 [info ] [MainThread]: 
+[0m17:02:54.731374 [error] [MainThread]: [[31mERROR[0m]: in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+[0m17:02:54.731735 [error] [MainThread]:   Database Error in model stg_superstore_orders (models\staging\stg_superstore_orders.sql)
+  Access Denied: Table your-gcp-project-id:superstore_raw.orders_raw: User does not have permission to query table your-gcp-project-id:superstore_raw.orders_raw, or perhaps it does not exist.
+  compiled code at target\run\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql
+[0m17:02:54.732038 [info ] [MainThread]: 
+[0m17:02:54.732400 [info ] [MainThread]:   compiled code at target\compiled\superstore_sales_pipeline\models\staging\stg_superstore_orders.sql
+[0m17:02:54.732693 [info ] [MainThread]: 
+[0m17:02:54.733014 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=3 NO-OP=0 REUSED=0 TOTAL=4
+[0m17:02:54.733752 [debug] [MainThread]: Command `dbt run` failed at 17:02:54.733655 after 6.47 seconds
+[0m17:02:54.734058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AD8BCD440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AD8B86CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AD8B85E50>]}
+[0m17:02:54.734361 [debug] [MainThread]: Flushing usage events
+[0m17:02:55.137549 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:05:30.809253 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FC0BF4D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FC3177ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FC3177B10>]}
+
+
+============================== 17:05:30.812949 | 226bf69e-a2ac-4f03-93f9-d8336bbdbb88 ==============================
+[0m17:05:30.812949 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:05:30.813442 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'F:\\Dropbox\\Hq Data Services\\superstore-sales-pipeline\\logs'}
+[0m17:05:31.857843 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '226bf69e-a2ac-4f03-93f9-d8336bbdbb88', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FC10E9350>]}
+[0m17:05:31.916571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '226bf69e-a2ac-4f03-93f9-d8336bbdbb88', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FE6C7EF10>]}
+[0m17:05:31.917254 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m17:05:32.432660 [debug] [MainThread]: checksum: 9f850a4c8519dda9c2cdec9ac7033dce7662068bcd2aa6b6c9709c735746ffa8, vars: {}, profile: superstore_sales_pipeline, target: dev, version: 1.12.0
+[0m17:05:32.589446 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 0 files added, 1 files changed.
+[0m17:05:32.590175 [debug] [MainThread]: Partial parsing: updated file: superstore_sales_pipeline://models\staging\_staging__sources.yml
+[0m17:05:32.590478 [debug] [MainThread]: Partial parsing: deleted file: superstore_sales_pipeline://models\marts\mart_product_performance.sql
+[0m17:05:33.239902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '226bf69e-a2ac-4f03-93f9-d8336bbdbb88', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FE7173B50>]}
+[0m17:05:33.332664 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\manifest.json
+[0m17:05:33.335544 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\semantic_manifest.json
+[0m17:05:33.354721 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\osi_document.json
+[0m17:05:33.363011 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  'test.superstore_sales_pipeline.unique_mart_product_performance_product_id.eb590e33e2' depends on 'model.superstore_sales_pipeline.mart_product_performance' which is not in the graph!
+[0m17:05:33.363903 [debug] [MainThread]: Command `dbt run` failed at 17:05:33.363791 after 2.75 seconds
+[0m17:05:33.364223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FE8708F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FE8709220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FC30EBE70>]}
+[0m17:05:33.364526 [debug] [MainThread]: Flushing usage events
+[0m17:05:33.852614 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:06:29.533639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021093E64D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210963E7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210963E7B10>]}
+
+
+============================== 17:06:29.537232 | b4757ea4-dbc2-4c7b-8c18-164eda087403 ==============================
+[0m17:06:29.537232 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:06:29.537727 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'F:\\Dropbox\\Hq Data Services\\superstore-sales-pipeline\\logs'}
+[0m17:06:30.579984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b4757ea4-dbc2-4c7b-8c18-164eda087403', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002109435D350>]}
+[0m17:06:30.638950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b4757ea4-dbc2-4c7b-8c18-164eda087403', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210B9EEAF10>]}
+[0m17:06:30.639670 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m17:06:31.150953 [debug] [MainThread]: checksum: 9f850a4c8519dda9c2cdec9ac7033dce7662068bcd2aa6b6c9709c735746ffa8, vars: {}, profile: superstore_sales_pipeline, target: dev, version: 1.12.0
+[0m17:06:31.304558 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:06:31.304872 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:06:31.305105 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:06:31.312921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b4757ea4-dbc2-4c7b-8c18-164eda087403', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210BB3B2850>]}
+[0m17:06:31.438154 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\manifest.json
+[0m17:06:31.441030 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\semantic_manifest.json
+[0m17:06:31.459993 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\osi_document.json
+[0m17:06:31.467983 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  'test.superstore_sales_pipeline.unique_mart_product_performance_product_id.eb590e33e2' depends on 'model.superstore_sales_pipeline.mart_product_performance' which is not in the graph!
+[0m17:06:31.468940 [debug] [MainThread]: Command `dbt run` failed at 17:06:31.468833 after 2.13 seconds
+[0m17:06:31.469244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210BB5CE120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210BB5CE3F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002109635BE70>]}
+[0m17:06:31.469544 [debug] [MainThread]: Flushing usage events
+[0m17:06:31.914998 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:07:13.171015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE3C544D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE3EAC7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE3EAC7B10>]}
+
+
+============================== 17:07:13.174703 | 9f6bc97a-8c72-4068-8fde-4706981071e1 ==============================
+[0m17:07:13.174703 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:07:13.175239 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'F:\\Dropbox\\Hq Data Services\\superstore-sales-pipeline\\logs'}
+[0m17:07:14.254608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9f6bc97a-8c72-4068-8fde-4706981071e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE3CA39350>]}
+[0m17:07:14.312963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9f6bc97a-8c72-4068-8fde-4706981071e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE625BEF10>]}
+[0m17:07:14.313660 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m17:07:14.830188 [debug] [MainThread]: checksum: 9f850a4c8519dda9c2cdec9ac7033dce7662068bcd2aa6b6c9709c735746ffa8, vars: {}, profile: superstore_sales_pipeline, target: dev, version: 1.12.0
+[0m17:07:14.831014 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m17:07:14.831448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9f6bc97a-8c72-4068-8fde-4706981071e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE624E6350>]}
+[0m17:07:16.244821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9f6bc97a-8c72-4068-8fde-4706981071e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE629449B0>]}
+[0m17:07:16.340657 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\manifest.json
+[0m17:07:16.343845 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\semantic_manifest.json
+[0m17:07:16.362611 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\osi_document.json
+[0m17:07:16.372527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9f6bc97a-8c72-4068-8fde-4706981071e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE63CD4F30>]}
+[0m17:07:16.372865 [info ] [MainThread]: Found 3 models, 2 data tests, 1 source, 561 macros
+[0m17:07:16.373287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9f6bc97a-8c72-4068-8fde-4706981071e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE63FA5160>]}
+[0m17:07:16.374958 [info ] [MainThread]: 
+[0m17:07:16.375341 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:07:16.375638 [info ] [MainThread]: 
+[0m17:07:16.376091 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:07:16.379750 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m17:07:16.380093 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:07:16.409637 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m17:07:16.410038 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:07:17.861834 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_superstore_dev_staging'
+[0m17:07:17.863977 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:07:17.866134 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_superstore_dev_marts'
+[0m17:07:17.868345 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:07:19.333500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9f6bc97a-8c72-4068-8fde-4706981071e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE63F91490>]}
+[0m17:07:19.335482 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:07:19.408709 [debug] [Thread-5 (]: Began running node model.superstore_sales_pipeline.stg_superstore_orders
+[0m17:07:19.409244 [info ] [Thread-5 (]: 1 of 3 START sql view model superstore_dev_staging.stg_superstore_orders ....... [RUN]
+[0m17:07:19.409766 [debug] [Thread-5 (]: Acquiring new bigquery connection 'model.superstore_sales_pipeline.stg_superstore_orders'
+[0m17:07:19.410076 [debug] [Thread-5 (]: Began compiling node model.superstore_sales_pipeline.stg_superstore_orders
+[0m17:07:19.415548 [debug] [Thread-5 (]: Writing injected SQL for node "model.superstore_sales_pipeline.stg_superstore_orders"
+[0m17:07:19.424054 [debug] [Thread-5 (]: Began executing node model.superstore_sales_pipeline.stg_superstore_orders
+[0m17:07:19.446571 [debug] [Thread-5 (]: Writing runtime sql for node "model.superstore_sales_pipeline.stg_superstore_orders"
+[0m17:07:19.448670 [debug] [Thread-5 (]: On model.superstore_sales_pipeline.stg_superstore_orders: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "superstore_sales_pipeline", "target_name": "dev", "node_id": "model.superstore_sales_pipeline.stg_superstore_orders"} */
+
+
+  create or replace view `dataanalytics-504114`.`superstore_dev_staging`.`stg_superstore_orders`
+  OPTIONS()
+  as -- Staging: light cleaning and renaming only. No business logic here.
+--
+-- This variant of the Superstore dataset is leaner than some other
+-- "Superstore" uploads on Kaggle -- no order ID, product ID/name,
+-- customer info, or dates. Just the fields below. BigQuery kept the
+-- original headers' spaces/hyphens literally rather than converting them
+-- to underscores, so they need backtick-quoting here.
+
+with source as (
+
+    select * from `dataanalytics-504114`.`superstore_raw`.`orders_raw`
+
+),
+
+renamed as (
+
+    select
+        `Ship Mode`                    as ship_mode,
+        Segment                        as segment,
+        Country                        as country,
+        City                           as city,
+        State                          as state,
+        `Postal Code`                  as postal_code,
+        Region                         as region,
+        Category                       as category,
+        `Sub-Category`                 as sub_category,
+        cast(Sales as float64)         as sales,
+        cast(Quantity as int64)        as quantity,
+        cast(Discount as float64)      as discount,
+        cast(Profit as float64)        as profit
+
+    from source
+    where Category is not null
+
+)
+
+select * from renamed;
+
+
+[0m17:07:19.449109 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m17:07:20.930231 [debug] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:63710b0e-3fc9-49cb-b4fa-58dcd46fef75&page=queryresults
+[0m17:07:21.339705 [debug] [Thread-5 (]: SQL status: OK in 0.407 seconds
+[0m17:07:21.472518 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9f6bc97a-8c72-4068-8fde-4706981071e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE642FC260>]}
+[0m17:07:21.473068 [info ] [Thread-5 (]: 1 of 3 OK created sql view model superstore_dev_staging.stg_superstore_orders .. [[32mCREATE VIEW (0 processed)[0m in 2.06s]
+[0m17:07:21.473705 [debug] [Thread-5 (]: Finished running node model.superstore_sales_pipeline.stg_superstore_orders
+[0m17:07:21.474398 [debug] [Thread-7 (]: Began running node model.superstore_sales_pipeline.mart_segment_state_summary
+[0m17:07:21.475116 [debug] [Thread-6 (]: Began running node model.superstore_sales_pipeline.mart_category_region_summary
+[0m17:07:21.474802 [info ] [Thread-7 (]: 3 of 3 START sql table model superstore_dev_marts.mart_segment_state_summary ... [RUN]
+[0m17:07:21.476010 [debug] [Thread-7 (]: Acquiring new bigquery connection 'model.superstore_sales_pipeline.mart_segment_state_summary'
+[0m17:07:21.476318 [debug] [Thread-7 (]: Began compiling node model.superstore_sales_pipeline.mart_segment_state_summary
+[0m17:07:21.477954 [debug] [Thread-7 (]: Writing injected SQL for node "model.superstore_sales_pipeline.mart_segment_state_summary"
+[0m17:07:21.475488 [info ] [Thread-6 (]: 2 of 3 START sql table model superstore_dev_marts.mart_category_region_summary . [RUN]
+[0m17:07:21.478780 [debug] [Thread-6 (]: Acquiring new bigquery connection 'model.superstore_sales_pipeline.mart_category_region_summary'
+[0m17:07:21.479085 [debug] [Thread-6 (]: Began compiling node model.superstore_sales_pipeline.mart_category_region_summary
+[0m17:07:21.480662 [debug] [Thread-6 (]: Writing injected SQL for node "model.superstore_sales_pipeline.mart_category_region_summary"
+[0m17:07:21.481192 [debug] [Thread-7 (]: Began executing node model.superstore_sales_pipeline.mart_segment_state_summary
+[0m17:07:21.506194 [debug] [Thread-7 (]: Writing runtime sql for node "model.superstore_sales_pipeline.mart_segment_state_summary"
+[0m17:07:21.506673 [debug] [Thread-6 (]: Began executing node model.superstore_sales_pipeline.mart_category_region_summary
+[0m17:07:21.508305 [debug] [Thread-6 (]: Writing runtime sql for node "model.superstore_sales_pipeline.mart_category_region_summary"
+[0m17:07:21.510045 [debug] [Thread-7 (]: On model.superstore_sales_pipeline.mart_segment_state_summary: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "superstore_sales_pipeline", "target_name": "dev", "node_id": "model.superstore_sales_pipeline.mart_segment_state_summary"} */
+
+  
+    
+
+    create or replace table `dataanalytics-504114`.`superstore_dev_marts`.`mart_segment_state_summary`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- Production mart: sales and profit by customer segment and state.
+-- Replaces the originally-planned product-level mart, which isn't
+-- buildable with this dataset variant (no product ID/name present).
+-- Segment + state is a genuinely useful cut this data DOES support well
+-- -- e.g. "is the Consumer segment profitable in every state, or are
+-- there specific regions dragging down an otherwise-healthy segment?"
+
+with orders as (
+
+    select * from `dataanalytics-504114`.`superstore_dev_staging`.`stg_superstore_orders`
+
+),
+
+segment_state_summary as (
+
+    select
+        segment,
+        state,
+        region,
+        count(*)                             as line_item_count,
+        sum(sales)                           as total_sales,
+        sum(profit)                          as total_profit,
+        sum(quantity)                        as total_quantity,
+        avg(discount)                        as avg_discount,
+        safe_divide(sum(profit), sum(sales)) as profit_margin
+
+    from orders
+    group by
+        segment,
+        state,
+        region
+
+)
+
+select * from segment_state_summary
+    );
+  
+[0m17:07:21.510435 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m17:07:21.510911 [debug] [Thread-6 (]: On model.superstore_sales_pipeline.mart_category_region_summary: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "superstore_sales_pipeline", "target_name": "dev", "node_id": "model.superstore_sales_pipeline.mart_category_region_summary"} */
+
+  
+    
+
+    create or replace table `dataanalytics-504114`.`superstore_dev_marts`.`mart_category_region_summary`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- Production mart: sales and profit aggregated by category, sub-category,
+-- and region. Powers the profitability-by-category/region views in Power
+-- BI, including the discount-vs-profit story (heavy discounting often
+-- looks good for sales volume while quietly destroying margin).
+--
+-- NOTE: this dataset has no order ID, so "line_item_count" (a row count)
+-- stands in for order volume rather than a true distinct-order count.
+
+with orders as (
+
+    select * from `dataanalytics-504114`.`superstore_dev_staging`.`stg_superstore_orders`
+
+),
+
+category_region_summary as (
+
+    select
+        category,
+        sub_category,
+        region,
+        count(*)                          as line_item_count,
+        sum(sales)                        as total_sales,
+        sum(profit)                       as total_profit,
+        sum(quantity)                     as total_quantity,
+        avg(discount)                     as avg_discount,
+        safe_divide(sum(profit), sum(sales)) as profit_margin
+
+    from orders
+    group by
+        category,
+        sub_category,
+        region
+
+)
+
+select * from category_region_summary
+    );
+  
+[0m17:07:21.511303 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m17:07:23.142275 [debug] [Thread-6 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:f560cda8-6490-45a6-bab4-49cf54ad86f2&page=queryresults
+[0m17:07:23.330636 [debug] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:f7ebb62f-2b47-4620-a187-b891b8b11bf7&page=queryresults
+[0m17:07:24.439222 [debug] [Thread-6 (]: SQL status: OK in 1.295 seconds
+[0m17:07:24.451415 [debug] [Thread-7 (]: SQL status: OK in 1.119 seconds
+[0m17:07:24.638808 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9f6bc97a-8c72-4068-8fde-4706981071e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE6426C0F0>]}
+[0m17:07:24.641643 [info ] [Thread-7 (]: 3 of 3 OK created sql table model superstore_dev_marts.mart_segment_state_summary  [[32mCREATE TABLE (140.0 rows, 731.9 KiB processed)[0m in 3.16s]
+[0m17:07:24.645094 [debug] [Thread-7 (]: Finished running node model.superstore_sales_pipeline.mart_segment_state_summary
+[0m17:07:24.673307 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9f6bc97a-8c72-4068-8fde-4706981071e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE6432E350>]}
+[0m17:07:24.676023 [info ] [Thread-6 (]: 2 of 3 OK created sql table model superstore_dev_marts.mart_category_region_summary  [[32mCREATE TABLE (68.0 rows, 613.4 KiB processed)[0m in 3.19s]
+[0m17:07:24.679452 [debug] [Thread-6 (]: Finished running node model.superstore_sales_pipeline.mart_category_region_summary
+[0m17:07:24.685557 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:07:24.768411 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:07:24.768730 [debug] [MainThread]: Connection 'list_dataanalytics-504114' was properly closed.
+[0m17:07:24.768972 [debug] [MainThread]: Connection 'list_dataanalytics-504114' was properly closed.
+[0m17:07:24.769210 [debug] [MainThread]: Connection 'list_dataanalytics-504114_superstore_dev_staging' was properly closed.
+[0m17:07:24.769448 [debug] [MainThread]: Connection 'list_dataanalytics-504114_superstore_dev_marts' was properly closed.
+[0m17:07:24.769684 [debug] [MainThread]: Connection 'model.superstore_sales_pipeline.stg_superstore_orders' was properly closed.
+[0m17:07:24.769918 [debug] [MainThread]: Connection 'model.superstore_sales_pipeline.mart_segment_state_summary' was properly closed.
+[0m17:07:24.770151 [debug] [MainThread]: Connection 'model.superstore_sales_pipeline.mart_category_region_summary' was properly closed.
+[0m17:07:24.770465 [info ] [MainThread]: 
+[0m17:07:24.770870 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 8.39 seconds (8.39s).
+[0m17:07:24.771848 [debug] [MainThread]: Command end result
+[0m17:07:24.804311 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\manifest.json
+[0m17:07:24.807227 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\semantic_manifest.json
+[0m17:07:24.809983 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\osi_document.json
+[0m17:07:24.816357 [debug] [MainThread]: Wrote artifact RunExecutionResult to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\run_results.json
+[0m17:07:24.816615 [info ] [MainThread]: 
+[0m17:07:24.817047 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:07:24.817363 [info ] [MainThread]: 
+[0m17:07:24.817692 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m17:07:24.818429 [debug] [MainThread]: Command `dbt run` succeeded at 17:07:24.818327 after 11.84 seconds
+[0m17:07:24.818737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE3EB800C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE36A6A190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE63FA9430>]}
+[0m17:07:24.819031 [debug] [MainThread]: Flushing usage events
+[0m17:07:25.345777 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:07:31.460479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020517A14D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020519F97ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020519F97B10>]}
+
+
+============================== 17:07:31.464265 | b937df56-dbe4-450b-b533-337dc52e6bce ==============================
+[0m17:07:31.464265 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:07:31.464844 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'F:\\Dropbox\\Hq Data Services\\superstore-sales-pipeline\\logs'}
+[0m17:07:32.496143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b937df56-dbe4-450b-b533-337dc52e6bce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020517F09350>]}
+[0m17:07:32.554669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b937df56-dbe4-450b-b533-337dc52e6bce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002053DA8EF10>]}
+[0m17:07:32.555382 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m17:07:33.073486 [debug] [MainThread]: checksum: 9f850a4c8519dda9c2cdec9ac7033dce7662068bcd2aa6b6c9709c735746ffa8, vars: {}, profile: superstore_sales_pipeline, target: dev, version: 1.12.0
+[0m17:07:33.224185 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:07:33.224494 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:07:33.224724 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:07:33.232546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b937df56-dbe4-450b-b533-337dc52e6bce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002053EF4E850>]}
+[0m17:07:33.359716 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\manifest.json
+[0m17:07:33.362676 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\semantic_manifest.json
+[0m17:07:33.381347 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\osi_document.json
+[0m17:07:33.404119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b937df56-dbe4-450b-b533-337dc52e6bce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002053F1516D0>]}
+[0m17:07:33.404489 [info ] [MainThread]: Found 3 models, 2 data tests, 1 source, 561 macros
+[0m17:07:33.404870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b937df56-dbe4-450b-b533-337dc52e6bce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002053F1467B0>]}
+[0m17:07:33.406456 [info ] [MainThread]: 
+[0m17:07:33.406787 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:07:33.407080 [info ] [MainThread]: 
+[0m17:07:33.407539 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:07:33.411485 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_superstore_dev_marts'
+[0m17:07:33.411767 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:07:33.412449 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_superstore_dev_staging'
+[0m17:07:33.412743 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:07:34.853761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b937df56-dbe4-450b-b533-337dc52e6bce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002051A852A90>]}
+[0m17:07:34.855692 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:07:34.919856 [debug] [Thread-3 (]: Began running node test.superstore_sales_pipeline.not_null_stg_superstore_orders_category.a017265a46
+[0m17:07:34.920618 [debug] [Thread-4 (]: Began running node test.superstore_sales_pipeline.not_null_stg_superstore_orders_region.ad33d58626
+[0m17:07:34.920250 [info ] [Thread-3 (]: 1 of 2 START test not_null_stg_superstore_orders_category ...................... [RUN]
+[0m17:07:34.921443 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.superstore_sales_pipeline.not_null_stg_superstore_orders_category.a017265a46'
+[0m17:07:34.921738 [debug] [Thread-3 (]: Began compiling node test.superstore_sales_pipeline.not_null_stg_superstore_orders_category.a017265a46
+[0m17:07:34.938604 [debug] [Thread-3 (]: Writing injected SQL for node "test.superstore_sales_pipeline.not_null_stg_superstore_orders_category.a017265a46"
+[0m17:07:34.920991 [info ] [Thread-4 (]: 2 of 2 START test not_null_stg_superstore_orders_region ........................ [RUN]
+[0m17:07:34.939277 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.superstore_sales_pipeline.not_null_stg_superstore_orders_region.ad33d58626'
+[0m17:07:34.939581 [debug] [Thread-4 (]: Began compiling node test.superstore_sales_pipeline.not_null_stg_superstore_orders_region.ad33d58626
+[0m17:07:34.944762 [debug] [Thread-4 (]: Writing injected SQL for node "test.superstore_sales_pipeline.not_null_stg_superstore_orders_region.ad33d58626"
+[0m17:07:34.947482 [debug] [Thread-3 (]: Began executing node test.superstore_sales_pipeline.not_null_stg_superstore_orders_category.a017265a46
+[0m17:07:34.957193 [debug] [Thread-4 (]: Began executing node test.superstore_sales_pipeline.not_null_stg_superstore_orders_region.ad33d58626
+[0m17:07:34.965718 [debug] [Thread-3 (]: Writing runtime sql for node "test.superstore_sales_pipeline.not_null_stg_superstore_orders_category.a017265a46"
+[0m17:07:34.967459 [debug] [Thread-4 (]: Writing runtime sql for node "test.superstore_sales_pipeline.not_null_stg_superstore_orders_region.ad33d58626"
+[0m17:07:34.969278 [debug] [Thread-4 (]: On test.superstore_sales_pipeline.not_null_stg_superstore_orders_region.ad33d58626: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "superstore_sales_pipeline", "target_name": "dev", "node_id": "test.superstore_sales_pipeline.not_null_stg_superstore_orders_region.ad33d58626"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select region
+from `dataanalytics-504114`.`superstore_dev_staging`.`stg_superstore_orders`
+where region is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:07:34.969648 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m17:07:34.970029 [debug] [Thread-3 (]: On test.superstore_sales_pipeline.not_null_stg_superstore_orders_category.a017265a46: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "superstore_sales_pipeline", "target_name": "dev", "node_id": "test.superstore_sales_pipeline.not_null_stg_superstore_orders_category.a017265a46"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select category
+from `dataanalytics-504114`.`superstore_dev_staging`.`stg_superstore_orders`
+where category is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:07:34.970376 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m17:07:36.628205 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:c250c09e-5e1e-452e-93d7-161aeb1a62a9&page=queryresults
+[0m17:07:36.642948 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:3dde8571-75f4-48b6-8b67-b86c692fc5c1&page=queryresults
+[0m17:07:36.834393 [debug] [Thread-4 (]: SQL status: OK in 0.204 seconds
+[0m17:07:36.861852 [debug] [Thread-3 (]: SQL status: OK in 0.218 seconds
+[0m17:07:37.361998 [info ] [Thread-4 (]: 2 of 2 PASS not_null_stg_superstore_orders_region .............................. [[32mPASS[0m in 2.42s]
+[0m17:07:37.363497 [debug] [Thread-4 (]: Finished running node test.superstore_sales_pipeline.not_null_stg_superstore_orders_region.ad33d58626
+[0m17:07:37.368911 [info ] [Thread-3 (]: 1 of 2 PASS not_null_stg_superstore_orders_category ............................ [[32mPASS[0m in 2.45s]
+[0m17:07:37.370231 [debug] [Thread-3 (]: Finished running node test.superstore_sales_pipeline.not_null_stg_superstore_orders_category.a017265a46
+[0m17:07:37.372767 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:07:37.428931 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:07:37.429263 [debug] [MainThread]: Connection 'list_dataanalytics-504114_superstore_dev_marts' was properly closed.
+[0m17:07:37.429502 [debug] [MainThread]: Connection 'list_dataanalytics-504114_superstore_dev_staging' was properly closed.
+[0m17:07:37.429728 [debug] [MainThread]: Connection 'test.superstore_sales_pipeline.not_null_stg_superstore_orders_category.a017265a46' was properly closed.
+[0m17:07:37.429954 [debug] [MainThread]: Connection 'test.superstore_sales_pipeline.not_null_stg_superstore_orders_region.ad33d58626' was properly closed.
+[0m17:07:37.430221 [info ] [MainThread]: 
+[0m17:07:37.430614 [info ] [MainThread]: Finished running 2 data tests in 0 hours 0 minutes and 4.02 seconds (4.02s).
+[0m17:07:37.431466 [debug] [MainThread]: Command end result
+[0m17:07:37.462412 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\manifest.json
+[0m17:07:37.465297 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\semantic_manifest.json
+[0m17:07:37.467985 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\osi_document.json
+[0m17:07:37.474794 [debug] [MainThread]: Wrote artifact RunExecutionResult to F:\Dropbox\Hq Data Services\superstore-sales-pipeline\target\run_results.json
+[0m17:07:37.475041 [info ] [MainThread]: 
+[0m17:07:37.475476 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:07:37.475793 [info ] [MainThread]: 
+[0m17:07:37.476126 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[0m17:07:37.476843 [debug] [MainThread]: Command `dbt test` succeeded at 17:07:37.476745 after 6.21 seconds
+[0m17:07:37.477138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020519DF50D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002053F1A2150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002053F1A0940>]}
+[0m17:07:37.477446 [debug] [MainThread]: Flushing usage events
+[0m17:07:37.888592 [debug] [MainThread]: An error was encountered while trying to flush usage events

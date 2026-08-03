@@ -1,0 +1,20 @@
+name: 'superstore_sales_pipeline'
+version: '1.0.0'
+config-version: 2
+
+profile: 'superstore_sales_pipeline'
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  superstore_sales_pipeline:
+    staging:
+      +materialized: view
+      +schema: staging
+    marts:
+      +materialized: table
+      +schema: marts

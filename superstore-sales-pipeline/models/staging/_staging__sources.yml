@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: superstore_raw
+    database: dataanalytics-504114   # <- replace with your actual GCP project
+    schema: superstore_raw          # the BigQuery dataset you upload the CSV into
+    tables:
+      - name: orders_raw
+        description: >
+          Raw upload of the Sample Superstore CSV, loaded as-is via
+          BigQuery's direct file upload (no transformation). This is the
+          landing zone table — everything downstream reads from here
+          through the staging layer, never directly from source.
