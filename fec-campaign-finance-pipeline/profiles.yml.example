@@ -1,0 +1,20 @@
+# Copy this into ~/.dbt/profiles.yml as a fourth named profile, alongside
+# medicare_data_pipeline, ga4_ecommerce_pipeline, and superstore_sales_pipeline.
+#
+# Location: no cross-project public dataset involved here (unlike GA4) —
+# you're uploading the CSV directly into your own project, so pick
+# whichever location you're already standardizing on (US multi-region,
+# matching GA4 and Superstore, is a reasonable default).
+
+fec_campaign_finance_pipeline:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: your-gcp-project-id
+      dataset: fec_dev
+      threads: 4
+      timeout_seconds: 300
+      location: US
+      keyfile: "C:/path/to/your-key.json"

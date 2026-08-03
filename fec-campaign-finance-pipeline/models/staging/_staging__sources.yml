@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: fec_raw
+    database: dataanalytics-504114   # <- replace with your actual GCP project
+    schema: fec_raw                 # the BigQuery dataset you upload the CSV into
+    tables:
+      - name: candidate_summary_raw
+        description: >
+          Raw upload of the FEC's official "candidate_summary_2026.csv" bulk
+          data file (2025-2026 election cycle), downloaded directly from
+          fec.gov and uploaded as-is via BigQuery's direct file upload —
+          no Cloud Storage step needed at this file size. One row per
+          candidate registered for U.S. House, Senate, or President.

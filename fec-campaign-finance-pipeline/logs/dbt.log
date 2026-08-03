@@ -1,0 +1,689 @@
+[0m20:59:40.743288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217D9BB0D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217DC13BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217DC13BB10>]}
+
+
+============================== 20:59:40.749379 | e27c6d7c-57a0-423c-927c-54e044472f62 ==============================
+[0m20:59:40.749379 [info ] [MainThread]: Running with dbt=1.12.0
+[0m20:59:40.749889 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'F:\\Dropbox\\Hq Data Services\\fec-campaign-finance-pipeline\\logs'}
+[0m20:59:40.752551 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Could not find profile named 'fec_campaign_finance_pipeline'
+[0m20:59:40.753268 [debug] [MainThread]: Command `dbt run` failed at 20:59:40.753167 after 0.21 seconds
+[0m20:59:40.753548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217DC1376F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217DC0EF530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217DC1DC050>]}
+[0m20:59:40.753841 [debug] [MainThread]: Flushing usage events
+[0m20:59:41.313925 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:04:13.228521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023610884D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023612E0BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023612E0BB10>]}
+
+
+============================== 21:04:13.232235 | 53b94ae7-3565-4f2a-8e22-4e090cf4d80c ==============================
+[0m21:04:13.232235 [info ] [MainThread]: Running with dbt=1.12.0
+[0m21:04:13.232739 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'F:\\Dropbox\\Hq Data Services\\fec-campaign-finance-pipeline\\logs'}
+[0m21:04:13.235204 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Could not find profile named 'fec_campaign_finance_pipeline'
+[0m21:04:13.235928 [debug] [MainThread]: Command `dbt run` failed at 21:04:13.235827 after 0.21 seconds
+[0m21:04:13.236214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023612E076F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023612DBF530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023612EAC050>]}
+[0m21:04:13.236551 [debug] [MainThread]: Flushing usage events
+[0m21:04:13.788656 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:05:14.121139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD23DE4D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD2636BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD2636BB10>]}
+
+
+============================== 21:05:14.124870 | cfd309f2-46d0-4192-96fa-9103a453840a ==============================
+[0m21:05:14.124870 [info ] [MainThread]: Running with dbt=1.12.0
+[0m21:05:14.125367 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'F:\\Dropbox\\Hq Data Services\\fec-campaign-finance-pipeline\\logs'}
+[0m21:05:14.127813 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Could not find profile named 'fec_campaign_finance_pipeline'
+[0m21:05:14.128580 [debug] [MainThread]: Command `dbt run` failed at 21:05:14.128471 after 0.22 seconds
+[0m21:05:14.128876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD263676F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD2631F530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD2640C050>]}
+[0m21:05:14.129183 [debug] [MainThread]: Flushing usage events
+[0m21:05:14.661507 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:06:17.542572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B29044D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B2B5CBED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B2B5CBB10>]}
+
+
+============================== 21:06:17.546164 | af652269-6c7e-4af8-aaba-7be82ef90db7 ==============================
+[0m21:06:17.546164 [info ] [MainThread]: Running with dbt=1.12.0
+[0m21:06:17.546655 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'invocation_command': 'dbt run', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'F:\\Dropbox\\Hq Data Services\\fec-campaign-finance-pipeline\\logs'}
+[0m21:06:17.549103 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Could not find profile named 'fec_campaign_finance_pipeline'
+[0m21:06:17.549816 [debug] [MainThread]: Command `dbt run` failed at 21:06:17.549716 after 0.20 seconds
+[0m21:06:17.550118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B2B5C76F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B2B57F530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B2B66C050>]}
+[0m21:06:17.550424 [debug] [MainThread]: Flushing usage events
+[0m21:06:18.110828 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:09:35.985230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018A84204D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018A866F0910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018A866F1A90>]}
+
+
+============================== 21:09:35.989008 | bb920ebe-5737-4035-ba32-9cc29c2616de ==============================
+[0m21:09:35.989008 [info ] [MainThread]: Running with dbt=1.12.0
+[0m21:09:35.989545 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'invocation_command': 'dbt run', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'F:\\Dropbox\\Hq Data Services\\fec-campaign-finance-pipeline\\logs'}
+[0m21:09:35.991986 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  Runtime Error
+    Syntax error near line 54
+    ------------------------------
+    51 |       threads: 4
+    52 |       timeout_seconds: 300
+    53 |       location: US
+    54 |       keyfile: "C:\Users\mhall\.dbt\dataanalytics-504114-e9fa71b1567a.json"
+    
+    Raw Error:
+    ------------------------------
+    while parsing a quoted scalar
+      in "<unicode string>", line 54, column 16
+    did not find expected hexdecimal number
+      in "<unicode string>", line 54, column 21
+  
+[0m21:09:35.992743 [debug] [MainThread]: Command `dbt run` failed at 21:09:35.992640 after 0.14 seconds
+[0m21:09:35.993031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018A8656BE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018A8673E0F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018A8677C5A0>]}
+[0m21:09:35.993327 [debug] [MainThread]: Flushing usage events
+[0m21:09:36.448279 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:15:03.075572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F3D320D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F3F8ABED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F3F8ABB10>]}
+
+
+============================== 21:15:03.079371 | 4d890882-3075-45c8-9c5a-16e8a35e46dd ==============================
+[0m21:15:03.079371 [info ] [MainThread]: Running with dbt=1.12.0
+[0m21:15:03.079866 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'F:\\Dropbox\\Hq Data Services\\fec-campaign-finance-pipeline\\logs'}
+[0m21:15:05.153413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4d890882-3075-45c8-9c5a-16e8a35e46dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F3D81D350>]}
+[0m21:15:05.212638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4d890882-3075-45c8-9c5a-16e8a35e46dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F633CAF10>]}
+[0m21:15:05.213354 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m21:15:05.742994 [debug] [MainThread]: checksum: 3c882ddd696b0e8bb7dc9d306f7e2ccd7e4c9cd82047f9767e1f3a9a284f062e, vars: {}, profile: fec_campaign_finance_pipeline, target: dev, version: 1.12.0
+[0m21:15:05.743846 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m21:15:05.744243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4d890882-3075-45c8-9c5a-16e8a35e46dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F632F6350>]}
+[0m21:15:07.213999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4d890882-3075-45c8-9c5a-16e8a35e46dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F3C99AE40>]}
+[0m21:15:07.310919 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\manifest.json
+[0m21:15:07.316274 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\semantic_manifest.json
+[0m21:15:07.354982 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\osi_document.json
+[0m21:15:07.370647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4d890882-3075-45c8-9c5a-16e8a35e46dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F64AE7930>]}
+[0m21:15:07.371026 [info ] [MainThread]: Found 3 models, 3 data tests, 1 source, 561 macros
+[0m21:15:07.371370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4d890882-3075-45c8-9c5a-16e8a35e46dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F64DB5300>]}
+[0m21:15:07.372924 [info ] [MainThread]: 
+[0m21:15:07.373273 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:15:07.373569 [info ] [MainThread]: 
+[0m21:15:07.374026 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m21:15:07.377530 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m21:15:07.377851 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:15:07.378565 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m21:15:07.408072 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:15:08.858019 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataanalytics-504114, now create_dataanalytics-504114_fec_dev_staging)
+[0m21:15:08.858885 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataanalytics-504114, now create_dataanalytics-504114_fec_dev_marts)
+[0m21:15:08.859828 [debug] [ThreadPool]: Creating schema "database: "dataanalytics-504114"
+schema: "fec_dev_staging"
+"
+[0m21:15:08.860742 [debug] [ThreadPool]: Creating schema "database: "dataanalytics-504114"
+schema: "fec_dev_marts"
+"
+[0m21:15:08.878690 [debug] [ThreadPool]: On create_dataanalytics-504114_fec_dev_marts: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "fec_campaign_finance_pipeline", "target_name": "dev", "connection_name": "create_dataanalytics-504114_fec_dev_marts"} */
+create schema if not exists `dataanalytics-504114`.`fec_dev_marts`
+  
+[0m21:15:08.888663 [debug] [ThreadPool]: On create_dataanalytics-504114_fec_dev_staging: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "fec_campaign_finance_pipeline", "target_name": "dev", "connection_name": "create_dataanalytics-504114_fec_dev_staging"} */
+create schema if not exists `dataanalytics-504114`.`fec_dev_staging`
+  
+[0m21:15:08.889496 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:15:08.890321 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:15:10.392940 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:1d8e16da-39bf-47c2-b34e-39da791fe6c9&page=queryresults
+[0m21:15:10.462808 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:4e08ade1-ef4b-4ad6-a95a-6a756f2e01e7&page=queryresults
+[0m21:15:11.170151 [debug] [ThreadPool]: SQL status: OK in 0.776 seconds
+[0m21:15:11.224072 [debug] [ThreadPool]: SQL status: OK in 0.760 seconds
+[0m21:15:11.436436 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_fec_dev_marts'
+[0m21:15:11.436902 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:15:11.437361 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_fec_dev_staging'
+[0m21:15:11.437628 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:15:13.261346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4d890882-3075-45c8-9c5a-16e8a35e46dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F64D896D0>]}
+[0m21:15:13.262922 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:15:13.339648 [debug] [Thread-7 (]: Began running node model.fec_campaign_finance_pipeline.stg_fec_candidates
+[0m21:15:13.340130 [info ] [Thread-7 (]: 1 of 3 START sql view model fec_dev_staging.stg_fec_candidates ................. [RUN]
+[0m21:15:13.340673 [debug] [Thread-7 (]: Acquiring new bigquery connection 'model.fec_campaign_finance_pipeline.stg_fec_candidates'
+[0m21:15:13.340987 [debug] [Thread-7 (]: Began compiling node model.fec_campaign_finance_pipeline.stg_fec_candidates
+[0m21:15:13.346680 [debug] [Thread-7 (]: Writing injected SQL for node "model.fec_campaign_finance_pipeline.stg_fec_candidates"
+[0m21:15:13.351218 [debug] [Thread-7 (]: Began executing node model.fec_campaign_finance_pipeline.stg_fec_candidates
+[0m21:15:13.370434 [debug] [Thread-7 (]: Writing runtime sql for node "model.fec_campaign_finance_pipeline.stg_fec_candidates"
+[0m21:15:13.372705 [debug] [Thread-7 (]: On model.fec_campaign_finance_pipeline.stg_fec_candidates: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "fec_campaign_finance_pipeline", "target_name": "dev", "node_id": "model.fec_campaign_finance_pipeline.stg_fec_candidates"} */
+
+
+  create or replace view `dataanalytics-504114`.`fec_dev_staging`.`stg_fec_candidates`
+  OPTIONS()
+  as -- Staging: light cleaning and renaming only. No business logic here.
+--
+-- Source: FEC's official candidate_summary_2026.csv bulk file, downloaded
+-- directly from fec.gov/data/browse-data/?tab=bulk-data (2025-2026 cycle).
+-- Column names below match BigQuery's autodetect exactly, verified against
+-- the real downloaded file's header row before writing this model — these
+-- headers already use underscores (Cand_Name, Total_Receipt, etc.), so no
+-- backtick-quoting needed, unlike the Superstore project's spaced headers.
+--
+-- NOTE: many candidates legitimately show $0 across every financial field —
+-- this isn't stripped/missing data (unlike the GA4 project), it's simply
+-- true: most declared candidates, especially early in a cycle or in
+-- uncompetitive races, haven't raised or spent anything yet.
+
+with source as (
+
+    select * from `dataanalytics-504114`.`fec_raw`.`candidate_summary_raw`
+
+),
+
+renamed as (
+
+    select
+        Cand_Id                                    as candidate_id,
+        Cand_Name                                   as candidate_name,
+        Cand_Office                                 as office,               -- H = House, S = Senate, P = President
+        Cand_Office_St                              as office_state,
+        Cand_Office_Dist                            as office_district,
+        Cand_Party_Affiliation                      as party_affiliation,
+        Cand_Incumbent_Challenger_Open_Seat          as incumbent_status,
+        cast(Total_Receipt as float64)               as total_receipts,
+        cast(Total_Disbursement as float64)          as total_disbursements,
+        cast(Cash_On_Hand_COP as float64)            as cash_on_hand,
+        cast(Debt_Owed_By_Committee as float64)      as debt_owed,
+        cast(Individual_Contribution as float64)     as individual_contributions,
+        cast(Cand_Contribution as float64)           as candidate_self_funding,
+        cast(Cand_Loan as float64)                   as candidate_loans,
+        cast(Total_Contribution as float64)          as total_contributions,
+        Coverage_Start_Date                         as coverage_start_date,
+        Coverage_End_Date                           as coverage_end_date
+
+    from source
+    where Cand_Id is not null
+
+)
+
+select * from renamed;
+
+
+[0m21:15:13.373135 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m21:15:14.733693 [debug] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:60370ad8-4b25-464d-8000-4a6d47022fb6&page=queryresults
+[0m21:15:14.736120 [error] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:60370ad8-4b25-464d-8000-4a6d47022fb6&page=queryresults
+[0m21:15:14.787435 [debug] [Thread-7 (]: Database Error in model stg_fec_candidates (models\staging\stg_fec_candidates.sql)
+  Not found: Table dataanalytics-504114:fec_raw.candidate_summary_raw was not found in location US
+  compiled code at target\run\fec_campaign_finance_pipeline\models\staging\stg_fec_candidates.sql
+[0m21:15:14.793663 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4d890882-3075-45c8-9c5a-16e8a35e46dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F65190CB0>]}
+[0m21:15:14.795619 [error] [Thread-7 (]: 1 of 3 ERROR creating sql view model fec_dev_staging.stg_fec_candidates ........ [[31mERROR[0m in 1.45s]
+[0m21:15:14.798004 [debug] [Thread-7 (]: Finished running node model.fec_campaign_finance_pipeline.stg_fec_candidates
+[0m21:15:14.800135 [debug] [Thread-13 ]: Marking all children of 'model.fec_campaign_finance_pipeline.stg_fec_candidates' to be skipped because of status 'error'.  Reason: Database Error in model stg_fec_candidates (models\staging\stg_fec_candidates.sql)
+  Not found: Table dataanalytics-504114:fec_raw.candidate_summary_raw was not found in location US
+  compiled code at target\run\fec_campaign_finance_pipeline\models\staging\stg_fec_candidates.sql.
+[0m21:15:14.802066 [debug] [Thread-9 (]: Began running node model.fec_campaign_finance_pipeline.mart_fundraising_by_party_office
+[0m21:15:14.802686 [debug] [Thread-8 (]: Began running node model.fec_campaign_finance_pipeline.mart_candidate_leaderboard
+[0m21:15:14.803279 [info ] [Thread-9 (]: 3 of 3 SKIP relation fec_dev_marts.mart_fundraising_by_party_office ............ [[33mSKIP[0m]
+[0m21:15:14.804725 [debug] [Thread-9 (]: Finished running node model.fec_campaign_finance_pipeline.mart_fundraising_by_party_office
+[0m21:15:14.804084 [info ] [Thread-8 (]: 2 of 3 SKIP relation fec_dev_marts.mart_candidate_leaderboard .................. [[33mSKIP[0m]
+[0m21:15:14.805724 [debug] [Thread-8 (]: Finished running node model.fec_campaign_finance_pipeline.mart_candidate_leaderboard
+[0m21:15:14.807656 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:15:14.848870 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:15:14.849182 [debug] [MainThread]: Connection 'create_dataanalytics-504114_fec_dev_staging' was properly closed.
+[0m21:15:14.849422 [debug] [MainThread]: Connection 'create_dataanalytics-504114_fec_dev_marts' was properly closed.
+[0m21:15:14.849644 [debug] [MainThread]: Connection 'list_dataanalytics-504114_fec_dev_marts' was properly closed.
+[0m21:15:14.849868 [debug] [MainThread]: Connection 'list_dataanalytics-504114_fec_dev_staging' was properly closed.
+[0m21:15:14.850089 [debug] [MainThread]: Connection 'model.fec_campaign_finance_pipeline.stg_fec_candidates' was properly closed.
+[0m21:15:14.850389 [info ] [MainThread]: 
+[0m21:15:14.850784 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 7.48 seconds (7.48s).
+[0m21:15:14.851527 [debug] [MainThread]: Command end result
+[0m21:15:14.883157 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\manifest.json
+[0m21:15:14.886216 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\semantic_manifest.json
+[0m21:15:14.889025 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\osi_document.json
+[0m21:15:14.895431 [debug] [MainThread]: Wrote artifact RunExecutionResult to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\run_results.json
+[0m21:15:14.895700 [info ] [MainThread]: 
+[0m21:15:14.896107 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m21:15:14.896446 [info ] [MainThread]: 
+[0m21:15:14.896831 [error] [MainThread]: [[31mERROR[0m]: in model stg_fec_candidates (models\staging\stg_fec_candidates.sql)
+[0m21:15:14.897199 [error] [MainThread]:   Database Error in model stg_fec_candidates (models\staging\stg_fec_candidates.sql)
+  Not found: Table dataanalytics-504114:fec_raw.candidate_summary_raw was not found in location US
+  compiled code at target\run\fec_campaign_finance_pipeline\models\staging\stg_fec_candidates.sql
+[0m21:15:14.897500 [info ] [MainThread]: 
+[0m21:15:14.897846 [info ] [MainThread]:   compiled code at target\compiled\fec_campaign_finance_pipeline\models\staging\stg_fec_candidates.sql
+[0m21:15:14.898140 [info ] [MainThread]: 
+[0m21:15:14.898468 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 REUSED=0 TOTAL=3
+[0m21:15:14.899199 [debug] [MainThread]: Command `dbt run` failed at 21:15:14.899101 after 12.04 seconds
+[0m21:15:14.899504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F650663F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F650BC3B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F3D01AD50>]}
+[0m21:15:14.899800 [debug] [MainThread]: Flushing usage events
+[0m21:15:15.333868 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:17:16.495902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5A8364D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5AA8EBED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5AA8EBB10>]}
+
+
+============================== 21:17:16.499473 | 2b4c3c3b-edf8-45a7-9783-d9ea3f8e7f9b ==============================
+[0m21:17:16.499473 [info ] [MainThread]: Running with dbt=1.12.0
+[0m21:17:16.499960 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'F:\\Dropbox\\Hq Data Services\\fec-campaign-finance-pipeline\\logs'}
+[0m21:17:17.582271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2b4c3c3b-edf8-45a7-9783-d9ea3f8e7f9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5A8859350>]}
+[0m21:17:17.641600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2b4c3c3b-edf8-45a7-9783-d9ea3f8e7f9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5CE3EAF10>]}
+[0m21:17:17.642338 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m21:17:18.156095 [debug] [MainThread]: checksum: 3c882ddd696b0e8bb7dc9d306f7e2ccd7e4c9cd82047f9767e1f3a9a284f062e, vars: {}, profile: fec_campaign_finance_pipeline, target: dev, version: 1.12.0
+[0m21:17:18.306806 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:17:18.307112 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m21:17:18.307331 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:17:18.315355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2b4c3c3b-edf8-45a7-9783-d9ea3f8e7f9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5CE8DE850>]}
+[0m21:17:18.441453 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\manifest.json
+[0m21:17:18.444236 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\semantic_manifest.json
+[0m21:17:18.463391 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\osi_document.json
+[0m21:17:18.472794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2b4c3c3b-edf8-45a7-9783-d9ea3f8e7f9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5CFA38140>]}
+[0m21:17:18.473149 [info ] [MainThread]: Found 3 models, 3 data tests, 1 source, 561 macros
+[0m21:17:18.473538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2b4c3c3b-edf8-45a7-9783-d9ea3f8e7f9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5CFA5A0B0>]}
+[0m21:17:18.475067 [info ] [MainThread]: 
+[0m21:17:18.475485 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:17:18.475834 [info ] [MainThread]: 
+[0m21:17:18.476303 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m21:17:18.479946 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m21:17:18.480274 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:17:18.509743 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114'
+[0m21:17:18.510190 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:17:19.771880 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataanalytics-504114, now create_dataanalytics-504114_fec_dev_staging)
+[0m21:17:19.772850 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataanalytics-504114, now create_dataanalytics-504114_fec_dev_marts)
+[0m21:17:19.773835 [debug] [ThreadPool]: Creating schema "database: "dataanalytics-504114"
+schema: "fec_dev_staging"
+"
+[0m21:17:19.774842 [debug] [ThreadPool]: Creating schema "database: "dataanalytics-504114"
+schema: "fec_dev_marts"
+"
+[0m21:17:19.795408 [debug] [ThreadPool]: On create_dataanalytics-504114_fec_dev_staging: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "fec_campaign_finance_pipeline", "target_name": "dev", "connection_name": "create_dataanalytics-504114_fec_dev_staging"} */
+create schema if not exists `dataanalytics-504114`.`fec_dev_staging`
+  
+[0m21:17:19.797844 [debug] [ThreadPool]: On create_dataanalytics-504114_fec_dev_marts: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "fec_campaign_finance_pipeline", "target_name": "dev", "connection_name": "create_dataanalytics-504114_fec_dev_marts"} */
+create schema if not exists `dataanalytics-504114`.`fec_dev_marts`
+  
+[0m21:17:19.798661 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:17:19.799405 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:17:21.263765 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:0a2fa9f8-1fbc-4f43-b746-2186a743285b&page=queryresults
+[0m21:17:21.268458 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:49fe3afa-72e8-4859-af23-c8a459bbf63b&page=queryresults
+[0m21:17:22.032250 [debug] [ThreadPool]: SQL status: OK in 0.763 seconds
+[0m21:17:22.077687 [debug] [ThreadPool]: SQL status: OK in 0.813 seconds
+[0m21:17:22.153563 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_fec_dev_staging'
+[0m21:17:22.154022 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:17:22.154489 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_fec_dev_marts'
+[0m21:17:22.154756 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:17:23.544737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2b4c3c3b-edf8-45a7-9783-d9ea3f8e7f9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5CFC15980>]}
+[0m21:17:23.546997 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:17:23.611418 [debug] [Thread-7 (]: Began running node model.fec_campaign_finance_pipeline.stg_fec_candidates
+[0m21:17:23.611903 [info ] [Thread-7 (]: 1 of 3 START sql view model fec_dev_staging.stg_fec_candidates ................. [RUN]
+[0m21:17:23.612419 [debug] [Thread-7 (]: Acquiring new bigquery connection 'model.fec_campaign_finance_pipeline.stg_fec_candidates'
+[0m21:17:23.612720 [debug] [Thread-7 (]: Began compiling node model.fec_campaign_finance_pipeline.stg_fec_candidates
+[0m21:17:23.618155 [debug] [Thread-7 (]: Writing injected SQL for node "model.fec_campaign_finance_pipeline.stg_fec_candidates"
+[0m21:17:23.619157 [debug] [Thread-7 (]: Began executing node model.fec_campaign_finance_pipeline.stg_fec_candidates
+[0m21:17:23.642722 [debug] [Thread-7 (]: Writing runtime sql for node "model.fec_campaign_finance_pipeline.stg_fec_candidates"
+[0m21:17:23.643999 [debug] [Thread-7 (]: On model.fec_campaign_finance_pipeline.stg_fec_candidates: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "fec_campaign_finance_pipeline", "target_name": "dev", "node_id": "model.fec_campaign_finance_pipeline.stg_fec_candidates"} */
+
+
+  create or replace view `dataanalytics-504114`.`fec_dev_staging`.`stg_fec_candidates`
+  OPTIONS()
+  as -- Staging: light cleaning and renaming only. No business logic here.
+--
+-- Source: FEC's official candidate_summary_2026.csv bulk file, downloaded
+-- directly from fec.gov/data/browse-data/?tab=bulk-data (2025-2026 cycle).
+-- Column names below match BigQuery's autodetect exactly, verified against
+-- the real downloaded file's header row before writing this model — these
+-- headers already use underscores (Cand_Name, Total_Receipt, etc.), so no
+-- backtick-quoting needed, unlike the Superstore project's spaced headers.
+--
+-- NOTE: many candidates legitimately show $0 across every financial field —
+-- this isn't stripped/missing data (unlike the GA4 project), it's simply
+-- true: most declared candidates, especially early in a cycle or in
+-- uncompetitive races, haven't raised or spent anything yet.
+
+with source as (
+
+    select * from `dataanalytics-504114`.`fec_raw`.`candidate_summary_raw`
+
+),
+
+renamed as (
+
+    select
+        Cand_Id                                    as candidate_id,
+        Cand_Name                                   as candidate_name,
+        Cand_Office                                 as office,               -- H = House, S = Senate, P = President
+        Cand_Office_St                              as office_state,
+        Cand_Office_Dist                            as office_district,
+        Cand_Party_Affiliation                      as party_affiliation,
+        Cand_Incumbent_Challenger_Open_Seat          as incumbent_status,
+        cast(Total_Receipt as float64)               as total_receipts,
+        cast(Total_Disbursement as float64)          as total_disbursements,
+        cast(Cash_On_Hand_COP as float64)            as cash_on_hand,
+        cast(Debt_Owed_By_Committee as float64)      as debt_owed,
+        cast(Individual_Contribution as float64)     as individual_contributions,
+        cast(Cand_Contribution as float64)           as candidate_self_funding,
+        cast(Cand_Loan as float64)                   as candidate_loans,
+        cast(Total_Contribution as float64)          as total_contributions,
+        Coverage_Start_Date                         as coverage_start_date,
+        Coverage_End_Date                           as coverage_end_date
+
+    from source
+    where Cand_Id is not null
+
+)
+
+select * from renamed;
+
+
+[0m21:17:23.644457 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m21:17:25.135322 [debug] [Thread-7 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:d96b3b89-c439-40ce-910f-25b243ed3760&page=queryresults
+[0m21:17:25.675468 [debug] [Thread-7 (]: SQL status: OK in 0.538 seconds
+[0m21:17:25.730023 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2b4c3c3b-edf8-45a7-9783-d9ea3f8e7f9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5CFA91E50>]}
+[0m21:17:25.730697 [info ] [Thread-7 (]: 1 of 3 OK created sql view model fec_dev_staging.stg_fec_candidates ............ [[32mCREATE VIEW (0 processed)[0m in 2.12s]
+[0m21:17:25.731401 [debug] [Thread-7 (]: Finished running node model.fec_campaign_finance_pipeline.stg_fec_candidates
+[0m21:17:25.732138 [debug] [Thread-8 (]: Began running node model.fec_campaign_finance_pipeline.mart_candidate_leaderboard
+[0m21:17:25.732962 [debug] [Thread-9 (]: Began running node model.fec_campaign_finance_pipeline.mart_fundraising_by_party_office
+[0m21:17:25.732611 [info ] [Thread-8 (]: 2 of 3 START sql table model fec_dev_marts.mart_candidate_leaderboard .......... [RUN]
+[0m21:17:25.734006 [debug] [Thread-8 (]: Acquiring new bigquery connection 'model.fec_campaign_finance_pipeline.mart_candidate_leaderboard'
+[0m21:17:25.734351 [debug] [Thread-8 (]: Began compiling node model.fec_campaign_finance_pipeline.mart_candidate_leaderboard
+[0m21:17:25.736081 [debug] [Thread-8 (]: Writing injected SQL for node "model.fec_campaign_finance_pipeline.mart_candidate_leaderboard"
+[0m21:17:25.733409 [info ] [Thread-9 (]: 3 of 3 START sql table model fec_dev_marts.mart_fundraising_by_party_office .... [RUN]
+[0m21:17:25.736798 [debug] [Thread-9 (]: Acquiring new bigquery connection 'model.fec_campaign_finance_pipeline.mart_fundraising_by_party_office'
+[0m21:17:25.737100 [debug] [Thread-9 (]: Began compiling node model.fec_campaign_finance_pipeline.mart_fundraising_by_party_office
+[0m21:17:25.738591 [debug] [Thread-9 (]: Writing injected SQL for node "model.fec_campaign_finance_pipeline.mart_fundraising_by_party_office"
+[0m21:17:25.739164 [debug] [Thread-8 (]: Began executing node model.fec_campaign_finance_pipeline.mart_candidate_leaderboard
+[0m21:17:25.763655 [debug] [Thread-8 (]: Writing runtime sql for node "model.fec_campaign_finance_pipeline.mart_candidate_leaderboard"
+[0m21:17:25.764408 [debug] [Thread-9 (]: Began executing node model.fec_campaign_finance_pipeline.mart_fundraising_by_party_office
+[0m21:17:25.766148 [debug] [Thread-9 (]: Writing runtime sql for node "model.fec_campaign_finance_pipeline.mart_fundraising_by_party_office"
+[0m21:17:25.767611 [debug] [Thread-8 (]: On model.fec_campaign_finance_pipeline.mart_candidate_leaderboard: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "fec_campaign_finance_pipeline", "target_name": "dev", "node_id": "model.fec_campaign_finance_pipeline.mart_candidate_leaderboard"} */
+
+  
+    
+
+    create or replace table `dataanalytics-504114`.`fec_dev_marts`.`mart_candidate_leaderboard`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- Production mart: one row per candidate, with state/office/party context.
+-- Powers the "top fundraisers" leaderboard view and state-level maps.
+--
+-- Grain is candidate_id (the reliable FEC-assigned identifier) — not a
+-- composite of candidate_id + name + state, applying the same defensive
+-- grouping lesson from the GA4/Superstore projects: group by the one field
+-- you can trust, use ANY_VALUE() for descriptive context.
+
+with candidates as (
+
+    select * from `dataanalytics-504114`.`fec_dev_staging`.`stg_fec_candidates`
+
+),
+
+candidate_leaderboard as (
+
+    select
+        candidate_id,
+        any_value(candidate_name)          as candidate_name,
+        any_value(office)                  as office,
+        any_value(office_state)            as office_state,
+        any_value(office_district)         as office_district,
+        any_value(party_affiliation)       as party_affiliation,
+        any_value(incumbent_status)        as incumbent_status,
+        sum(total_receipts)                as total_receipts,
+        sum(total_disbursements)           as total_disbursements,
+        sum(cash_on_hand)                  as cash_on_hand,
+        sum(debt_owed)                     as debt_owed,
+        sum(candidate_self_funding)        as candidate_self_funding
+
+    from candidates
+    group by
+        candidate_id
+
+)
+
+select * from candidate_leaderboard
+    );
+  
+[0m21:17:25.768021 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m21:17:25.768418 [debug] [Thread-9 (]: On model.fec_campaign_finance_pipeline.mart_fundraising_by_party_office: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "fec_campaign_finance_pipeline", "target_name": "dev", "node_id": "model.fec_campaign_finance_pipeline.mart_fundraising_by_party_office"} */
+
+  
+    
+
+    create or replace table `dataanalytics-504114`.`fec_dev_marts`.`mart_fundraising_by_party_office`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- Production mart: total fundraising aggregated by party affiliation and
+-- office type (House/Senate/President). Powers the "which parties/races
+-- are attracting the most money" view — the headline story for a 2026
+-- midterm-cycle dashboard.
+
+with candidates as (
+
+    select * from `dataanalytics-504114`.`fec_dev_staging`.`stg_fec_candidates`
+
+),
+
+party_office_summary as (
+
+    select
+        office,
+        party_affiliation,
+        count(distinct candidate_id)              as candidate_count,
+        sum(total_receipts)                       as total_raised,
+        sum(total_disbursements)                  as total_spent,
+        sum(cash_on_hand)                         as total_cash_on_hand,
+        sum(individual_contributions)             as total_individual_contributions,
+        sum(candidate_self_funding)               as total_self_funding,
+        avg(total_receipts)                       as avg_raised_per_candidate
+
+    from candidates
+    group by
+        office,
+        party_affiliation
+
+)
+
+select * from party_office_summary
+    );
+  
+[0m21:17:25.768798 [debug] [Thread-9 (]: Opening a new connection, currently in state init
+[0m21:17:27.416755 [debug] [Thread-8 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:9744236c-6004-4f7a-b9c2-36385f2c8a66&page=queryresults
+[0m21:17:27.456531 [debug] [Thread-9 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:688dd934-a8d4-41cc-81d8-89850cc34337&page=queryresults
+[0m21:17:29.031566 [debug] [Thread-8 (]: SQL status: OK in 1.613 seconds
+[0m21:17:29.051719 [debug] [Thread-9 (]: SQL status: OK in 1.593 seconds
+[0m21:17:29.241093 [debug] [Thread-8 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2b4c3c3b-edf8-45a7-9783-d9ea3f8e7f9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5CFA460A0>]}
+[0m21:17:29.243569 [info ] [Thread-8 (]: 2 of 3 OK created sql table model fec_dev_marts.mart_candidate_leaderboard ..... [[32mCREATE TABLE (4.3k rows, 424.5 KiB processed)[0m in 3.51s]
+[0m21:17:29.250616 [debug] [Thread-8 (]: Finished running node model.fec_campaign_finance_pipeline.mart_candidate_leaderboard
+[0m21:17:29.253639 [debug] [Thread-9 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2b4c3c3b-edf8-45a7-9783-d9ea3f8e7f9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5CFD5F750>]}
+[0m21:17:29.255586 [info ] [Thread-9 (]: 3 of 3 OK created sql table model fec_dev_marts.mart_fundraising_by_party_office  [[32mCREATE TABLE (99.0 rows, 249.3 KiB processed)[0m in 3.52s]
+[0m21:17:29.257452 [debug] [Thread-9 (]: Finished running node model.fec_campaign_finance_pipeline.mart_fundraising_by_party_office
+[0m21:17:29.261076 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:17:29.307226 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:17:29.307542 [debug] [MainThread]: Connection 'create_dataanalytics-504114_fec_dev_marts' was properly closed.
+[0m21:17:29.307779 [debug] [MainThread]: Connection 'create_dataanalytics-504114_fec_dev_staging' was properly closed.
+[0m21:17:29.308007 [debug] [MainThread]: Connection 'list_dataanalytics-504114_fec_dev_staging' was properly closed.
+[0m21:17:29.308233 [debug] [MainThread]: Connection 'list_dataanalytics-504114_fec_dev_marts' was properly closed.
+[0m21:17:29.308457 [debug] [MainThread]: Connection 'model.fec_campaign_finance_pipeline.stg_fec_candidates' was properly closed.
+[0m21:17:29.308681 [debug] [MainThread]: Connection 'model.fec_campaign_finance_pipeline.mart_candidate_leaderboard' was properly closed.
+[0m21:17:29.308914 [debug] [MainThread]: Connection 'model.fec_campaign_finance_pipeline.mart_fundraising_by_party_office' was properly closed.
+[0m21:17:29.309218 [info ] [MainThread]: 
+[0m21:17:29.309619 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 10.83 seconds (10.83s).
+[0m21:17:29.310689 [debug] [MainThread]: Command end result
+[0m21:17:29.348306 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\manifest.json
+[0m21:17:29.351255 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\semantic_manifest.json
+[0m21:17:29.353922 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\osi_document.json
+[0m21:17:29.360125 [debug] [MainThread]: Wrote artifact RunExecutionResult to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\run_results.json
+[0m21:17:29.360373 [info ] [MainThread]: 
+[0m21:17:29.360733 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:17:29.361051 [info ] [MainThread]: 
+[0m21:17:29.361376 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m21:17:29.362131 [debug] [MainThread]: Command `dbt run` succeeded at 21:17:29.362032 after 13.06 seconds
+[0m21:17:29.362428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5CE1D8650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5CE396C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5AA9601A0>]}
+[0m21:17:29.362728 [debug] [MainThread]: Flushing usage events
+[0m21:17:29.817343 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:17:36.200640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238D2AA4D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238D502BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238D502BB10>]}
+
+
+============================== 21:17:36.204337 | 61673470-246a-447d-a1d4-a14dc80e29f7 ==============================
+[0m21:17:36.204337 [info ] [MainThread]: Running with dbt=1.12.0
+[0m21:17:36.204834 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\mhall\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'F:\\Dropbox\\Hq Data Services\\fec-campaign-finance-pipeline\\logs'}
+[0m21:17:37.256647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '61673470-246a-447d-a1d4-a14dc80e29f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238D2F9D350>]}
+[0m21:17:37.315435 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '61673470-246a-447d-a1d4-a14dc80e29f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238F8B2EF10>]}
+[0m21:17:37.316127 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m21:17:37.830326 [debug] [MainThread]: checksum: 3c882ddd696b0e8bb7dc9d306f7e2ccd7e4c9cd82047f9767e1f3a9a284f062e, vars: {}, profile: fec_campaign_finance_pipeline, target: dev, version: 1.12.0
+[0m21:17:37.980092 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:17:37.980401 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m21:17:37.980669 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:17:37.988396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '61673470-246a-447d-a1d4-a14dc80e29f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238F901E850>]}
+[0m21:17:38.118036 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\manifest.json
+[0m21:17:38.120889 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\semantic_manifest.json
+[0m21:17:38.139725 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\osi_document.json
+[0m21:17:38.161272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '61673470-246a-447d-a1d4-a14dc80e29f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238FA1F45F0>]}
+[0m21:17:38.161656 [info ] [MainThread]: Found 3 models, 3 data tests, 1 source, 561 macros
+[0m21:17:38.162001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '61673470-246a-447d-a1d4-a14dc80e29f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238FA1F25F0>]}
+[0m21:17:38.163594 [info ] [MainThread]: 
+[0m21:17:38.163935 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:17:38.164229 [info ] [MainThread]: 
+[0m21:17:38.164693 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m21:17:38.168706 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_fec_dev_marts'
+[0m21:17:38.168976 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:17:38.169616 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataanalytics-504114_fec_dev_staging'
+[0m21:17:38.169883 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:17:39.578817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '61673470-246a-447d-a1d4-a14dc80e29f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238D58EAB60>]}
+[0m21:17:39.580872 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:17:39.653989 [debug] [Thread-4 (]: Began running node test.fec_campaign_finance_pipeline.not_null_stg_fec_candidates_candidate_id.7a9772ed55
+[0m21:17:39.654726 [debug] [Thread-3 (]: Began running node test.fec_campaign_finance_pipeline.not_null_mart_candidate_leaderboard_candidate_id.a400880527
+[0m21:17:39.655350 [debug] [Thread-5 (]: Began running node test.fec_campaign_finance_pipeline.unique_mart_candidate_leaderboard_candidate_id.35bb39900d
+[0m21:17:39.655040 [info ] [Thread-4 (]: 2 of 3 START test not_null_stg_fec_candidates_candidate_id ..................... [RUN]
+[0m21:17:39.655781 [info ] [Thread-3 (]: 1 of 3 START test not_null_mart_candidate_leaderboard_candidate_id ............. [RUN]
+[0m21:17:39.656590 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.fec_campaign_finance_pipeline.not_null_stg_fec_candidates_candidate_id.7a9772ed55'
+[0m21:17:39.657007 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.fec_campaign_finance_pipeline.not_null_mart_candidate_leaderboard_candidate_id.a400880527'
+[0m21:17:39.656173 [info ] [Thread-5 (]: 3 of 3 START test unique_mart_candidate_leaderboard_candidate_id ............... [RUN]
+[0m21:17:39.657388 [debug] [Thread-4 (]: Began compiling node test.fec_campaign_finance_pipeline.not_null_stg_fec_candidates_candidate_id.7a9772ed55
+[0m21:17:39.657687 [debug] [Thread-3 (]: Began compiling node test.fec_campaign_finance_pipeline.not_null_mart_candidate_leaderboard_candidate_id.a400880527
+[0m21:17:39.658082 [debug] [Thread-5 (]: Acquiring new bigquery connection 'test.fec_campaign_finance_pipeline.unique_mart_candidate_leaderboard_candidate_id.35bb39900d'
+[0m21:17:39.675923 [debug] [Thread-4 (]: Writing injected SQL for node "test.fec_campaign_finance_pipeline.not_null_stg_fec_candidates_candidate_id.7a9772ed55"
+[0m21:17:39.681197 [debug] [Thread-3 (]: Writing injected SQL for node "test.fec_campaign_finance_pipeline.not_null_mart_candidate_leaderboard_candidate_id.a400880527"
+[0m21:17:39.681649 [debug] [Thread-5 (]: Began compiling node test.fec_campaign_finance_pipeline.unique_mart_candidate_leaderboard_candidate_id.35bb39900d
+[0m21:17:39.688473 [debug] [Thread-5 (]: Writing injected SQL for node "test.fec_campaign_finance_pipeline.unique_mart_candidate_leaderboard_candidate_id.35bb39900d"
+[0m21:17:39.691318 [debug] [Thread-3 (]: Began executing node test.fec_campaign_finance_pipeline.not_null_mart_candidate_leaderboard_candidate_id.a400880527
+[0m21:17:39.709114 [debug] [Thread-3 (]: Writing runtime sql for node "test.fec_campaign_finance_pipeline.not_null_mart_candidate_leaderboard_candidate_id.a400880527"
+[0m21:17:39.709608 [debug] [Thread-4 (]: Began executing node test.fec_campaign_finance_pipeline.not_null_stg_fec_candidates_candidate_id.7a9772ed55
+[0m21:17:39.710925 [debug] [Thread-4 (]: Writing runtime sql for node "test.fec_campaign_finance_pipeline.not_null_stg_fec_candidates_candidate_id.7a9772ed55"
+[0m21:17:39.711513 [debug] [Thread-5 (]: Began executing node test.fec_campaign_finance_pipeline.unique_mart_candidate_leaderboard_candidate_id.35bb39900d
+[0m21:17:39.712824 [debug] [Thread-5 (]: Writing runtime sql for node "test.fec_campaign_finance_pipeline.unique_mart_candidate_leaderboard_candidate_id.35bb39900d"
+[0m21:17:39.714447 [debug] [Thread-4 (]: On test.fec_campaign_finance_pipeline.not_null_stg_fec_candidates_candidate_id.7a9772ed55: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "fec_campaign_finance_pipeline", "target_name": "dev", "node_id": "test.fec_campaign_finance_pipeline.not_null_stg_fec_candidates_candidate_id.7a9772ed55"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select candidate_id
+from `dataanalytics-504114`.`fec_dev_staging`.`stg_fec_candidates`
+where candidate_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:17:39.714825 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m21:17:39.715202 [debug] [Thread-3 (]: On test.fec_campaign_finance_pipeline.not_null_mart_candidate_leaderboard_candidate_id.a400880527: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "fec_campaign_finance_pipeline", "target_name": "dev", "node_id": "test.fec_campaign_finance_pipeline.not_null_mart_candidate_leaderboard_candidate_id.a400880527"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select candidate_id
+from `dataanalytics-504114`.`fec_dev_marts`.`mart_candidate_leaderboard`
+where candidate_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:17:39.715547 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m21:17:39.743433 [debug] [Thread-5 (]: On test.fec_campaign_finance_pipeline.unique_mart_candidate_leaderboard_candidate_id.35bb39900d: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "fec_campaign_finance_pipeline", "target_name": "dev", "node_id": "test.fec_campaign_finance_pipeline.unique_mart_candidate_leaderboard_candidate_id.35bb39900d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select candidate_id as unique_field
+  from `dataanalytics-504114`.`fec_dev_marts`.`mart_candidate_leaderboard`
+  where candidate_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m21:17:39.743806 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m21:17:41.395972 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:f5dd0c3a-e1de-44ad-865d-e22b16661f57&page=queryresults
+[0m21:17:41.482712 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:c697dd81-9d78-4d62-b661-c945daebd7ce&page=queryresults
+[0m21:17:41.590341 [debug] [Thread-5 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataanalytics-504114&j=bq:US:f826047b-27a1-4e66-8825-62c1d28f6a7b&page=queryresults
+[0m21:17:41.597976 [debug] [Thread-3 (]: SQL status: OK in 0.201 seconds
+[0m21:17:41.645246 [debug] [Thread-4 (]: SQL status: OK in 0.161 seconds
+[0m21:17:42.079766 [info ] [Thread-4 (]: 2 of 3 PASS not_null_stg_fec_candidates_candidate_id ........................... [[32mPASS[0m in 2.42s]
+[0m21:17:42.083959 [debug] [Thread-4 (]: Finished running node test.fec_campaign_finance_pipeline.not_null_stg_fec_candidates_candidate_id.7a9772ed55
+[0m21:17:42.090450 [info ] [Thread-3 (]: 1 of 3 PASS not_null_mart_candidate_leaderboard_candidate_id ................... [[32mPASS[0m in 2.43s]
+[0m21:17:42.092787 [debug] [Thread-3 (]: Finished running node test.fec_campaign_finance_pipeline.not_null_mart_candidate_leaderboard_candidate_id.a400880527
+[0m21:17:42.184509 [debug] [Thread-5 (]: SQL status: OK in 0.592 seconds
+[0m21:17:42.636964 [info ] [Thread-5 (]: 3 of 3 PASS unique_mart_candidate_leaderboard_candidate_id ..................... [[32mPASS[0m in 2.98s]
+[0m21:17:42.640604 [debug] [Thread-5 (]: Finished running node test.fec_campaign_finance_pipeline.unique_mart_candidate_leaderboard_candidate_id.35bb39900d
+[0m21:17:42.647728 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:17:42.718019 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:17:42.718331 [debug] [MainThread]: Connection 'list_dataanalytics-504114_fec_dev_marts' was properly closed.
+[0m21:17:42.718565 [debug] [MainThread]: Connection 'list_dataanalytics-504114_fec_dev_staging' was properly closed.
+[0m21:17:42.718791 [debug] [MainThread]: Connection 'test.fec_campaign_finance_pipeline.not_null_stg_fec_candidates_candidate_id.7a9772ed55' was properly closed.
+[0m21:17:42.719029 [debug] [MainThread]: Connection 'test.fec_campaign_finance_pipeline.not_null_mart_candidate_leaderboard_candidate_id.a400880527' was properly closed.
+[0m21:17:42.719257 [debug] [MainThread]: Connection 'test.fec_campaign_finance_pipeline.unique_mart_candidate_leaderboard_candidate_id.35bb39900d' was properly closed.
+[0m21:17:42.719526 [info ] [MainThread]: 
+[0m21:17:42.719923 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 4.55 seconds (4.55s).
+[0m21:17:42.720926 [debug] [MainThread]: Command end result
+[0m21:17:42.753064 [debug] [MainThread]: Wrote artifact WritableManifest to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\manifest.json
+[0m21:17:42.755931 [debug] [MainThread]: Wrote artifact SemanticManifest to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\semantic_manifest.json
+[0m21:17:42.758623 [debug] [MainThread]: Wrote artifact OsiDocument to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\osi_document.json
+[0m21:17:42.765682 [debug] [MainThread]: Wrote artifact RunExecutionResult to F:\Dropbox\Hq Data Services\fec-campaign-finance-pipeline\target\run_results.json
+[0m21:17:42.765964 [info ] [MainThread]: 
+[0m21:17:42.766391 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:17:42.766708 [info ] [MainThread]: 
+[0m21:17:42.767034 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m21:17:42.767760 [debug] [MainThread]: Command `dbt test` succeeded at 21:17:42.767662 after 6.76 seconds
+[0m21:17:42.768098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238D4E7D0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238FA2449F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238FA2457B0>]}
+[0m21:17:42.768401 [debug] [MainThread]: Flushing usage events
+[0m21:17:43.219092 [debug] [MainThread]: An error was encountered while trying to flush usage events

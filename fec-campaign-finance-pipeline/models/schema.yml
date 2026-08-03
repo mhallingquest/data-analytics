@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_fec_candidates
+    description: Cleaned staging layer over the raw FEC candidate summary CSV load.
+    columns:
+      - name: candidate_id
+        tests:
+          - not_null
+
+  - name: mart_fundraising_by_party_office
+    description: One row per (office, party affiliation) — aggregated fundraising totals.
+
+  - name: mart_candidate_leaderboard
+    description: One row per candidate — total receipts, disbursements, cash on hand.
+    columns:
+      - name: candidate_id
+        tests:
+          - unique
+          - not_null
